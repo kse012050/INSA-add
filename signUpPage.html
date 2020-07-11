@@ -36,10 +36,16 @@
             //     }
             // })
 
-            $('.agreeArea li > span').click(function(){
+            $('.individuaAgreeArea li > span').click(function(){
                 $('.agreeExampleArea').addClass('active');
                 $('.agreeExampleArea li').removeClass('active');
-                $('.agreeExampleArea li').eq($('.agreeArea li > span').index(this)).addClass('active');
+                $('.agreeExampleArea li').eq($('.individuaAgreeArea li > span').index(this)).addClass('active');
+            });
+
+            $('.enterpriseAgreeArea li > span').click(function(){
+                $('.agreeExampleArea').addClass('active');
+                $('.agreeExampleArea li').removeClass('active');
+                $('.agreeExampleArea li').eq($('.enterpriseAgreeArea li > span').index(this)).addClass('active');
             });
 
 
@@ -112,13 +118,13 @@
                                 <input type="password">
                                 <span>비밀번호를 입력해주세요</span>
                             </li>
-                            <li class="active">
+                            <li class="phoneNumberArea active">
                                 <label for=""><span>휴대폰번호</span></label>
                                 <input type="text">
                                 <button>인증번호 전송</button>
                                 <span>휴대폰번호를 입력해주세요</span>
                             </li>
-                            <li class="active">
+                            <li class="certificationArea active">
                                 <label for=""><span>인증번호 입력</span></label>
                                 <input type="text">
                                 <button>확인</button>
@@ -127,7 +133,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="agreeArea">
+                    <fieldset class="agreeArea individuaAgreeArea">
                         <legend>
                             필수동의 항목 및 개인정보 수집 및 이용 동의(선택), <br/>
                             마케팅 정보 수신(선택)에 모두 동의합니다.
@@ -137,27 +143,25 @@
                             <li>
                                 <input type="checkbox" id="agreeCK01">
                                 <label for="agreeCK01"><span>[필수]</span>이용약관 동의</label>
-                                <span>보기</span>
+                                <span>자세히보기</span>
                             </li>
                             <li>
                                 <input type="checkbox" id="agreeCK02">
                                 <label for="agreeCK02"><span>[필수]</span>개인정보 수집 및 이용 동의 </label>
-                                <span>보기</span>
+                                <span>자세히보기</span>
                             </li>
                             <li>
                                 <input type="checkbox" id="agreeCK03">
                                 <label for="agreeCK03">[선택] 개인정보 수집 및 이용 동의 </label>
-                                <span>보기</span>
+                                <span>자세히보기</span>
                             </li>
                             <li>
                                 <input type="checkbox" id="agreeCK04">
                                 <label for="agreeCK04">[선택] 마케팅 정보 이메일 수신 동의</label>
-                                <span>보기</span>
                             </li>
                             <li>
                                 <input type="checkbox" id="agreeCK05">
                                 <label for="agreeCK05">[선택] 마케팅 정보 SMS 수신 동의</label>
-                                <span>보기</span>
                             </li>
                         </ul>
                     </fieldset>
@@ -174,11 +178,97 @@
                             <label for="validityRD03">회원탈퇴시</label>
                         </div>
                     </fieldset>
-                    <input type="submit" id="individualSubmitBtn" value="회원가입하기 (이력서작성하기)">
+                    <input type="submit" value="회원가입하기 (이력서작성하기)">
                 </form>
             </li>
-            <li>
-                준비중입니다.
+            <li class="enterpriseArea">
+                <form action="#" method="POST">
+                    <fieldset class="necessaryArea">
+                        <legend>필수 입력 정보입니다.</legend>
+                        <ul>
+                            <!-- li에 active class가 들어가면, 경고문  -->
+                            <li class="">
+                                <label for=""><span>사업자등록번호</span></label>
+                                <input type="text"  >
+                                <span>사업자등록번호을 입력해주세요</span>
+                            </li>
+                            <li class="active">
+                                <label for="">회사명</label>
+                                <input type="text">
+                                <span>회사명을 입력해주세요</span>
+                            </li>
+                            <li class="active">
+                                <label for=""><span>아이디(이메일)</span></label>
+                                <input type="email" >
+                                <span>아이디(이메일)을 입력해주세요</span>
+                            </li>
+                            <li class="active">
+                                <label for=""><span>비밀번호(6~16자의 영문,숫자,특수기호)</span></label>
+                                <input type="password">
+                                <span>비밀번호를 입력해주세요</span>
+                            </li>
+                            <li class="phoneNumberArea active">
+                                <label for=""><span>휴대폰번호</span></label>
+                                <input type="text">
+                                <button>인증번호 전송</button>
+                                <span>휴대폰번호를 입력해주세요</span>
+                            </li>
+                            <li class="certificationArea active">
+                                <label for=""><span>인증번호 입력</span></label>
+                                <input type="text">
+                                <button>확인</button>
+                                <button>인증번호 재전송</button>
+                                <span>인증번호를 입력해주세요</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="agreeArea enterpriseAgreeArea">
+                        <legend>
+                            필수동의 항목 및 개인정보 수집 및 이용 동의(선택), <br/>
+                            마케팅 정보 수신(선택)에 모두 동의합니다.
+                            <span></span>
+                        </legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="agreeCK01">
+                                <label for="agreeCK01"><span>[필수]</span>이용약관 동의</label>
+                                <span>자세히보기</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agreeCK02">
+                                <label for="agreeCK02"><span>[필수]</span>개인정보 수집 및 이용 동의 </label>
+                                <span>자세히보기</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agreeCK03">
+                                <label for="agreeCK03">[선택] 개인정보 수집 및 이용 동의 </label>
+                                <span>자세히보기</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agreeCK04">
+                                <label for="agreeCK04">[선택] 마케팅 정보 이메일 수신 동의</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agreeCK05">
+                                <label for="agreeCK05">[선택] 마케팅 정보 SMS 수신 동의</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="validityArea">
+                        <legend>
+                            개인정보 유효기간 선택
+                        </legend>
+                        <div>
+                            <input type="radio" name="validityGroup" id="validityRD01" checked>
+                            <label for="validityRD01">1년</label>
+                            <input type="radio" name="validityGroup" id="validityRD02">
+                            <label for="validityRD02">3년</label>
+                            <input type="radio" name="validityGroup" id="validityRD03">
+                            <label for="validityRD03">회원탈퇴시</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="회원가입하기 (이력서작성하기)">
+                </form>
             </li>
         </ul>
     </section>
