@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- fontawesome cdn -->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/signUpPage.css">
+    <script>
+        $(document).ready(function(){
+            $('.signUpTabArea li').click(function(){
+                $('.signUpTabArea li').removeClass('active');
+                $(this).addClass('active');
+                $('.tabContentArea > li').hide();
+                $('.tabContentArea > li').eq($(this).index()).show();
+            });
+
+            $('.agreeArea legend span').click(function(){
+                $(this).toggleClass('active');
+                if($(this).hasClass('active')){
+                    $('.agreeArea ul li input').prop('checked',true);
+                }else{
+                    $('.agreeArea ul li input').prop('checked',false);
+                }
+            });
+
+            // $('#individualSubmitBtn').click(function(e){
+            //     e.preventDefault();
+            //     if($('#individualName').val().replace(, "") ==''){
+            //         alert();
+            //     }
+            // })
+
+            $('.agreeArea li > span').click(function(){
+                $('.agreeExampleArea').addClass('active');
+                $('.agreeExampleArea li').removeClass('active');
+                $('.agreeExampleArea li').eq($('.agreeArea li > span').index(this)).addClass('active');
+            });
+
+
+            $('.popupCloseBtn').click(function(){
+                $('.agreeExampleArea').removeClass('active');
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#">
+                <img src="image/LOGO.png" alt="LOGO">
+            </a>
+        </h1>
+        <p>INSA는 수많은 글자들에 가려 제대로 보이지 않았던 적합한 인재(人)와 적합한 기업(社)을 연결해드립니다.</p>
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="signUpArea">
+        <h2>회원가입</h2>
+        
+        <ul class="signUpTabArea">
+            <li class="active">개인회원 가입</li>
+            <li>기업회원 가입</li>
+        </ul>
+
+        
+        <ul class="tabContentArea">
+            <li class="individualArea">
+                <div class="SNSLoginBtnArea">
+                    <h3>SNS로 간편하게 로그인하세요</h3>
+                    <ul>
+                        <li>
+                            <button>네이버 로그인</button>
+                        </li>
+                        <li>
+                            <button>페이스북 로그인</button>
+                        </li>
+                        <li>
+                            <button>카카오 로그인</button>
+                        </li>
+                        <li>
+                            <button>구글 로그인</button>
+                        </li>
+                    </ul>
+                </div>
+                <form action="#" method="POST">
+                    <fieldset class="necessaryArea">
+                        <legend>필수 입력 정보입니다.</legend>
+                        <ul>
+                            <!-- li에 active class가 들어가면, 경고문  -->
+                            <li class="">
+                                <label for=""><span>이름(실명)</span></label>
+                                <input type="text"  >
+                                <span>이름(실명)을 입력해주세요</span>
+                            </li>
+                            <li class="active">
+                                <label for=""><span>아이디(이메일)</span></label>
+                                <input type="email" >
+                                <span>아이디(이메일)을 입력해주세요</span>
+                            </li>
+                            <li class="active">
+                                <label for=""><span>비밀번호(6~16자의 영문,숫자,특수기호)</span></label>
+                                <input type="password">
+                                <span>비밀번호를 입력해주세요</span>
+                            </li>
+                            <li class="active">
+                                <label for=""><span>휴대폰번호</span></label>
+                                <input type="text">
+                                <button>인증번호 전송</button>
+                                <span>휴대폰번호를 입력해주세요</span>
+                            </li>
+                            <li class="active">
+                                <label for=""><span>인증번호 입력</span></label>
+                                <input type="text">
+                                <button>확인</button>
+                                <button>인증번호 재전송</button>
+                                <span>인증번호를 입력해주세요</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="agreeArea">
+                        <legend>
+                            필수동의 항목 및 개인정보 수집 및 이용 동의(선택), <br/>
+                            마케팅 정보 수신(선택)에 모두 동의합니다.
+                            <span></span>
+                        </legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="agreeCK01">
+                                <label for="agreeCK01"><span>[필수]</span>이용약관 동의</label>
+                                <span>보기</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agreeCK02">
+                                <label for="agreeCK02"><span>[필수]</span>개인정보 수집 및 이용 동의 </label>
+                                <span>보기</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agreeCK03">
+                                <label for="agreeCK03">[선택] 개인정보 수집 및 이용 동의 </label>
+                                <span>보기</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agreeCK04">
+                                <label for="agreeCK04">[선택] 마케팅 정보 이메일 수신 동의</label>
+                                <span>보기</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="agreeCK05">
+                                <label for="agreeCK05">[선택] 마케팅 정보 SMS 수신 동의</label>
+                                <span>보기</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="validityArea">
+                        <legend>
+                            개인정보 유효기간 선택
+                        </legend>
+                        <div>
+                            <input type="radio" name="validityGroup" id="validityRD01" checked>
+                            <label for="validityRD01">1년</label>
+                            <input type="radio" name="validityGroup" id="validityRD02">
+                            <label for="validityRD02">3년</label>
+                            <input type="radio" name="validityGroup" id="validityRD03">
+                            <label for="validityRD03">회원탈퇴시</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" id="individualSubmitBtn" value="회원가입하기 (이력서작성하기)">
+                </form>
+            </li>
+            <li>
+                준비중입니다.
+            </li>
+        </ul>
+    </section>
+
+    <ul class="agreeExampleArea">
+        <li>
+            <span class="popupCloseBtn">닫기</span>
+            이용약관 동의
+        </li>
+        <li>
+            <span class="popupCloseBtn">닫기</span>
+            개인정보 수집 및 이용 동의
+        </li>
+        <li>
+            <span class="popupCloseBtn">닫기</span>
+            개인정보 수집 및 이용 동의
+        </li>
+        <li>
+            <span class="popupCloseBtn">닫기</span>
+            마케팅 정보 이메일 수신 동의
+        </li>
+        <li>
+            <span class="popupCloseBtn">닫기</span>
+            마케팅 정보 SMS 수신 동의
+        </li>
+    </ul>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">보도기사</a>
+                </li>
+                <li>
+                    <a href="#">찾아오시는길</a>
+                </li>
+                <li>
+                    <a href="#">회원약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">이메일무단수집거부</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="addressArea">
+            <h1><img src="image/f_LOGO.png" alt="LOGO"></h1>
+            <div>
+                <h2>
+                    (주)INSA
+                </h2>
+                <address>
+                    <p>서울특별시 용산구 한강대로 69, 102동 2025호<span>(한강로2가,용산푸르지오써밋)</span></p>
+                    <dl>
+                        <dt>대표</dt>
+                        <dd>정영주, 정진우</dd>
+                        <dt>사업자등록</dt>
+                        <dd>000-00-0000</dd>
+                    </dl>
+                    <dl>
+                        <dt>직업정보제공사업</dt>
+                        <dd>서울 용산 제 2020-0호</dd>
+                        <dt>통신판매업</dt>
+                        <dd>제 0000호</dd>
+                    </dl>
+                </address>
+            </div>
+            <div>
+                <h2>INSA 고객센터</h2>
+                <address>
+                    <p>080-0000-0000 <span>(평일 09:00~19:00, 주말·공휴일 휴무)</span></p>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>help@insahr.co.kr</dd>
+                    </dl>
+                    <dl>
+                        <dt>Fax</dt>
+                        <dd>02-6954-0000(대표)</dd>
+                    </dl>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrightArea">
+        <div>
+            <p>Copyright (c) INSA. All rights reserved.</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bold"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>

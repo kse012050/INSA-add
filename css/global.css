@@ -1,0 +1,74 @@
+*{font-family: 'Noto Sans KR';}
+
+a{color: black; text-decoration: none;}
+
+header{position: fixed; top: 0; left: 0; width: 100%; padding: 15px 30px; background-color: rgba(0,0,0,0.7); box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; z-index: 5;}
+header h1{}
+header p{color: white; font-size: 16px; font-weight: 400;}
+header div{width: 40px;}
+header div span{display: block; height: 3px; background-color: white;}
+header div span:first-of-type{margin-bottom: 10px;}
+
+
+
+footer{}
+footer nav{width: 100%;}
+footer nav ul{display: flex; border-bottom: 1px solid rgba(0,0,0,0.6); border-top: 1px solid rgba(0,0,0,0.6);}
+footer nav ul li{flex: 1; text-align: center;}
+footer nav ul li a{display: block; font-size: 16px; padding: 1.563em 0;}
+footer .addressArea{display: flex; width: 100%; max-width: 1780px; margin: 0 auto; padding: 40px 30px; box-sizing: border-box;}
+footer .addressArea h1{}
+footer .addressArea h1 img{border: 1px solid rgba(0,0,0,0.6);}
+footer .addressArea div{margin-left: 80px;}
+footer .addressArea div h2{font-size: 14px; margin-bottom: 2.143em; font-weight: 500;}
+footer .addressArea div address{font-style: normal; font-style: 14px; line-height: 1.714;}
+footer .addressArea div address p{}
+footer .addressArea div address dl{display: flex; }
+footer .addressArea div address dl dt{padding-right: 10px; position: relative;}
+footer .addressArea div address dl dt::after{content: ':'; position: absolute; right: 3px; top: -1px;}
+footer .addressArea div address dl dt:not(:first-of-type){margin-left: 2.214em;}
+
+.copyrightArea{border-top: 1px solid rgba(0,0,0,0.6); padding: 40px 0;}
+.copyrightArea div{display: flex; justify-content: space-between; align-content: center; width: 100%; max-width: 1780px; margin: 0 auto; padding: 40px 30px; box-sizing: border-box;}
+.copyrightArea div p{font-size: 14px; display: flex; align-items: center;}
+.copyrightArea div ul{display: flex;}
+.copyrightArea div ul li{}
+.copyrightArea div ul li a{}
+.copyrightArea div ul li a i{font-size: 20px;}
+.copyrightArea div ul li:not(:first-of-type){margin-left: 2.5em;}
+
+.popupCloseBtn{font-size: 14px; display: inline-block; padding-right: 45px; position: relative; cursor: pointer; color: white;}
+.popupCloseBtn::after{content: ''; display:inline-block; width: 20px; height:20px; background: url(../image/popupXIcon.png) no-repeat center center; position: absolute; right: 0; top: -2px;}
+
+
+@media screen and (max-width:1290px){
+    header p{display: none;}
+
+    footer nav ul{flex-wrap: wrap; padding: 10px 0;}
+    footer nav ul li{max-width: calc(33% - 20px); width: calc(33% - 20px); min-width: 185px; margin: 10px;  flex: none;}
+    footer nav ul li a{border: 1px solid black;}
+
+    footer .addressArea{flex-direction: column; text-align: center;}
+    footer .addressArea div{margin-left: 0;}
+    footer .addressArea div h2{margin: 2.857em 0 1.786em 0;}
+    footer .addressArea div address dl{display: flex; justify-content: center;}
+
+    .copyrightArea{display: none;}
+}
+
+@media screen and (max-width:767px){
+
+}
+
+@media screen and (max-width:639px){
+    footer .addressArea{padding: 40px 10px;}
+    footer nav ul li{min-width: calc(50% - 20px);}
+    footer .addressArea div address p{margin-bottom: 10px;}
+    footer .addressArea div address p span{display: block;}
+    footer .addressArea div address dl{flex-direction: column;}
+    footer .addressArea div address dl dt{padding: 0;}
+    footer .addressArea div address dl dt::after{display: none;}
+    footer .addressArea div address dl dt:not(:first-of-type){margin-left: 0;}
+    footer .addressArea div address dl dd{margin-bottom: 10px;}
+
+}
