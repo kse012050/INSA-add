@@ -1,0 +1,71 @@
+/* 이력서 등록 */
+.subResumeTitle{padding: 100px 0 50px; font-size: 40px; font-weight: 400;}
+.subResumeTitle span{color: #006aed;}
+/* 서브 메뉴 */
+.subMenu{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative;}  
+.subMenu::after{content: ''; display: block; width: 100%; height: 1px; background-color: #d9e6ee; position: absolute; bottom: 0; left: 0; z-index: 0;}
+.subMenu ul{display: flex; }
+.subMenu ul li{flex: 1; text-align: center;}
+.subMenu ul li a{font-size: 20px; font-weight: 300; color: #939393; display: block; padding: 23px 0;}
+.subMenu ul li a.active {font-weight: 700; color: #006aed; background-color: #f2faff; border-width: 0 1px 0 1px; border-style: solid; border-color: #d9e6ee; position: relative; z-index: 1;}
+
+.resumeRegistrationArea{padding: 100px 0; background-color: #f2faff;}
+.RR_wrapArea{display: flex;}
+
+/* 사이트 메뉴 */
+.RRC_subMenu{width: 265px; margin-right: 70px;}
+.RRC_subMenu ul li a{display: flex; padding: 18px 15px 18px 20px; background-color: #006aed; border-radius: 10px;}
+.RRC_subMenu ul li a strong{font-size: 26px; width: 45px; color: white; line-height: 45px; text-align: center; border-radius: 50%; background-color: #2285ff; margin-right: 25px;}
+.RRC_subMenu ul li a .RRWA_nameArea{display: flex; flex-direction: column; justify-content: space-between;}
+.RRC_subMenu ul li a .RRWA_nameArea p:nth-of-type(1){font-size: 20px; color: #c5defd;}
+.RRC_subMenu ul li a .RRWA_nameArea p:nth-of-type(1) span{font-weight: 700; color: white;}
+.RRC_subMenu ul li a .RRWA_nameArea p:nth-of-type(2){font-size: 14px; color: rgba(255,255,255,0.4);}
+.RRC_subMenu ul li a .RRWA_menuArea{margin-left: auto; width: 16px; display: flex; flex-direction: column; justify-content: center;}
+.RRC_subMenu ul li a .RRWA_menuArea span{display: block; height: 1px; background-color: white;}
+.RRC_subMenu ul li a .RRWA_menuArea span:nth-of-type(1){margin-bottom: 5px;}
+.RRC_subMenu ul li:not(:last-of-type){margin-bottom: 10px;}
+
+/* 삭제 버튼 */
+.RRWCT_delete_all{display: flex; align-items: center;}
+.RRWCT_delete_all input[type="checkbox"]{display: none;}
+.RRWCT_delete_all label{font-size: 16px; padding:10px 0 10px 30px; margin-right: 20px; background: url(../image/sub/deleteAllIcon.png) no-repeat left center;}
+.RRWCT_delete_all button{width: 125px; line-height: 40px; font-size: 14px; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #343434; border: none;}
+.RRWCT_delete_all button::before{content: ''; display: block; width: 17px; height: 17px;  background: url(../image/sub/XIcon.png) no-repeat center center;}
+
+.RRWC_delete{display: flex; align-items: center; margin-left: 30px;}
+.RRWC_delete input[type="checkbox"]{display: none;}
+.RRWC_delete label{font-size: 16px; color: #939393; padding:10px 0 10px 30px; margin-right: 20px; background: url(../image/sub/deleteAllIcon.png) no-repeat left center;}
+.RRWC_delete button{width: 125px; line-height: 40px; font-size: 14px; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #939799; border: none;}
+.RRWC_delete button::before{content: ''; display: block; width: 17px; height: 17px;  background: url(../image/sub/XIcon.png) no-repeat center center;}
+ 
+.RRW_contentsArea{flex: 1;}
+.RRW_contentsArea .RRWC_titleArea{display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;}
+.RRW_contentsArea .RRWC_titleArea .RRWCT_title{display: flex; align-items: flex-end;}
+.RRW_contentsArea .RRWC_titleArea .RRWCT_title > *{font-weight: 500;}
+.RRW_contentsArea .RRWC_titleArea .RRWCT_title h3{font-size: 24px; margin-right: 10px;}
+.RRW_contentsArea .RRWC_titleArea .RRWCT_title p{font-size: 18px;}
+
+
+.RRWC_itemTitleArea{display: flex; padding: 21px 0; border-top: 1px solid black; border-color: black 0 rgba(0,52,85,0.1); } 
+.RRWC_itemTitleArea p{font-size: 18px; font-weight: 500; color: #006aed; text-align: center;}
+.RRWC_itemTitleArea p:nth-of-type(1){flex: 1;}
+.RRWC_itemTitleArea p:nth-of-type(2){width: 215px;}
+
+
+/* 항목 */
+.RRWC_itemArea{padding: 30px 0; border-top: 1px solid rgba(0,52,85,0.1);}
+.RRWC_itemArea > li{display: flex;}
+.RRWC_itemArea > li:not(:last-of-type){margin-bottom: 20px;}
+.RRWC_itemArea > li .RRWCI_listArea{flex: 1; display: flex; padding: 14px 10px; background-color: #dfedf6; border: 1px solid #b5d6fa;}
+.RRWC_itemArea > li .RRWCI_listArea *{font-size: 18px; font-weight: 500;}
+.RRWC_itemArea > li .RRWCI_listArea label{width: 130px; line-height: 50px; padding-left: 10px; box-sizing: border-box;}
+.RRWC_itemArea > li .RRWCI_listArea ul{flex: 1;}
+.RRWC_itemArea > li .RRWCI_listArea ul li{display: flex;}
+.RRWC_itemArea > li .RRWCI_listArea ul li:not(:last-of-type){margin-bottom: 10px;}
+.RRWC_itemArea > li .RRWCI_listArea ul li input,
+.RRWC_itemArea > li .RRWCI_listArea ul li select
+{flex: 1; padding: 10px 20px; border: none;}
+.RRWC_itemArea > li .RRWCI_listArea ul li button{width: 50px; border: none; background-color: #a7c2d3; margin-left: 5px; background-repeat: no-repeat; background-position: center center;}
+.RRWC_itemArea > li .RRWCI_listArea ul li button.refreshBtn{background-image: url(../image/sub/refreshIcon.png);}
+.RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn{background-image: url(../image/sub/plusIcon.png);}
+

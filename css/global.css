@@ -2,12 +2,12 @@
 
 a{color: black; text-decoration: none;}
 
-header{position: fixed; top: 0; left: 0; width: 100%; padding: 15px 30px; background-color: rgba(0,0,0,0.7); box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; z-index: 5;}
-header h1{}
-header p{color: white; font-size: 16px; font-weight: 400;}
-header div{width: 40px;}
-header div span{display: block; height: 3px; background-color: white;}
-header div span:first-of-type{margin-bottom: 10px;}
+header.mainHeader{position: fixed; top: 0; left: 0; width: 100%; padding: 15px 30px; background-color: rgba(0,0,0,0.7); box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; z-index: 5;}
+header.mainHeader h1{}
+header.mainHeader p{color: white; font-size: 16px; font-weight: 400;}
+header.mainHeader div{width: 40px;}
+header.mainHeader div span{display: block; height: 3px; background-color: white;}
+header.mainHeader div span:first-of-type{margin-bottom: 10px;}
 
 
 
@@ -42,7 +42,7 @@ footer .addressArea div address dl dt:not(:first-of-type){margin-left: 2.214em;}
 
 
 @media screen and (max-width:1290px){
-    header p{display: none;}
+    header.mainHeader p{display: none;}
 
     footer nav ul{flex-wrap: wrap; padding: 10px 0;}
     footer nav ul li{max-width: calc(33% - 20px); width: calc(33% - 20px); min-width: 185px; margin: 10px;  flex: none;}
@@ -72,3 +72,33 @@ footer .addressArea div address dl dt:not(:first-of-type){margin-left: 2.214em;}
     footer .addressArea div address dl dd{margin-bottom: 10px;}
 
 }
+
+
+
+/* subHeader */
+/* 공통 */
+.subWidth{width: calc(100% - 40px); max-width: 1600px; margin: 0 auto;}
+.subContentsWidth{width: 100%; max-width: 1200px; margin: 0 auto;}
+.subHeader{background-color: #4c4c4c;}
+.SH_topArea{border-bottom: 1px solid rgba(255,255,255,0.1);}
+.SH_topArea div{padding: 20px 0; display: flex; justify-content: space-between;}
+.SH_topArea div h1{font-size: 16px; font-weight: 300; color: white; display: flex; align-items: center;}
+.SH_topArea div h1 a img{margin-right: 20px;}
+.SH_topArea div input[type="search"]{align-self: center; width: 400px; line-height: 50px; background-color: #4c4c4c; border:1px solid rgba(255,255,255,0.4); border-radius: 50px; background: url(../image/sub/sub_seachIcon.png) no-repeat center right 20px;}
+.SH_bottomArea{padding: 20px 0; display: flex; justify-content: space-between; }
+.SH_bottomArea button{font-size: 18px; line-height: 50px; width: 165px; padding: 0 20px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; letter-spacing: -2px;}
+.SH_bottomArea button::after{content: ''; width: 9px; height: 16px; background: url(../image/sub/clampIcon.png);}
+.SH_bottomArea nav{display: flex; align-self: center;}
+.SH_bottomArea nav ul{display: flex; margin-right: 25px;}
+.SH_bottomArea nav ul li{display: flex; align-self: center;}
+.SH_bottomArea nav ul li a{display: block; font-size: 18px; font-weight: 400; color: white; padding: 0 25px;}
+.SH_bottomArea nav div{display: flex; justify-content: center;}
+.SH_bottomArea nav div a{width: 135px; font-size: 14px; font-weight: 400; line-height: 40px; color: white; background-color:#343434; display: flex; justify-content: center; align-items: center;}
+.SH_bottomArea nav div a:not(:first-of-type){margin-left: 10px;}
+.SH_bottomArea nav div a::before{content: ''; background-repeat: no-repeat; background-position: center center; margin-right: 18px;}
+.SH_bottomArea nav div a:nth-of-type(1)::before{width: 17px; height: 20px; background-image: url(../image/sub/myPageIcon.png);}
+.SH_bottomArea nav div a:nth-of-type(2)::before{width: 18px; height: 16px; background-image: url(../image/sub/logOutIcon.png);}
+
+
+
+
