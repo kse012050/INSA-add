@@ -1,19 +1,23 @@
+#middleSchool,#University{display: none;}
+
+@media screen and (min-width:1291px){
+
 /* 이력서 등록 */
 .subResumeTitle{padding: 100px 0 50px; font-size: 40px; font-weight: 400;}
 .subResumeTitle span{color: #006aed;}
 /* 서브 메뉴 */
-.subMenu{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative;}  
-.subMenu::after{content: ''; display: block; width: 100%; height: 1px; background-color: #d9e6ee; position: absolute; bottom: 0; left: 0; z-index: 0;}
-.subMenu ul{display: flex; }
-.subMenu ul li{flex: 1; text-align: center;}
-.subMenu ul li a{font-size: 20px; font-weight: 300; color: #939393; display: block; padding: 23px 0;}
-.subMenu ul li a.active {font-weight: 700; color: #006aed; background-color: #f2faff; border-width: 0 1px 0 1px; border-style: solid; border-color: #d9e6ee; position: relative; z-index: 1;}
+.subMenu nav{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative;}  
+.subMenu nav::after{content: ''; display: block; width: 100%; height: 1px; background-color: #d9e6ee; position: absolute; bottom: 0; left: 0; z-index: 0;}
+.subMenu nav ul{display: flex; }
+.subMenu nav ul li{flex: 1; text-align: center;}
+.subMenu nav ul li a{font-size: 20px; font-weight: 300; color: #939393; display: block; padding: 23px 0;}
+.subMenu nav ul li a.active {font-weight: 700; color: #006aed; background-color: #f2faff; border-width: 0 1px 0 1px; border-style: solid; border-color: #d9e6ee; position: relative; z-index: 1;}
 
 .resumeRegistrationArea{padding: 100px 0; background-color: #f2faff;}
 .RR_wrapArea{display: flex;}
 
 /* 사이트 메뉴 */
-.RRC_subMenu{width: 265px; margin-right: 70px;}
+.RRC_subMenu{min-width: 265px; margin-right: 70px;}
 .RRC_subMenu ul li a{display: flex; padding: 18px 15px 18px 20px; background-color: #006aed; border-radius: 10px;}
 .RRC_subMenu ul li a strong{font-size: 26px; width: 45px; color: white; line-height: 45px; text-align: center; border-radius: 50%; background-color: #2285ff; margin-right: 25px;}
 .RRC_subMenu ul li a .RRWA_nameArea{display: flex; flex-direction: column; justify-content: space-between;}
@@ -26,15 +30,15 @@
 .RRC_subMenu ul li:not(:last-of-type){margin-bottom: 10px;}
 
 /* 삭제 버튼 - 전체 삭제*/
-.delete_all{display: flex; align-items: center;}
+.delete_all{display: flex; align-items: center; margin-left: 20px;}
 .delete_all input[type="checkbox"]{display: none;}
-.delete_all label{font-size: 16px; padding:10px 0 10px 30px; margin-right: 20px; background: url(../image/sub/deleteAllIcon.png) no-repeat left center;}
-.delete_all button{width: 125px; line-height: 40px; font-size: 14px; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #343434; border: none;}
+.delete_all label{font-size: 16px !important; padding:10px 0 10px 25px; margin-right: 20px !important; background: url(../image/sub/deleteAllIcon.png) no-repeat left center;}
+.delete_all button{width: 125px; line-height: 40px; font-size: 14px !important; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #343434; border: none;}
 .delete_all button::before{content: ''; display: block; width: 17px; height: 17px;  background: url(../image/sub/XIcon.png) no-repeat center center;}
 /* 삭제 버튼 - 항목 삭제*/
 .RRWC_delete{display: flex; align-items: center; margin-left: 30px;}
 .RRWC_delete input[type="checkbox"]{display: none;}
-.RRWC_delete label{font-size: 16px; color: #939393; padding:10px 0 10px 30px; margin-right: 20px; background: url(../image/sub/deleteAllIcon.png) no-repeat left center;}
+.RRWC_delete label{font-size: 16px; color: #939393; padding:10px 0 10px 25px; margin-right: 20px; background: url(../image/sub/deleteAllIcon.png) no-repeat left center;}
 .RRWC_delete button{width: 125px; line-height: 40px; font-size: 14px; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #939799; border: none;}
 .RRWC_delete button::before{content: ''; display: block; width: 17px; height: 17px;  background: url(../image/sub/XIcon.png) no-repeat center center;}
 /* 추가 버튼 */
@@ -49,6 +53,7 @@
 .RRW_contentsArea .RRWC_titleArea .RRWCT_title > *{font-weight: 500;}
 .RRW_contentsArea .RRWC_titleArea .RRWCT_title h3{font-size: 24px; margin-right: 10px;}
 .RRW_contentsArea .RRWC_titleArea .RRWCT_title p{font-size: 18px;}
+.RRW_contentsArea .RRWC_titleArea select{width: 220px; height: 50px; font-size: 16px; font-weight: 300; color: #5f5f5f; padding: 0 20px; box-sizing: border-box;}
 
 
 .RRWC_itemTitleArea{display: flex; padding: 21px 0; border-top: 1px solid black; border-color: black 0 rgba(0,52,85,0.1); } 
@@ -58,12 +63,12 @@
 
 
 /* 항목 */
-.RRWC_itemArea{padding: 30px 0; border-top: 1px solid rgba(0,52,85,0.1);}
+.RRWC_itemArea{max-width: 865px; padding: 30px 0; border-top: 1px solid rgba(0,52,85,0.1);}
 .RRWC_itemArea > li{display: flex;}
 .RRWC_itemArea > li:not(:last-of-type){margin-bottom: 20px;}
 .RRWC_itemArea > li .RRWCI_listArea{flex: 1; display: flex; align-items: center; padding: 14px 10px; background-color: #dfedf6; border: 1px solid #b5d6fa;}
-.RRWC_itemArea > li .RRWCI_listArea *{font-size: 18px; font-weight: 500;}
-.RRWC_itemArea > li .RRWCI_listArea > label{min-width: 130px; line-height: 50px; padding-left: 10px; box-sizing: border-box;}
+.RRWC_itemArea > li .RRWCI_listArea *{font-size: 18px; font-weight: 500; }
+.RRWC_itemArea > li .RRWCI_listArea > label{align-self: flex-start; min-width: 130px; line-height: 50px; color: black; padding-left: 10px; box-sizing: border-box;}
 .RRWC_itemArea > li .RRWCI_listArea > ul{flex: 1;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li{display: flex;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li:not(:last-of-type){margin-bottom: 10px;}
@@ -72,10 +77,121 @@
 .RRWC_itemArea > li .RRWCI_listArea > ul li .RRWCIL_titleArea label{font-size: 18px; font-weight: 300; color: #5f5f5f; background: url(../image/sub/deleteIcon.png) no-repeat left; padding:10px 0 10px 30px;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li input:not([type='checkbox']),
 .RRWC_itemArea > li .RRWCI_listArea > ul li select
-{flex: 1; padding: 10px 20px; border: none;}
+{flex: 1; padding: 10px 20px; border: none; box-sizing: border-box;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li input[type="search"]{max-width: 198px;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li textarea{flex: 1; height: 200px; padding: 10px 20px; resize: none; border: none; box-sizing: border-box;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li .subInput{max-width: 170px;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li .subSmallInput{max-width: 90px;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li *:not(:last-child){margin-right: 10px;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li p{font-size: 18px; font-weight: 300; color: #5f5f5f; display: flex; align-items: center;}
 .RRWC_itemArea > li .RRWCI_listArea ul li button.refreshBtn,
 .RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn
-{width: 50px; border: none; background-color: #a7c2d3; margin-left: 5px; background-repeat: no-repeat; background-position: center center;}
+{width: 50px; border: none; background-color: #a7c2d3; background-repeat: no-repeat; background-position: center center;}
 .RRWC_itemArea > li .RRWCI_listArea ul li button.refreshBtn{background-image: url(../image/sub/refreshIcon.png);}
 .RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn{background-image: url(../image/sub/plusIcon.png);}
 
+}
+
+
+
+@media screen and (max-width: 640px){
+
+    /* 이력서 등록 */
+    .subResumeTitle{padding: 15.625vw 0 7.8125vw; font-size: 6.25vw; font-weight: 400;}
+    .subResumeTitle span{color: #006aed;}
+    /* 서브 메뉴 */
+    .subMenu{overflow: hidden;}
+    .subMenu nav{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative; min-width: 131.25vw;}  
+    .subMenu nav::after{content: ''; display: block; width: 100%; height: 1px; background-color: #d9e6ee; position: absolute; bottom: 0; left: 0; z-index: 0;}
+    .subMenu nav ul{display: flex; }
+    .subMenu nav ul li{flex: 1; text-align: center;}
+    .subMenu nav ul li a{font-size: 3.125vw; font-weight: 300; color: #939393; display: block; padding: 3.59375vw 0;}
+    .subMenu nav ul li a.active {font-weight: 700; color: #006aed; background-color: #f2faff; border-width: 0 1px 0 1px; border-style: solid; border-color: #d9e6ee; position: relative; z-index: 1;}
+    
+    .resumeRegistrationArea{padding: 9.375vw 0; background-color: #f2faff;}
+    .RR_wrapArea{}
+    
+    /* 사이트 메뉴 */
+    .RRC_subMenu{margin-bottom: 15.625vw;}
+    .RRC_subMenu ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+    .RRC_subMenu ul li{float: left; width: calc(50% - 1.5625vw);}
+    .RRC_subMenu ul li:nth-of-type(2n + 1){margin-right: 3.125vw;}
+    .RRC_subMenu ul li a{display: flex; justify-content: space-between; padding: 3.125vw 2.34375vw; background-color: #006aed; border-radius: 1.5625vw;}
+    .RRC_subMenu ul li a strong{align-self: flex-start; font-size: 4.6875vw; width: 7.8125vw; color: white; line-height: 7.8125vw; text-align: center; border-radius: 50%; background-color: #2285ff; margin-right: 3.125vw;}
+    .RRC_subMenu ul li a .RRWA_nameArea{display: flex; flex-direction: column; justify-content: space-between;}
+    .RRC_subMenu ul li a .RRWA_nameArea p:nth-of-type(1){font-size: 4.375vw; color: #c5defd; margin-bottom: 1.5625vw;}
+    .RRC_subMenu ul li a .RRWA_nameArea p:nth-of-type(1) span{font-weight: 700; color: white;}
+    .RRC_subMenu ul li a .RRWA_nameArea p:nth-of-type(2){font-size: 2.8125vw; color: rgba(255,255,255,0.4);}
+    .RRC_subMenu ul li a .RRWA_menuArea{margin-left: auto; width: 3.90625vw; display: flex; flex-direction: column; justify-content: center;}
+    .RRC_subMenu ul li a .RRWA_menuArea span{display: block; height: 1px; background-color: white;}
+    .RRC_subMenu ul li a .RRWA_menuArea span:nth-of-type(1){margin-bottom: 0.78125vw;}
+    .RRC_subMenu ul li:not(:last-of-type){margin-bottom: 3.125vw;}
+    
+    /* 삭제 버튼 - 전체 삭제*/
+    .delete_all{width: 27.34375vw; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; margin-left: 4.6875vw;}
+    .delete_all input[type="checkbox"]{display: none;}
+    .delete_all label{font-size: 3.75vw; color: #939393; padding:1.5625vw 0 1.5625vw 3.90625vw; background: url(../image/sub/deleteAllIcon.png) no-repeat left center; margin-bottom: 3.125vw;}
+    .delete_all button{width: 27.34375vw; line-height: 9.375vw; font-size: 3.4375vw; font-weight: 400; color: white; padding: 0 2.65625vw 0 3.125vw; display: flex; justify-content: space-between; align-items: center;  background-color: #343434; border: none;}
+    .delete_all button::before{content: ''; display: block; width: 3.90625vw; height: 3.90625vw;  background: url(../image/sub/XIcon.png) no-repeat center center; background-size: cover;}
+    /* 삭제 버튼 - 항목 삭제*/
+    .RRWC_delete{width: 27.34375vw; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; margin-left: 4.6875vw;}
+    .RRWC_delete input[type="checkbox"]{display: none;}
+    .RRWC_delete label{font-size: 3.75vw; color: #939393; padding:1.5625vw 0 1.5625vw 3.90625vw; background: url(../image/sub/deleteAllIcon.png) no-repeat left center; margin-bottom: 3.125vw;}
+    .RRWC_delete button{width: 27.34375vw; line-height: 9.375vw; font-size: 3.4375vw; font-weight: 400; color: white; padding: 0 2.65625vw 0 3.125vw; display: flex; justify-content: space-between; align-items: center;  background-color: #939799; border: none;}
+    .RRWC_delete button::before{content: ''; display: block; width: 3.90625vw; height: 3.90625vw;  background: url(../image/sub/XIcon.png) no-repeat center center; background-size: cover;}
+    /* 추가 버튼 */
+    .addBtn{text-align: center; margin: 3.125vw 0 9.375vw 0;}
+    .addBtn button{width: 34.6875vw; line-height: 12.5vw; font-size: 4.375vw; font-weight: 500; color: white; text-align: center; margin: 0 auto; background-color: black; border: none; border-radius: 7.8125vw;}
+    
+     
+    .RRW_contentsArea{flex: 1;}
+    .RRW_contentsArea .RRWC_titleArea{display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; margin-bottom: 3.125vw;}
+    .RRW_contentsArea .RRWC_titleArea > p{width: 100%; font-size: 3.4375vw; line-height: 4.6875vw; font-weight: 400; color: rgba(0, 0, 0, 0.6); padding: 1.5625vw 0;}
+    .RRW_contentsArea .RRWC_titleArea > p span{display: block;}
+    .RRW_contentsArea .RRWC_titleArea .RRWCT_title{display: flex; flex-direction: column;}
+    .RRW_contentsArea .RRWC_titleArea .RRWCT_title > *{font-weight: 500;}
+    .RRW_contentsArea .RRWC_titleArea .RRWCT_title h3{font-size: 5.625vw; margin-bottom: 3.90625vw;}
+    .RRW_contentsArea .RRWC_titleArea .RRWCT_title p{font-size: 3.75vw; padding-bottom: 1.5625vw;}
+    .RRW_contentsArea .RRWC_titleArea select{width: 34.375vw; height: 7.8125vw; font-size: 2.5vw; font-weight: 300; color: #5f5f5f; padding: 0 3.125vw; box-sizing: border-box;}
+    
+    
+    .RRWC_itemTitleArea{display: flex; justify-content: space-between; padding: 4.6875vw 0; border-top: 1px solid black; border-color: black 0 rgba(0,52,85,0.1); } 
+    .RRWC_itemTitleArea p{font-size: 3.4375vw; font-weight: 500; color: #006aed; text-align: center;}
+    
+    
+    /* 항목 */
+    .RRWC_itemArea{width: 100%; padding: 6.25vw 0; border-top: 1px solid rgba(0,52,85,0.1);}
+    .RRWC_itemArea > li{display: flex;}
+    .RRWC_itemArea > li:not(:last-of-type){margin-bottom: 3.125vw;}
+    .RRWC_itemArea > li .RRWCI_listArea{width: calc(100% - 27.34375vw);display: flex; flex-wrap: wrap; align-items: center; padding: 4.6875vw 3.125vw 3.125vw; background-color: #dfedf6; border: 1px solid #b5d6fa; box-sizing: border-box;}
+    .RRWC_itemArea > li .RRWCI_listArea.RRWCI_listTitleArea{width: 100%; flex-direction: column; justify-content: space-between; align-items: stretch;}
+    /* .RRWC_itemArea > li .RRWCI_listArea.RRWCI_listTitleArea .RRWCIL_titleArea{display: none;} */
+    .RRWC_itemArea > li .RRWCI_listArea.RRWCI_listTitleArea ul{width: auto;}
+    .RRWC_itemArea > li .RRWCI_listArea.RRWCI_listTitleArea ul li{justify-content: space-between;}
+    .RRWC_itemArea > li .RRWCI_listArea *{font-size: 3.75vw; font-weight: 500;}
+    .RRWC_itemArea > li .RRWCI_listArea > label{align-self: flex-start; margin-bottom: 3.125vw; color: black;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul{ width: 100%;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li{display: flex; flex-wrap: wrap; }
+    .RRWC_itemArea > li .RRWCI_listArea > ul li:not(:last-of-type){margin-bottom: 1.5625vw;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li:nth-of-type(2){display: flex; flex-wrap: nowrap;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li:nth-of-type(2) *:first-child{margin-right: 1.5625vw;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li .RRWCIL_titleArea{flex: 1; display: flex; align-items: flex-start;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li .RRWCIL_titleArea input[type="checkbox"]{display: none;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li .RRWCIL_titleArea label{font-size: 2.8125vw; font-weight: 300; color: #5f5f5f; background: url(../image/sub/deleteIcon.png) no-repeat left; padding:1.5625vw 0 1.5625vw 4.6875vw;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input:not([type='checkbox']),
+    .RRWC_itemArea > li .RRWCI_listArea > ul li select
+    {padding: 1.5625vw 3.125vw; border: none; box-sizing: border-box; width: 100%; }
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"]{padding: 0; max-width: 46.875vw;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="search"]{max-width: 100%; margin-bottom: 1.5625vw;}
+    /* .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="search"]:first-of-type{margin-bottom: 1.5625vw;} */
+    .RRWC_itemArea > li .RRWCI_listArea > ul li textarea{flex: 1; height: 31.25vw; padding: 1.5625vw 3.125vw; resize: none; border: none; box-sizing: border-box;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li .subInput{max-width: 100%; margin-bottom: 1.5625vw;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li .subSmallInput{max-width: 14.0625vw;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li p{font-size: 3.75vw; font-weight: 300; color: #5f5f5f; display: flex; align-items: center; margin-left: 2.34375vw;}
+    .RRWC_itemArea > li .RRWCI_listArea ul li button.refreshBtn,
+    .RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn
+    {min-width: 10.9375vw; height: 10.9375vw; border: none; background-color: #a7c2d3; background-repeat: no-repeat; background-position: center center; }
+    .RRWC_itemArea > li .RRWCI_listArea ul li button.refreshBtn{background-image: url(../image/sub/refreshIcon.png);}
+    .RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn{background-image: url(../image/sub/plusIcon.png);}
+    
+    }

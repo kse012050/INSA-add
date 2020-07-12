@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이력서 - INSA</title>
+    <title>이력서 certificate - INSA</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="css/import.css">
@@ -17,9 +21,15 @@
                     <a href="#">
                         <img src="image/sub/sub_logo.png" alt="logo">
                     </a>
-                    글자 뒤에 가려진 사람을 보다 INSA
+                    <p>
+                        글자 뒤에 가려진 사람을 보다 INSA
+                    </p>
                 </h1>
                 <input type="search">
+                <div class="mobileMenu">
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
         <div class="subWidth SH_bottomArea">
@@ -41,23 +51,25 @@
     </header>
 
 
-    <h2 class="subWidth subResumeTitle" >Thank you for your <span>being.</span></h2>
-    <nav class="subMenu">
-        <ul class="subWidth">
-            <li><a href="#">지원현황</a></li>
-            <li><a href="#" class="active">이력서 등록</a></li>
-            <li><a href="#">자기소개 동영상</a></li>
-            <li><a href="#">INSA 검사</a></li>
-            <li><a href="#">외국어/OS 검증</a></li>
-        </ul>
-    </nav>
+    <h2 class="subContentsWidth subResumeTitle" >Thank you for your <span>being.</span></h2>
+    <div class="subMenu">
+        <nav>
+            <ul class="subContentsWidth">
+                <li><a href="#">지원현황</a></li>
+                <li><a href="#" class="active">이력서 등록</a></li>
+                <li><a href="#">자기소개 동영상</a></li>
+                <li><a href="#">INSA 검사</a></li>
+                <li><a href="#">외국어/OS 검증</a></li>
+            </ul>
+        </nav>
+    </div>
     
     <div class="resumeRegistrationArea">
         <div class="subContentsWidth RR_wrapArea">
             <aside class="RRC_subMenu">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="resumeRegistration_basic.html">
                             <strong>B</strong>
                             <div class="RRWA_nameArea">
                                 <p><span>B</span>asic</p>
@@ -70,7 +82,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="resumeRegistration_education.html">
                             <strong>E</strong>
                             <div class="RRWA_nameArea">
                                 <p><span>E</span>ducation</p>
@@ -83,7 +95,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="resumeRegistration_certificate.html">
                             <strong>I</strong>
                             <div class="RRWA_nameArea">
                                 <p>Cert<span>i</span>ficate</p>
@@ -96,7 +108,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="resumeRegistration_experience.html">
                             <strong>N</strong>
                             <div class="RRWA_nameArea">
                                 <p>Experie<span>n</span>ce</p>
@@ -109,7 +121,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="resumeRegistration_language.html">
                             <strong>G</strong>
                             <div class="RRWA_nameArea">
                                 <p>Lan<span>g</span>uage</p>
@@ -233,6 +245,97 @@
                     </ul>
                 </fieldset>
             </form>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">보도기사</a>
+                </li>
+                <li>
+                    <a href="#">찾아오시는길</a>
+                </li>
+                <li>
+                    <a href="#">회원약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">이메일무단수집거부</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="subAddressArea">
+            <h1><img src="image/main/f_LOGO.png" alt="LOGO"></h1>
+            <div>
+                <h2>
+                    (주)INSA
+                </h2>
+                <address>
+                    <p>서울특별시 용산구 한강대로 69, 102동 2025호<span>(한강로2가,용산푸르지오써밋)</span></p>
+                    <dl>
+                        <dt>대표</dt>
+                        <dd>정영주, 정진우</dd>
+                        <dt>사업자등록</dt>
+                        <dd>000-00-0000</dd>
+                    </dl>
+                    <dl>
+                        <dt>직업정보제공사업</dt>
+                        <dd>서울 용산 제 2020-0호</dd>
+                        <dt>통신판매업</dt>
+                        <dd>제 0000호</dd>
+                    </dl>
+                </address>
+            </div>
+            <div>
+                <h2>INSA 고객센터</h2>
+                <address>
+                    <p>080-0000-0000 <span>(평일 09:00~19:00, 주말·공휴일 휴무)</span></p>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>help@insahr.co.kr</dd>
+                    </dl>
+                    <dl>
+                        <dt>Fax</dt>
+                        <dd>02-6954-0000(대표)</dd>
+                    </dl>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <div class="subCopyrightArea">
+        <div>
+            <p>Copyright (c) INSA. All rights reserved.</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bold"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>

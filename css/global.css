@@ -41,40 +41,6 @@ footer .addressArea div address dl dt:not(:first-of-type){margin-left: 2.214em;}
 .popupCloseBtn::after{content: ''; display:inline-block; width: 20px; height:20px; background: url(../image/popupXIcon.png) no-repeat center center; position: absolute; right: 0; top: -2px;}
 
 
-@media screen and (max-width:1290px){
-    header.mainHeader p{display: none;}
-
-    footer nav ul{flex-wrap: wrap; padding: 10px 0;}
-    footer nav ul li{max-width: calc(33% - 20px); width: calc(33% - 20px); min-width: 185px; margin: 10px;  flex: none;}
-    footer nav ul li a{border: 1px solid black;}
-
-    footer .addressArea{flex-direction: column; text-align: center;}
-    footer .addressArea div{margin-left: 0;}
-    footer .addressArea div h2{margin: 2.857em 0 1.786em 0;}
-    footer .addressArea div address dl{display: flex; justify-content: center;}
-
-    .copyrightArea{display: none;}
-}
-
-@media screen and (max-width:767px){
-
-}
-
-@media screen and (max-width:639px){
-    footer .addressArea{padding: 40px 10px;}
-    footer nav ul li{min-width: calc(50% - 20px);}
-    footer .addressArea div address p{margin-bottom: 10px;}
-    footer .addressArea div address p span{display: block;}
-    footer .addressArea div address dl{flex-direction: column;}
-    footer .addressArea div address dl dt{padding: 0;}
-    footer .addressArea div address dl dt::after{display: none;}
-    footer .addressArea div address dl dt:not(:first-of-type){margin-left: 0;}
-    footer .addressArea div address dl dd{margin-bottom: 10px;}
-
-}
-
-
-
 /* subHeader */
 /* 공통 */
 .subWidth{width: calc(100% - 40px); max-width: 1600px; margin: 0 auto;}
@@ -85,6 +51,7 @@ footer .addressArea div address dl dt:not(:first-of-type){margin-left: 2.214em;}
 .SH_topArea div h1{font-size: 16px; font-weight: 300; color: white; display: flex; align-items: center;}
 .SH_topArea div h1 a img{margin-right: 20px;}
 .SH_topArea div input[type="search"]{align-self: center; width: 400px; line-height: 50px; background-color: #4c4c4c; border:1px solid rgba(255,255,255,0.4); border-radius: 50px; background: url(../image/sub/sub_seachIcon.png) no-repeat center right 20px;}
+.SH_topArea div .mobileMenu{display: none}
 .SH_bottomArea{padding: 20px 0; display: flex; justify-content: space-between; }
 .SH_bottomArea button{font-size: 18px; line-height: 50px; width: 165px; padding: 0 20px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; letter-spacing: -2px;}
 .SH_bottomArea button::after{content: ''; width: 9px; height: 16px; background: url(../image/sub/clampIcon.png);}
@@ -99,6 +66,98 @@ footer .addressArea div address dl dt:not(:first-of-type){margin-left: 2.214em;}
 .SH_bottomArea nav div a:nth-of-type(1)::before{width: 17px; height: 20px; background-image: url(../image/sub/myPageIcon.png);}
 .SH_bottomArea nav div a:nth-of-type(2)::before{width: 18px; height: 16px; background-image: url(../image/sub/logOutIcon.png);}
 
+
+
+
+footer .subAddressArea{display: flex; width: 100%; max-width: 1600px; margin: 0 auto; padding: 40px 30px; box-sizing: border-box;}
+footer .subAddressArea h1{}
+footer .subAddressArea h1 img{border: 1px solid rgba(0,0,0,0.6);}
+footer .subAddressArea div{margin-left: 80px;}
+footer .subAddressArea div h2{font-size: 14px; margin-bottom: 2.143em; font-weight: 500;}
+footer .subAddressArea div address{font-style: normal; font-style: 14px; line-height: 1.714;}
+footer .subAddressArea div address p{}
+footer .subAddressArea div address dl{display: flex; }
+footer .subAddressArea div address dl dt{padding-right: 10px; position: relative;}
+footer .subAddressArea div address dl dt::after{content: ':'; position: absolute; right: 3px; top: -1px;}
+footer .subAddressArea div address dl dt:not(:first-of-type){margin-left: 2.214em;}
+
+.subCopyrightArea{border-top: 1px solid rgba(0,0,0,0.6); padding: 40px 0;}
+.subCopyrightArea div{display: flex; justify-content: space-between; align-content: center; width: 100%; max-width: 1600px; margin: 0 auto; padding: 40px 30px; box-sizing: border-box;}
+.subCopyrightArea div p{font-size: 14px; display: flex; align-items: center;}
+.subCopyrightArea div ul{display: flex;}
+.subCopyrightArea div ul li{}
+.subCopyrightArea div ul li a{}
+.subCopyrightArea div ul li a i{font-size: 20px;}
+.subCopyrightArea div ul li:not(:first-of-type){margin-left: 2.5em;}
+
+
+@media screen and (max-width:1290px){
+    header.mainHeader p{display: none;}
+    .SH_topArea div h1{width: 70px; margin-right: 0}
+    .SH_topArea div h1 img{width: 100%;}
+    .SH_topArea div h1 p{display: none;}
+    .SH_topArea div{padding: 18px 0;}
+    .SH_topArea div .mobileMenu{display: block; width: 40px; display: flex; flex-direction: column; justify-content: center;}
+    .SH_topArea div .mobileMenu span{display: block; width: 100%; height: 3px; background-color: white;}
+    .SH_topArea div .mobileMenu span:not(:last-of-type){margin-bottom: 10px;}
+
+    footer nav ul{flex-wrap: wrap; padding: 10px 0;}
+    footer nav ul li{max-width: calc(33% - 20px); width: calc(33% - 20px); min-width: 185px; margin: 10px;  flex: none;}
+    footer nav ul li a{border: 1px solid black;}
+
+    footer .addressArea{flex-direction: column; text-align: center;}
+    footer .addressArea div{margin-left: 0;}
+    footer .addressArea div h2{margin: 2.857em 0 1.786em 0;}
+    footer .addressArea div address dl{display: flex; justify-content: center;}
+
+    footer .subAddressArea{flex-direction: column; text-align: center;}
+    footer .subAddressArea div{margin-left: 0;}
+    footer .subAddressArea div h2{margin: 2.857em 0 1.786em 0;}
+    footer .subAddressArea div address dl{display: flex; justify-content: center;}
+    
+
+    .copyrightArea{display: none;}
+
+
+    .SH_bottomArea{display: none}
+    .subContentsWidth{width: calc(100% - 40px);}
+}
+
+@media screen and (max-width:767px){
+
+}
+
+@media screen and (max-width:639px){
+    .SH_topArea div h1{width: 10.9375vw; margin-right: 0}
+    .SH_topArea div h1 p{display: none;}
+    .SH_topArea div{padding: 2.8125vw 0;}
+    .SH_topArea div input[type="search"]{width: 62.5vw; line-height:7.8125vw; }
+    .SH_topArea div .mobileMenu{display: block; width: 6.25vw; display: flex; flex-direction: column; justify-content: center;}
+    .SH_topArea div .mobileMenu span{display: block; width: 100%; height: 0.46875vw; background-color: white;}
+    .SH_topArea div .mobileMenu span:not(:last-of-type){margin-bottom: 1.5625vw;}
+
+
+    footer .addressArea{padding: 40px 10px;}
+    footer nav ul li{min-width: calc(50% - 20px);}
+    footer .addressArea div address p{margin-bottom: 10px;}
+    footer .addressArea div address p span{display: block;}
+    footer .addressArea div address dl{flex-direction: column;}
+    footer .addressArea div address dl dt{padding: 0;}
+    footer .addressArea div address dl dt::after{display: none;}
+    footer .addressArea div address dl dt:not(:first-of-type){margin-left: 0;}
+    footer .addressArea div address dl dd{margin-bottom: 10px;}
+
+    footer .subAddressArea{padding: 40px 10px;}
+    footer nav ul li{min-width: calc(50% - 20px);}
+    footer .subAddressArea div address p{margin-bottom: 10px;}
+    footer .subAddressArea div address p span{display: block;}
+    footer .subAddressArea div address dl{flex-direction: column;}
+    footer .subAddressArea div address dl dt{padding: 0;}
+    footer .subAddressArea div address dl dt::after{display: none;}
+    footer .subAddressArea div address dl dt:not(:first-of-type){margin-left: 0;}
+    footer .subAddressArea div address dl dd{margin-bottom: 10px;}
+    
+}
 
 
 

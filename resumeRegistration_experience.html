@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이력서 education - INSA</title>
+    <title>이력서 experience - INSA</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/common.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="css/import.css">
@@ -138,321 +136,178 @@
             <form class="RRW_contentsArea">
                 <div class="RRWC_titleArea">
                     <div class="RRWCT_title">
-                        <h3>B : 학력 정보</h3>
+                        <h3>G: 외국어</h3>
                         <p>원하는 항목만 입력하세요. :)</p>
                     </div>
-                    <div>
-                        <select name="" id="">
-                            <option value="" data-graduation="elementarySchool">초등학교 졸업</option>
-                            <option value="" data-graduation="middleSchool">중학교 졸업</option>
-                            <option value="" data-graduation="University">대학/대학원</option>
-                        </select>
-                    </div>
+                    <p>
+                        동영상 인증이 없는 상태에서는 “미인증” 표기됩니다. <span>(외국어/os검증 메뉴에서 동영상 업로드 가능)</span>
+                    </p>
                 </div>
                 <div class="RRWC_itemTitleArea">
                     <p>드래그 하여 순서변경</p>
                     <p>숨기기/삭제</p>
                 </div>
-                <!-- 초등학교 -->
-                <fieldset id="elementarySchool">
+                <fieldset>
                     <ul class="RRWC_itemArea">
                         <li>
                             <div class="RRWCI_listArea RRWCI_listTitleArea">
-                                <label for="">초등학교</label>
-                                <ul>
-                                    <li>
-                                        <div class="RRWCIL_titleArea">
-                                            <input type="checkbox">
-                                            <label for="">중입 검정고시(초졸)</label>
-                                        </div>
-                                        <div class="delete_all">
-                                            <input type="checkbox">
-                                            <label for="">숨기기</label>
-                                            <button>
-                                                항목삭제
-                                            </button>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">합격년월</label>
-                                <ul>
-                                    <li>
-                                        <input type="text" >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">지역</label>
-                                <ul>
-                                    <li>
-                                        <select>
-                                            <option value="">서울</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">핸드폰</label>
-                                <ul>
-                                    <li>
-                                        <input type="text" >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                </fieldset>
-                <!-- 중학교 -->
-                <fieldset id="middleSchool">
-                    <ul class="RRWC_itemArea">
-                        <li>
-                            <div class="RRWCI_listArea RRWCI_listTitleArea">
-                                <label for="">중학교</label>
-                                <ul>
-                                    <li>
-                                        <div class="RRWCIL_titleArea">
-                                            <input type="checkbox">
-                                            <label for="">고입 검정고시(중졸)</label>
-                                        </div>
-                                        <div class="delete_all">
-                                            <input type="checkbox">
-                                            <label for="">숨기기</label>
-                                            <button>
-                                                항목삭제
-                                            </button>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">학교명</label>
-                                <ul>
-                                    <li>
-                                        <input type="text" >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">재학기간</label>
-                                <ul>
-                                    <li>
-                                        <input type="text">
-                                    </li>
-                                    <li>
-                                        <select>
-                                            <option value="">졸업</option>
-                                        </select>
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">증빙 첨부</label>
-                                <ul>
-                                    <li>
-                                        <input type="file" >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                </fieldset>
-                <!-- 대학/대학원 -->
-                <fieldset id="University">
-                    <ul class="RRWC_itemArea">
-                        <li>
-                            <div class="RRWCI_listArea RRWCI_listTitleArea">
-                                <label for="">고등학교</label>
-                                <ul>
-                                    <li>
-                                        <div class="RRWCIL_titleArea">
-                                            <input type="checkbox">
-                                            <label for="">대입 검정고시</label>
-                                        </div>
-                                        <div class="delete_all">
-                                            <input type="checkbox">
-                                            <label for="">숨기기</label>
-                                            <button>
-                                                항목삭제
-                                            </button>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">합격년월</label>
-                                <ul>
-                                    <li>
-                                        <input type="text" >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">증빙서류</label>
-                                <ul>
-                                    <li>
-                                        <input type="file" >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="RRWC_itemArea">
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">대학/대학원</label>
-                                <ul>
-                                    <li>
-                                        <select name="" id="">
-                                            <option value="">주간</option>
-                                        </select>
-                                        <div class="delete_all">
-                                            <input type="checkbox">
-                                            <label for="">숨기기</label>
-                                            <button>
-                                                항목삭제
-                                            </button>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">학교명</label>
-                                <ul>
-                                    <li>
-                                        <input type="text" >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">재학기간</label>
-                                <ul>
-                                    <li>
-                                        <input type="text">
-                                    </li>
-                                    <li>
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">논문/졸업작품</label>
-                                <ul>
-                                    <li>
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="RRWC_delete">
-                                <input type="checkbox">
-                                <label for="">숨기기</label>
-                                <button>
-                                    항목삭제
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="RRWCI_listArea">
-                                <label for="">증빙서류</label>
+                                <label for="">경력/경험 정보</label>
                                 <ul>
                                     <li>
                                         <input type="file">
+                                        <div class="delete_all">
+                                            <input type="checkbox">
+                                            <label for="">숨기기</label>
+                                            <button>
+                                                항목삭제
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="RRWCI_listArea">
+                                <label for="">회사명</label>
+                                <ul>
+                                    <li>
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="RRWC_delete">
+                                <input type="checkbox">
+                                <label for="">숨기기</label>
+                                <button>
+                                    항목삭제
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="RRWCI_listArea">
+                                <label for="">제직기간</label>
+                                <ul>
+                                    <li>
+                                        <input type="text">
+                                    </li>
+                                    <li>
+                                        <select>
+                                            <option value="">퇴사</option>
+                                        </select>
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="RRWC_delete">
+                                <input type="checkbox">
+                                <label for="">숨기기</label>
+                                <button>
+                                    항목삭제
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="RRWCI_listArea">
+                                <label for="">퇴사사유</label>
+                                <ul>
+                                    <li>
+                                        <select name="" id="">
+                                            <option value="">업직종 전환</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="RRWC_delete">
+                                <input type="checkbox">
+                                <label for="">숨기기</label>
+                                <button>
+                                    항목삭제
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="RRWCI_listArea">
+                                <label for="">직급/직책</label>
+                                <ul>
+                                    <li>
+                                        <select name="" id="" class="subInput">
+                                            <option value="">직급/직책</option>
+                                        </select>
+                                        <input type="text" class="subSmallInput">
+                                        <p>년차</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="RRWC_delete">
+                                <input type="checkbox">
+                                <label for="">숨기기</label>
+                                <button>
+                                    항목삭제
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="RRWCI_listArea">
+                                <label for="">근무부서</label>
+                                <ul>
+                                    <li>
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="RRWC_delete">
+                                <input type="checkbox">
+                                <label for="">숨기기</label>
+                                <button>
+                                    항목삭제
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="RRWCI_listArea">
+                                <label for="">연봉입력</label>
+                                <ul>
+                                    <li>
+                                        <input type="text" class="subInput">
+                                        <select name="" id="" class="subInput">
+                                            <option value="">만원</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="RRWC_delete">
+                                <input type="checkbox">
+                                <label for="">숨기기</label>
+                                <button>
+                                    항목삭제
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="RRWCI_listArea">
+                                <label for="">직무</label>
+                                <ul>
+                                    <li>
+                                        <input type="search" value="직무검색">
+                                        <input type="search" value="세부직무">
+                                        <button class="plusBtn"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="RRWC_delete">
+                                <input type="checkbox">
+                                <label for="">숨기기</label>
+                                <button>
+                                    항목삭제
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="RRWCI_listArea">
+                                <label for="">직무 기술</label>
+                                <ul>
+                                    <li>
+                                        <textarea name="" id="" ></textarea>
                                     </li>
                                 </ul>
                             </div>
@@ -465,9 +320,6 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="addBtn">
-                        <button>대학/대학원 추가</button>
-                    </div>
                 </fieldset>
             </form>
         </div>
