@@ -39,5 +39,13 @@ $(document).ready(function(){
         graduation = $('.RRW_contentsArea .RRWC_titleArea select option:selected').attr('data-graduation');
         $('#elementarySchool,#middleSchool,#University').css({'display':'none'});
         $('#'+graduation).css({'display':'block'});
-    })
+    });
+
+    $('.fileTwoLines, .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ p').click(function(){
+        $(this).siblings('input[type="file"]').click();
+    });
+    $('input[type="file"]').on('change',function(){
+        $(this).siblings('p').text($(this).val());
+        $(this).siblings('.fileTwoLines').children('p').text($(this).val());
+    });
 });

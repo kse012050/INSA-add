@@ -30,15 +30,17 @@
 .RRC_subMenu ul li:not(:last-of-type){margin-bottom: 10px;}
 
 /* 삭제 버튼 - 전체 삭제*/
-.delete_all{display: flex; align-items: center; margin-left: 20px;}
+.delete_all{display: flex; align-items: center; margin-left: auto;}
 .delete_all input[type="checkbox"]{display: none;}
-.delete_all label{font-size: 16px !important; padding:10px 0 10px 25px; margin-right: 20px !important; background: url(../image/sub/deleteAllIcon.png) no-repeat left center;}
+.delete_all label{font-size: 16px !important; padding:10px 0 10px 25px; margin-right: 20px !important; background-image: url(../image/sub/deleteAllIcon.png); background-repeat: no-repeat; background-position: left center;}
+.delete_all input[type="checkbox"]:checked + label{background-image: url(../image/sub/deleteIcon.png);}
 .delete_all button{width: 125px; line-height: 40px; font-size: 14px !important; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #343434; border: none;}
 .delete_all button::before{content: ''; display: block; width: 17px; height: 17px;  background: url(../image/sub/XIcon.png) no-repeat center center;}
 /* 삭제 버튼 - 항목 삭제*/
 .RRWC_delete{display: flex; align-items: center; margin-left: 30px;}
 .RRWC_delete input[type="checkbox"]{display: none;}
 .RRWC_delete label{font-size: 16px; color: #939393; padding:10px 0 10px 25px; margin-right: 20px; background: url(../image/sub/deleteAllIcon.png) no-repeat left center;}
+.RRWC_delete input[type="checkbox"]:checked + label{background-image: url(../image/sub/deleteIcon.png);}
 .RRWC_delete button{width: 125px; line-height: 40px; font-size: 14px; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #939799; border: none;}
 .RRWC_delete button::before{content: ''; display: block; width: 17px; height: 17px;  background: url(../image/sub/XIcon.png) no-repeat center center;}
 /* 추가 버튼 */
@@ -70,7 +72,7 @@
 .RRWC_itemArea > li .RRWCI_listArea *{font-size: 18px; font-weight: 500; }
 .RRWC_itemArea > li .RRWCI_listArea > label{align-self: flex-start; min-width: 130px; line-height: 50px; color: black; padding-left: 10px; box-sizing: border-box;}
 .RRWC_itemArea > li .RRWCI_listArea > ul{flex: 1;}
-.RRWC_itemArea > li .RRWCI_listArea > ul li{display: flex;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li{display: flex; align-items: center;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li:not(:last-of-type){margin-bottom: 10px;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li .RRWCIL_titleArea{flex: 1; display: flex; align-items: center;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li .RRWCIL_titleArea input[type="checkbox"]{display: none;}
@@ -79,6 +81,12 @@
 .RRWC_itemArea > li .RRWCI_listArea > ul li select
 {flex: 1; padding: 10px 20px; border: none; box-sizing: border-box; color: #5f5f5f;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="search"]{max-width: 198px;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"]{display: none;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ p{cursor: pointer;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] + label{text-indent: -9999px; width: 15px; height: 18px; background: url(../image/sub/fileIcon.png) no-repeat center center;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ div p{margin-right: 0; line-height: 24px;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ div.fileTwoLines{flex-direction: column; cursor: pointer;}
+.RRWC_itemArea > li .RRWCI_listArea > ul li div{display: flex; align-items: center;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li textarea{flex: 1; height: 200px; padding: 10px 20px; resize: none; border: none; box-sizing: border-box;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li .subInput{max-width: 170px;}
 .RRWC_itemArea > li .RRWCI_listArea > ul li .subSmallInput{max-width: 90px;}
@@ -86,7 +94,7 @@
 .RRWC_itemArea > li .RRWCI_listArea > ul li p{font-size: 18px; font-weight: 300; color: #5f5f5f; display: flex; align-items: center;}
 .RRWC_itemArea > li .RRWCI_listArea ul li button.refreshBtn,
 .RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn
-{width: 50px; border: none; background-color: #a7c2d3; background-repeat: no-repeat; background-position: center center; }
+{width: 50px; height: 50px; border: none; background-color: #a7c2d3; background-repeat: no-repeat; background-position: center center; }
 .RRWC_itemArea > li .RRWCI_listArea ul li button.refreshBtn{background-image: url(../image/sub/refreshIcon.png);}
 .RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn{background-image: url(../image/sub/plusIcon.png);}
 
@@ -128,13 +136,15 @@
     /* 삭제 버튼 - 전체 삭제*/
     .delete_all{width: 175px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; margin-left: 30px;}
     .delete_all input[type="checkbox"]{display: none;}
-    .delete_all label{font-size: 24px; color: #939393; padding:10px 0 10px 25px; background: url(../image/sub/deleteAllIcon.png) no-repeat left center; margin-bottom: 20px;}
+    .delete_all label{font-size: 24px; color: #939393; padding:10px 0 10px 25px; background-image: url(../image/sub/deleteAllIcon.png); background-repeat: no-repeat; background-position: left center; margin-bottom: 20px;}
+    .delete_all input[type="checkbox"]:checked + label{background-image: url(../image/sub/deleteIcon.png);}
     .delete_all button{width: 175px; line-height: 60px; font-size: 22px; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #343434; border: none;}
     .delete_all button::before{content: ''; display: block; width: 25px; height: 25px;  background: url(../image/sub/XIcon.png) no-repeat center center; background-size: cover;}
     /* 삭제 버튼 - 항목 삭제*/
     .RRWC_delete{width: 175px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; margin-left: 30px;}
     .RRWC_delete input[type="checkbox"]{display: none;}
     .RRWC_delete label{font-size: 24px; color: #939393; padding:10px 0 10px 25px; background: url(../image/sub/deleteAllIcon.png) no-repeat left center; margin-bottom: 20px;}
+    .RRWC_delete input[type="checkbox"]:checked + label{background-image: url(../image/sub/deleteIcon.png);}
     .RRWC_delete button{width: 175px; line-height: 60px; font-size: 22px; font-weight: 400; color: white; padding: 0 17px 0 20px; display: flex; justify-content: space-between; align-items: center;  background-color: #939799; border: none;}
     .RRWC_delete button::before{content: ''; display: block; width: 25px; height: 25px;  background: url(../image/sub/XIcon.png) no-repeat center center; background-size: cover;}
     /* 추가 버튼 */
@@ -169,7 +179,7 @@
     .RRWC_itemArea > li .RRWCI_listArea *{font-size: 24px; font-weight: 500;}
     .RRWC_itemArea > li .RRWCI_listArea > label{align-self: flex-start; margin-bottom: 20px; color: black;}
     .RRWC_itemArea > li .RRWCI_listArea > ul{ width: 100%;}
-    .RRWC_itemArea > li .RRWCI_listArea > ul li{display: flex; flex-wrap: wrap; }
+    .RRWC_itemArea > li .RRWCI_listArea > ul li{display: flex; flex-wrap: wrap; align-items: center;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li:not(:last-of-type){margin-bottom: 10px;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li:nth-of-type(2){display: flex;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li:nth-of-type(2) select{width: calc(50% - 5px); margin-right: 10px;}
@@ -182,6 +192,12 @@
     {padding: 10px 20px; border: none; box-sizing: border-box; width: 100%; color: #5f5f5f;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"]{padding: 0; max-width: 300px;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="search"]:first-of-type{max-width: 100%; margin-bottom: 10px;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"]{display: none;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ p{cursor: pointer;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] + label{text-indent: -9999px; width: 25px; height: 30px; background: url(../image/sub/fileIcon.png) no-repeat center center; background-size: cover;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ div p{margin-right: 0; font-size: 22px; line-height: 30px;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ div.fileTwoLines{flex-direction: column; cursor: pointer;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li div{display: flex; align-items: center;}
     /* .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="search"]:first-of-type{margin-bottom: 10px;} */
     .RRWC_itemArea > li .RRWCI_listArea > ul li textarea{flex: 1; height: 200px; padding: 10px 20px; resize: none; border: none; box-sizing: border-box;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li .subInput{max-width: 100%; margin-bottom: 10px;}
@@ -233,12 +249,14 @@
     .delete_all{width: 27.34375vw; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; margin-left: 4.6875vw;}
     .delete_all input[type="checkbox"]{display: none;}
     .delete_all label{font-size: 3.75vw;  color: #939393; padding:1.5625vw 0 1.5625vw 3.90625vw; background: url(../image/sub/deleteAllIcon.png) no-repeat left center; background-size: 3.28125vw; margin-bottom: 3.125vw;}
+    .delete_all input[type="checkbox"]:checked + label{background-image: url(../image/sub/deleteIcon.png);}
     .delete_all button{width: 27.34375vw; line-height: 9.375vw; font-size: 3.4375vw; font-weight: 400; color: white; padding: 0 2.65625vw 0 3.125vw; display: flex; justify-content: space-between; align-items: center;  background-color: #343434; border: none;}
     .delete_all button::before{content: ''; display: block; width: 3.90625vw; height: 3.90625vw;  background: url(../image/sub/XIcon.png) no-repeat center center; background-size: cover;}
     /* 삭제 버튼 - 항목 삭제*/
     .RRWC_delete{width: 27.34375vw; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; margin-left: 4.6875vw;}
     .RRWC_delete input[type="checkbox"]{display: none;}
     .RRWC_delete label{font-size: 3.75vw; color: #939393; padding:1.5625vw 0 1.5625vw 3.90625vw; background: url(../image/sub/deleteAllIcon.png) no-repeat left center; margin-bottom: 3.125vw; background-size: 3.28125vw;}
+    .RRWC_delete input[type="checkbox"]:checked + label{background-image: url(../image/sub/deleteIcon.png);}
     .RRWC_delete button{width: 27.34375vw; line-height: 9.375vw; font-size: 3.4375vw; font-weight: 400; color: white; padding: 0 2.65625vw 0 3.125vw; display: flex; justify-content: space-between; align-items: center;  background-color: #939799; border: none;}
     .RRWC_delete button::before{content: ''; display: block; width: 3.90625vw; height: 3.90625vw;  background: url(../image/sub/XIcon.png) no-repeat center center; background-size: cover;}
     /* 추가 버튼 */
@@ -272,7 +290,7 @@
     .RRWC_itemArea > li .RRWCI_listArea *{font-size: 3.75vw; font-weight: 500;}
     .RRWC_itemArea > li .RRWCI_listArea > label{align-self: flex-start; margin-bottom: 3.125vw; color: black;}
     .RRWC_itemArea > li .RRWCI_listArea > ul{ width: 100%;}
-    .RRWC_itemArea > li .RRWCI_listArea > ul li{display: flex; flex-wrap: wrap; }
+    .RRWC_itemArea > li .RRWCI_listArea > ul li{display: flex; flex-wrap: wrap; align-items: center;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li:not(:last-of-type){margin-bottom: 1.5625vw;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li:nth-of-type(2){display: flex;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li:nth-of-type(2) select{width: calc(50% - 0.78125vw); margin-right: 1.5625vw;}
@@ -285,6 +303,11 @@
     {padding: 1.5625vw 3.125vw; border: none; box-sizing: border-box; width: 100%; color: #5f5f5f;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"]{padding: 0; max-width: 46.875vw;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="search"]:first-of-type{max-width: 100%; margin-bottom: 1.5625vw;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"]{display: none;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ p{ width: 42.1875vw; white-space: nowrap; text-overflow: ellipsis;  overflow: hidden; cursor: pointer;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] + label{text-indent: -9999px; width: 3.90625vw; height: 4.6875vw; background: url(../image/sub/fileIcon.png) no-repeat center center; background-size: contain;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ div p{margin-right: 0; font-size: 3.4375vw; line-height: 4.6875vw;}
+    .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="file"] ~ div.fileTwoLines{flex-direction: column; cursor: pointer;}
     /* .RRWC_itemArea > li .RRWCI_listArea > ul li input[type="search"]:first-of-type{margin-bottom: 1.5625vw;} */
     .RRWC_itemArea > li .RRWCI_listArea > ul li textarea{flex: 1; height: 31.25vw; padding: 1.5625vw 3.125vw; resize: none; border: none; box-sizing: border-box;}
     .RRWC_itemArea > li .RRWCI_listArea > ul li .subInput{max-width: 100%; margin-bottom: 1.5625vw;}

@@ -50,7 +50,14 @@ footer .addressArea div address dl dt:not(:first-of-type){margin-left: 2.214em;}
 .SH_topArea div{padding: 20px 0; display: flex; justify-content: space-between;}
 .SH_topArea div h1{font-size: 16px; font-weight: 300; color: white; display: flex; align-items: center;}
 .SH_topArea div h1 a img{margin-right: 20px;}
-.SH_topArea div input[type="search"]{align-self: center; width: 400px; line-height: 50px; background-color: #4c4c4c; border:1px solid rgba(255,255,255,0.4); border-radius: 50px; background: url(../image/sub/sub_seachIcon.png) no-repeat center right 20px;}
+.SH_topArea div input[type="search"]{align-self: center; width: 400px; height: 50px; padding: 0 10px; background-color: #4c4c4c; border:1px solid rgba(255,255,255,0.4); border-radius: 50px; background: url(../image/sub/sub_seachIcon.png) no-repeat center right 20px; box-sizing: border-box;}
+.SH_topArea div input[type="search"]::-ms-clear,.SH_topArea div input[type="search"]::-ms-reveal{display: none;}
+.SH_topArea div input[type="search"]::-webkit-search-decoration,
+.SH_topArea div input[type="search"]::-webkit-search-cancel-button,
+.SH_topArea div input[type="search"]::-webkit-search-results-button,
+.SH_topArea div input[type="search"]::-webkit-search-results-decoration{
+	display:none;
+}
 .SH_topArea div .mobileMenu{display: none}
 .SH_bottomArea{padding: 20px 0; display: flex; justify-content: space-between; }
 .SH_bottomArea button{font-size: 18px; line-height: 50px; width: 165px; padding: 0 20px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; letter-spacing: -2px;}
@@ -131,7 +138,7 @@ footer .subAddressArea div address dl dt:not(:first-of-type){margin-left: 2.214e
     .SH_topArea div h1{width: 10.9375vw; margin-right: 0}
     .SH_topArea div h1 p{display: none;}
     .SH_topArea div{padding: 2.8125vw 0;}
-    .SH_topArea div input[type="search"]{width: 62.5vw; line-height:7.8125vw; }
+    .SH_topArea div input[type="search"]{width: 62.5vw; height:7.8125vw; padding: 1.5625vw;}
     .SH_topArea div .mobileMenu{display: block; width: 6.25vw; display: flex; flex-direction: column; justify-content: center;}
     .SH_topArea div .mobileMenu span{display: block; width: 100%; height: 0.46875vw; background-color: white;}
     .SH_topArea div .mobileMenu span:not(:last-of-type){margin-bottom: 1.5625vw;}
