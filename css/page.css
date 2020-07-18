@@ -3,8 +3,9 @@
 @media screen and (min-width:1291px){
 
 /* 이력서 등록 */
-.subResumeTitle{padding: 100px 0 50px; font-size: 40px; font-weight: 400;}
-.subResumeTitle span{color: #006aed;}
+.subTitle{ font-size: 40px; font-weight: 400;}
+.resumeTitle{padding: 100px 0 50px;}
+.resumeTitle span{color: #006aed;}
 /* 서브 메뉴 */
 .subMenu nav{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative;}  
 .subMenu nav::after{content: ''; display: block; width: 100%; height: 1px; background-color: #d9e6ee; position: absolute; bottom: 0; left: 0; z-index: 0;}
@@ -103,8 +104,11 @@
 @media screen and (max-width: 1290px) and (min-width: 641px) {
 
     /* 이력서 등록 */
-    .subResumeTitle{padding: 100px 0 50px; font-size: 40px; font-weight: 400;}
-    .subResumeTitle span{color: #006aed;}
+    .subTitle{font-size: 40px; font-weight: 400;}
+    .resumeTitle{padding: 100px 0 50px; }
+    .resumeTitle span{color: #006aed;}
+    /* .subResumeTitle{padding: 100px 0 50px; } */
+    /* .subResumeTitle span{color: #006aed;} */
     /* 서브 메뉴 */
     .subMenu{overflow: hidden;}
     .subMenu nav{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative; min-width: 1200px;}  
@@ -215,8 +219,11 @@
 @media screen and (max-width: 640px){
 
     /* 이력서 등록 */
-    .subResumeTitle{padding: 15.625vw 0 7.8125vw; font-size: 6.25vw; font-weight: 400;}
-    .subResumeTitle span{color: #006aed;}
+    .subTitle{font-size: 6.25vw; font-weight: 400;}
+    .resumeTitle{padding: 15.625vw 0 7.8125vw;}
+    .resumeTitle span{color: #006aed;}
+    /* .subResumeTitle{padding: 15.625vw 0 7.8125vw; font-size: 6.25vw; font-weight: 400;} */
+    /* .subResumeTitle span{color: #006aed;} */
     /* 서브 메뉴 */
     .subMenu{overflow: hidden;}
     .subMenu nav{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative; min-width: 131.25vw;}  

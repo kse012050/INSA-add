@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업회원 - 메인</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/enterprise_main.css">
+
+    <script>
+        $(document).ready(function(){
+            $('.enterpriseArea div h2').css('background-image','url(' + $('.enterpriseArea div h2').attr('data-img')+")");
+
+            $('.plusIcon').append('<span class="material-icons">add_circle_outline</span>');
+            $('.arrowRight').append('<span class="material-icons">navigate_next</span>');
+        });
+    </script>
+</head>
+<body>
+    <header class="subHeader">
+        <div class="SH_topArea">
+            <div class="subWidth">
+                <h1>
+                    <a href="#">
+                        <img src="image/sub/sub_logo.png" alt="logo">
+                    </a>
+                    <p>
+                        글자 뒤에 가려진 사람을 보다 INSA
+                    </p>
+                </h1>
+                <div class="headerSearch">
+                    <input type="search">
+                    <input type="button">
+                </div>
+                <div class="mobileMenu">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="subWidth SH_bottomArea">
+            <button>채용공고 검색</button>
+            <nav>
+                <ul>
+                    <li><a href="#">INSA 소개</a></li>
+                    <li><a href="#">이력서</a></li>
+                    <li><a href="#">INSA 검사</a></li>
+                    <li><a href="#">검증 툴</a></li>
+                    <li><a href="#">기업 추천</a></li>
+                </ul>
+                <div>
+                    <a href="#">마이페이지</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="enterpriseArea">
+        <div class="subContentsWidth">
+            <small>LG 생활건강</small>
+            <h2 class="subTitle" data-img="image/enterprise/LG_logo.png">
+                채용프로세스
+            </h2>
+            <ol>
+                <li class="arrowRight">
+                    <mark>
+                        4/19(금)~5/18(토)
+                        <span>
+                            16:00
+                        </span>
+                    </mark>
+                    <p>입사지원</p>
+                </li>
+                <li class="arrowRight">
+                    <mark>
+                        5/29(수)
+                    </mark>
+                    <p>1차 서류 전형</p>
+                </li>
+                <li class="arrowRight">
+                    <mark>
+                        6/1(토)
+                    </mark>
+                    <p>
+                        인/적성 검사<br/>
+                        직무자필시험
+                    </p>
+                </li>
+                <li class="arrowRight">
+                    <mark>
+                        6/21(수)
+                    </mark>
+                    <p>최종 서류 전형</p>
+                </li>
+                <li class="arrowRight">
+                    <mark>
+                        6월~7월 중
+                    </mark>
+                    <p>면접 전형</p>
+                </li>
+                <li class="arrowRight">
+                    <mark>
+                        7월 중
+                    </mark>
+                    <p>신체검사</p>
+                </li>
+                <li>
+                    <mark>
+                        ’20년 7월말
+                    </mark>
+                    <p>최종 입사</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="E_contentsArea">
+            <section class="EC_companyArea plusIcon">
+                <h3>회사 사진 업로드</h3>
+            </section>
+            <section class="EC_videoArea plusIcon">
+                <h3>회사 소개 동영상 업로드</h3>
+            </section>
+            <section class="EC_IntroduceArea plusIcon">
+                <h3>회사 한줄 소개 등록</h3>
+            </section>
+            <section class="EC_progressArea plusIcon">
+                <h3>현재 진행 공고</h3>
+            </section>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="#" class="plusIcon">기본 정보</a>
+                    </li>
+                    <li>
+                        <a href="#" class="plusIcon">직무 정보</a>
+                    </li>
+                    <li>
+                        <a href="#" class="plusIcon">인재상 정보</a>
+                    </li>
+                    <li>
+                        <a href="#" class="plusIcon">서류전형</a>
+                    </li>
+                    <li>
+                        <a href="#" class="plusIcon">인적성</a>
+                    </li>
+                    <li>
+                        <a href="#" class="plusIcon">면접</a>
+                    </li>
+                    <li>
+                        <a href="#" class="plusIcon">합격자 발표</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">보도기사</a>
+                </li>
+                <li>
+                    <a href="#">찾아오시는길</a>
+                </li>
+                <li>
+                    <a href="#">회원약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">이메일무단수집거부</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="subAddressArea">
+            <h1><img src="image/main/f_LOGO.png" alt="LOGO"></h1>
+            <div>
+                <h2>
+                    (주)INSA
+                </h2>
+                <address>
+                    <p>서울특별시 용산구 한강대로 69, 102동 2025호<span>(한강로2가,용산푸르지오써밋)</span></p>
+                    <dl>
+                        <dt>대표</dt>
+                        <dd>정영주, 정진우</dd>
+                        <dt>사업자등록</dt>
+                        <dd>000-00-0000</dd>
+                    </dl>
+                    <dl>
+                        <dt>직업정보제공사업</dt>
+                        <dd>서울 용산 제 2020-0호</dd>
+                        <dt>통신판매업</dt>
+                        <dd>제 0000호</dd>
+                    </dl>
+                </address>
+            </div>
+            <div>
+                <h2>INSA 고객센터</h2>
+                <address>
+                    <p>080-0000-0000 <span>(평일 09:00~19:00, 주말·공휴일 휴무)</span></p>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>help@insahr.co.kr</dd>
+                    </dl>
+                    <dl>
+                        <dt>Fax</dt>
+                        <dd>02-6954-0000(대표)</dd>
+                    </dl>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <div class="subCopyrightArea">
+        <div>
+            <p>Copyright (c) INSA. All rights reserved.</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bold"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

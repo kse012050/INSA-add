@@ -1,0 +1,165 @@
+@media screen and (min-width:1291px){
+    /* 기업회원 - 메인 */
+    .enterpriseArea{background-color: #efefef;}
+    .enterpriseArea div:first-of-type{padding-top: 60px; margin-bottom: 70px;}
+    .enterpriseArea div:first-of-type h2{ background-repeat: no-repeat; background-position: right bottom; margin-bottom: 60px;}
+    .enterpriseArea div:first-of-type small{display: inline-block; font-size: 22px; font-weight: 300; padding-bottom: 5px; border-bottom: 1px solid; margin-bottom: 15px;}
+    .enterpriseArea div:first-of-type ol{display: flex;}
+    .enterpriseArea div:first-of-type ol li{width: 13%; height: 175px; text-align: center; padding: 35px 0 30px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; background-color: white; border-radius: 20px; position: relative;} 
+    .enterpriseArea div:first-of-type ol li:not(:last-of-type){margin-right: 1.5%;}
+    .enterpriseArea div:first-of-type ol li mark{display: block; font-size: 16px; font-weight: 500; line-height: 20px; color: #006aed; background-color: transparent;}
+    .enterpriseArea div:first-of-type ol li mark span{display: block;}
+    .enterpriseArea div:first-of-type ol li p{height: 48px; font-size: 18px; font-weight: 500; line-height: 24px; display: flex; justify-content: center; align-items: center;}
+    .enterpriseArea div:first-of-type ol li > span{font-size: 30px; color: white; font-weight: 100; position: absolute; right: -25px; bottom:35px; background-color: #006aed; border-radius: 50%; z-index: 1;}
+    /* 기업회원 - 메인 컨텐츠*/
+    .E_contentsArea{display: grid; grid-template-columns: 50% 31.25% 18.75%; grid-template-rows: 340px 180px 180px;
+        display: -ms-grid; -ms-grid-columns: 50% 31.25% 18.75%; -ms-grid-rows: 340px 180px 180px; 
+    }
+    .E_contentsArea > *:not(aside){display: flex; justify-content: center; align-items: center;}
+    .E_contentsArea section h3{font-size: 32px; font-weight: 300;}
+    .E_contentsArea section:not(.EC_progressArea) h3{color: white;}
+    /* plus icon */
+    .E_contentsArea section.plusIcon span{font-size: 43px; margin-left: 35px;}
+    .E_contentsArea section.plusIcon:not(.EC_progressArea) span{color: white;}
+    .E_contentsArea section.EC_progressArea span{}
+    .E_contentsArea aside .plusIcon span{font-size: 32px; color: #cccccc;}
+    /* 기업회원 - 메인 컨텐츠 - 회사 사진*/
+    .EC_companyArea{grid-column: 1/2; grid-row: 1/3; background-color: #4c535f;
+        -ms-grid-column: 1; -ms-grid-column-span: 1; -ms-grid-row: 1; -ms-grid-row-span: 2;
+    }
+    /* 기업회원 - 메인 컨텐츠 - 회사 소개 동영상 업로드*/
+    .EC_videoArea{grid-column:2; grid-row: 1; background-color: #5ba6e0;
+        -ms-grid-column: 2; -ms-grid-column-span: 1; -ms-grid-row: 1; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - 회사 한줄 소개 등록*/
+    .EC_IntroduceArea{grid-column:2/3; grid-row:2/3; background-color: #5b84e0;
+        -ms-grid-column: 2; -ms-grid-column-span: 1; -ms-grid-row: 2; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - 현재 진행 공고*/
+    .EC_progressArea{grid-column:1/3; grid-row:3/4; background-color: transparent;
+        -ms-grid-column: 1; -ms-grid-column-span: 2; -ms-grid-row: 3; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - aisde*/
+    .E_contentsArea aside{grid-column: 3; grid-row: 1/4; background-color: white;
+        -ms-grid-column: 3; -ms-grid-column-span: 1; -ms-grid-row: 1; -ms-grid-row-span: 3;
+    }
+    .E_contentsArea aside ul{height: 100%; display: flex; flex-direction: column;}
+    .E_contentsArea aside ul li{flex: 1; }
+    .E_contentsArea aside ul li:not(:last-of-type){border-bottom: 1px solid #e5e5e5;}
+    .E_contentsArea aside ul li a{font-size: 24px; font-weight: 300; width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; box-sizing: border-box;}
+    .E_contentsArea aside ul li:not(:last-of-type) a{}
+}
+
+@media screen and (min-width:641px) and (max-width:1290px){
+    /* 기업회원 - 메인 */
+    .enterpriseArea{background-color: #efefef;}
+    .enterpriseArea div:first-of-type{padding-top: 50px; margin-bottom: 80px;}
+    .enterpriseArea div:first-of-type h2{ background-repeat: no-repeat; background-position: right bottom; margin-bottom: 50px;}
+    .enterpriseArea div:first-of-type small{display: inline-block; font-size: 24px; font-weight: 300; padding-bottom: 5px; border-bottom: 1px solid; margin-bottom: 20px;}
+    .enterpriseArea div:first-of-type ol{display: flex; flex-wrap: wrap;}
+    .enterpriseArea div:first-of-type ol li{width: 31.5%; height: 210px; text-align: center; padding: 45px 0 35px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; background-color: white; border-radius: 20px; position: relative;} 
+    .enterpriseArea div:first-of-type ol li:not(:last-of-type){margin-right: 1.5%; margin-bottom: 1.5%;}
+    .enterpriseArea div:first-of-type ol li mark{display: block; font-size: 22px; font-weight: 500; line-height: 26px; color: #006aed; background-color: transparent; letter-spacing: -1px;}
+    .enterpriseArea div:first-of-type ol li mark span{display: block;}
+    .enterpriseArea div:first-of-type ol li p{height: 48px; font-size: 24px; font-weight: 500; line-height: 26px; display: flex; justify-content: center; align-items: center;}
+    .enterpriseArea div:first-of-type ol li > span{font-size: 36px; color: white; font-weight: 100; position: absolute; right: -20px; bottom:35px; background-color: #006aed; border-radius: 50%; z-index: 1;}
+    /* 기업회원 - 메인 컨텐츠*/
+    .E_contentsArea{display: grid; grid-template-columns: 62.5% 37.5%; grid-template-rows: 340px 225px 120px 355px;
+        display: -ms-grid; -ms-grid-columns: 62.5% 37.5%; -ms-grid-rows: 340px 225px 120px 355px; 
+    }
+    .E_contentsArea > *:not(aside){display: flex; justify-content: center; align-items: center;}
+    .E_contentsArea section h3{font-size: 32px; font-weight: 300;}
+    .E_contentsArea section:not(.EC_progressArea) h3{color: white;}
+    /* plus icon */
+    .E_contentsArea section.plusIcon span{font-size: 43px; margin-left: 35px;}
+    .E_contentsArea section.plusIcon:not(.EC_progressArea) span{color: white;}
+    .E_contentsArea section.EC_progressArea span{}
+    .E_contentsArea aside .plusIcon span{font-size: 32px; color: #cccccc;}
+    /* 기업회원 - 메인 컨텐츠 - 회사 사진*/
+    .EC_companyArea{grid-column: 1/3; grid-row: 1/1; background-color: #4c535f;
+        -ms-grid-column: 1; -ms-grid-column-span: 2; -ms-grid-row: 1; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - 회사 소개 동영상 업로드*/
+    .EC_videoArea{
+        flex-direction: column;
+        grid-column:1/2; grid-row: 2/3; background-color: #5ba6e0;
+        -ms-grid-column: 1; -ms-grid-column-span:1; -ms-grid-row: 2; -ms-grid-row-span: 1;
+    }
+    .EC_videoArea.plusIcon > span{margin-left: 0; margin-top: 30px;}
+    
+    /* 기업회원 - 메인 컨텐츠 - 회사 한줄 소개 등록*/
+    .EC_IntroduceArea{grid-column:1/2; grid-row:3/4; background-color: #5b84e0;
+        -ms-grid-column: 1; -ms-grid-column-span: 1; -ms-grid-row: 3; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - 현재 진행 공고*/
+    .EC_progressArea{grid-column:1/2; grid-row:4/5; background-color: transparent;
+        -ms-grid-column: 1; -ms-grid-column-span: 1; -ms-grid-row: 4; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - aisde*/
+    .E_contentsArea aside{grid-column: 2/3; grid-row: 2/5; background-color: white;
+        -ms-grid-column: 2; -ms-grid-column-span: 1; -ms-grid-row: 2; -ms-grid-row-span: 4;
+    }
+    .E_contentsArea aside ul{height: 100%; display: flex; flex-direction: column;}
+    .E_contentsArea aside ul li{flex: 1; }
+    .E_contentsArea aside ul li:not(:last-of-type){border-bottom: 1px solid #e5e5e5;}
+    .E_contentsArea aside ul li a{font-size: 24px; font-weight: 300; width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 8.5% 0 12.5%; box-sizing: border-box;}
+    .E_contentsArea aside ul li:not(:last-of-type) a{}
+}
+
+@media screen and (max-width:640px){
+    /* 기업회원 - 메인 */
+    .enterpriseArea{background-color: #efefef;}
+    .enterpriseArea div:first-of-type{padding-top: 7.8125vw; margin-bottom: 12.5vw;}
+    .enterpriseArea div:first-of-type h2{ background-repeat: no-repeat; background-position: right bottom; margin-bottom: 7.8125vw;}
+    .enterpriseArea div:first-of-type small{display: inline-block; font-size: 3.75vw; font-weight: 300; padding-bottom: 0.78125vw; border-bottom: 1px solid; margin-bottom: 3.125vw;}
+    .enterpriseArea div:first-of-type ol{display: flex; flex-wrap: wrap;}
+    .enterpriseArea div:first-of-type ol li{width: 31.5%; height: 32.8125vw; text-align: center; padding: 7.03125vw 0 5.46875vw; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; background-color: white; border-radius: 3.125vw; position: relative;} 
+    .enterpriseArea div:first-of-type ol li:not(:last-of-type){margin-right: 1.5%; margin-bottom: 1.5%;}
+    .enterpriseArea div:first-of-type ol li mark{display: block; font-size: 3.4375vw; font-weight: 500; line-height: 4.0625vw; color: #006aed; background-color: transparent; letter-spacing: -1px;}
+    .enterpriseArea div:first-of-type ol li mark span{display: block;}
+    .enterpriseArea div:first-of-type ol li p{height: 7.5vw; font-size: 3.75vw; font-weight: 500; line-height: 4.0625vw; display: flex; justify-content: center; align-items: center;}
+    .enterpriseArea div:first-of-type ol li > span{font-size: 5.625vw; color: white; font-weight: 100; position: absolute; right: -3.125vw; bottom:5.46875vw; background-color: #006aed; border-radius: 50%; z-index: 1;}
+    /* 기업회원 - 메인 컨텐츠*/
+    .E_contentsArea{display: grid; grid-template-columns: 62.5% 37.5%; grid-template-rows: 53.125vw 35.15625vw 18.75vw 55.46875vw;
+        display: -ms-grid; -ms-grid-columns: 62.5% 37.5%; -ms-grid-rows: 53.125vw 35.15625vw 18.75vw 55.46875vw; 
+    }
+    .E_contentsArea > *:not(aside){display: flex; justify-content: center; align-items: center;}
+    .E_contentsArea section h3{font-size: 5vw; font-weight: 300;}
+    .E_contentsArea section:not(.EC_progressArea) h3{color: white;}
+    /* plus icon */
+    .E_contentsArea section.plusIcon span{font-size: 6.71875vw; margin-left: 5.46875vw;}
+    .E_contentsArea section.plusIcon:not(.EC_progressArea) span{color: white;}
+    .E_contentsArea section.EC_progressArea span{}
+    .E_contentsArea aside .plusIcon span{font-size: 5vw; color: #cccccc;}
+    /* 기업회원 - 메인 컨텐츠 - 회사 사진*/
+    .EC_companyArea{grid-column: 1/3; grid-row: 1/1; background-color: #4c535f;
+        -ms-grid-column: 1; -ms-grid-column-span: 2; -ms-grid-row: 1; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - 회사 소개 동영상 업로드*/
+    .EC_videoArea{
+        flex-direction: column;
+        grid-column:1/2; grid-row: 2/3; background-color: #5ba6e0;
+        -ms-grid-column: 1; -ms-grid-column-span:1; -ms-grid-row: 2; -ms-grid-row-span: 1;
+    }
+    .EC_videoArea.plusIcon > span{margin-left: 0; margin-top: 4.6875vw;}
+    
+    /* 기업회원 - 메인 컨텐츠 - 회사 한줄 소개 등록*/
+    .EC_IntroduceArea{grid-column:1/2; grid-row:3/4; background-color: #5b84e0;
+        -ms-grid-column: 1; -ms-grid-column-span: 1; -ms-grid-row: 3; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - 현재 진행 공고*/
+    .EC_progressArea{grid-column:1/2; grid-row:4/5; background-color: transparent;
+        -ms-grid-column: 1; -ms-grid-column-span: 1; -ms-grid-row: 4; -ms-grid-row-span: 1;
+    }
+    /* 기업회원 - 메인 컨텐츠 - aisde*/
+    .E_contentsArea aside{grid-column: 2/3; grid-row: 2/5; background-color: white;
+        -ms-grid-column: 2; -ms-grid-column-span: 1; -ms-grid-row: 2; -ms-grid-row-span: 4;
+    }
+    .E_contentsArea aside ul{height: 100%; display: flex; flex-direction: column;}
+    .E_contentsArea aside ul li{flex: 1; }
+    .E_contentsArea aside ul li:not(:last-of-type){border-bottom: 1px solid #e5e5e5;}
+    .E_contentsArea aside ul li a{font-size: 3.75vw; font-weight: 300; width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 8.5% 0 12.5%; box-sizing: border-box;}
+    .E_contentsArea aside ul li:not(:last-of-type) a{}
+}
+
+
