@@ -5,7 +5,7 @@
 /* 이력서 등록 */
 .subTitle{ font-size: 40px; font-weight: 400;}
 .resumeTitle{padding: 100px 0 50px;}
-.jobSearchArea legend{padding: 100px 0 50px;}
+.SearchArea legend{padding: 100px 0 50px;}
 .resumeTitle span{color: #006aed;}
 /* 서브 메뉴 */
 .subMenu nav{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative;}  
@@ -101,20 +101,20 @@
 .RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn{background-image: url(../image/sub/plusIcon.png);}
 
 
-/* 채용공고검색 */
-.jobSearchArea{margin-bottom: 110px;}
-.jobSearchArea fieldset{margin-bottom: 30px;}
-.jobSearchArea fieldset div{background-color: #f2faff; padding: 10px 0;}
-.jobSearchArea fieldset div > *{padding: 20px 30px 10px;}
-.jobSearchArea fieldset div > *:not(:last-child){border-bottom: 1px solid #d9e6ee;}
-.jobSearchArea fieldset div > *::after{content: ''; display: block; clear: both;}
-.jobSearchArea fieldset div > * li{float: left; font-size: 18px; font-weight: 500; color: #939393;   line-height: 50px; background-color: white; border: 1px solid #d8e2e7; border-radius: 10px; margin-right: 10px; margin-bottom: 10px;}
-.jobSearchArea fieldset div > * li label{display: block; height: 100%; border-radius: 10px;}
-.jobSearchArea fieldset div > * li input[type="radio"]{display: none;}
-.jobSearchArea fieldset div > * li input[type="radio"]:checked + label{background-color: #006aed; color: white; box-shadow: 0px 4px 20px -5px #006aed;}
-.jobSearchArea fieldset div ul li label{padding: 0 40px;}
-.jobSearchArea fieldset div ol li{width: 125px; text-align: center;}
-.jobSearchArea .addBtn{margin: 0;}
+/* 채용공고검색 ,맞춤인재검색*/
+.SearchArea{margin-bottom: 110px;}
+.SearchArea fieldset{margin-bottom: 30px;}
+.SearchArea fieldset div{background-color: #f2faff; padding: 10px 0;}
+.SearchArea fieldset div > *{padding: 20px 30px 10px;}
+.SearchArea fieldset div > *:not(:last-child){border-bottom: 1px solid #d9e6ee;}
+.SearchArea fieldset div > *::after{content: ''; display: block; clear: both;}
+.SearchArea fieldset div > * li{float: left; font-size: 18px; font-weight: 500; color: #939393;   line-height: 50px; background-color: white; border: 1px solid #d8e2e7; border-radius: 10px; margin-right: 10px; margin-bottom: 10px;}
+.SearchArea fieldset div > * li label{display: block; height: 100%; border-radius: 10px;}
+.SearchArea fieldset div > * li input[type="radio"]{display: none;}
+.SearchArea fieldset div > * li input[type="radio"]:checked + label{background-color: #006aed; color: white; box-shadow: 0px 4px 20px -5px #006aed;}
+.SearchArea fieldset div ul li label{padding: 0 40px;}
+.SearchArea fieldset div ol li{width: 125px; text-align: center;}
+.SearchArea .addBtn{margin: 0;}
 /*채용공고검색 - 검색 결과 */
 .JS_resultArea{padding: 60px 0 40px; background-color: #efefef;}
 .JS_resultArea ul::after{content: ''; display: block; visibility: hidden; clear: both;} 
@@ -124,6 +124,20 @@
 .JS_resultArea ul li a figure dl{line-height: 1.5;}
 .JS_resultArea ul li a figure dl dt{font-size: 18px; font-weight: 300;}
 .JS_resultArea ul li a figure dl dd{font-size: 14px; font-weight: 300; color: rgba(0, 0, 0, 0.6);}
+/* 맞춤인재검색 - 검색 결과 */
+.TS_resultArea{padding: 60px 0 40px; background-color: #efefef;}
+.TS_resultArea ul::after{content: ''; display: block; visibility: hidden; clear: both;} 
+.TS_resultArea ul li{float: left; width: 285px;  background-color: white;  box-sizing: border-box; border-radius: 25px; margin-right: 20px; margin-bottom: 20px; overflow: hidden;}
+.TS_resultArea ul li:nth-of-type(4n){margin-right: 0;}
+.TS_resultArea ul li a figure{height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;}
+.TS_resultArea ul li a figure figcaption{ padding: 30px; box-sizing: border-box;}
+.TS_resultArea ul li a figure figcaption dl::after{content: ''; display: block; clear: both;}
+.TS_resultArea ul li a figure figcaption dl dt{font-size: 18px; font-weight: 300; margin-bottom: 15px;}
+.TS_resultArea ul li a figure figcaption dl dd{float: left; font-size: 16px; font-weight: 300; margin-bottom: 10px;}
+.TS_resultArea ul li a figure figcaption dl dd:not(:first-of-type){margin-left: 10px; padding-left: 10px; position: relative;}
+.TS_resultArea ul li a figure figcaption dl dd:not(:first-of-type)::before{content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background-color: rgba(0, 0, 0, 0.2);}
+.TS_resultArea ul li a figure figcaption p{font-size: 14px; font-weight: 300; line-height: 24px; color: rgba(0, 0, 0, 0.6);}
+
 
 
 /* 기업회원 - 메인 */
@@ -182,7 +196,7 @@
     /* 이력서 등록 */
     .subTitle{font-size: 40px; font-weight: 400;}
     .resumeTitle{padding: 100px 0 50px; }
-    .jobSearchArea legend{padding: 100px 0 50px; }
+    .SearchArea legend{padding: 100px 0 50px; }
     .resumeTitle span{color: #006aed;}
     /* .subResumeTitle{padding: 100px 0 50px; } */
     /* .subResumeTitle span{color: #006aed;} */
@@ -291,23 +305,23 @@
     .RRWC_itemArea > li .RRWCI_listArea ul li button.plusBtn{background-image: url(../image/sub/plusIcon.png);}
     
 
-     /* 채용공고검색 */
-     .jobSearchArea{margin-bottom: 110px;}
-     .jobSearchArea fieldset{margin-bottom: 30px;}
-     .jobSearchArea fieldset div{background-color: #f2faff; }
-     .jobSearchArea fieldset div > *{padding: 30px 30px 10px;}
-     .jobSearchArea fieldset div > *:not(:last-child){border-bottom: 1px solid #d9e6ee;}
-     .jobSearchArea fieldset div > *::after{content: ''; display: block; clear: both;}
-     .jobSearchArea fieldset div > * li{float: left; font-size: 24px; font-weight: 500; color: #939393;   line-height: 60px; background-color: white; border: 1px solid #d8e2e7; border-radius: 10px; margin-right: 20px; margin-bottom: 20px; box-sizing: border-box;}
-     .jobSearchArea fieldset div > * li label{display: block; height: 100%; border-radius: 10px;}
-     .jobSearchArea fieldset div > * li input[type="radio"]{display: none;}
-     .jobSearchArea fieldset div > * li input[type="radio"]:checked + label{background-color: #006aed; color: white; box-shadow: 0px 4px 20px -5px #006aed;}
-     .jobSearchArea fieldset div ul li label{padding: 0 35px;}
-     .jobSearchArea fieldset div ol li{width: calc((100% - 60px)/4); text-align: center;}
-     .jobSearchArea fieldset div ol li:nth-of-type(4n){margin-right: 0;}
-     .jobSearchArea .addBtn{margin: 0;}
+     /* 채용공고검색 , 맞춤인재검색*/
+     .SearchArea{margin-bottom: 110px;}
+     .SearchArea fieldset{margin-bottom: 30px;}
+     .SearchArea fieldset div{background-color: #f2faff; }
+     .SearchArea fieldset div > *{padding: 30px 30px 10px;}
+     .SearchArea fieldset div > *:not(:last-child){border-bottom: 1px solid #d9e6ee;}
+     .SearchArea fieldset div > *::after{content: ''; display: block; clear: both;}
+     .SearchArea fieldset div > * li{float: left; font-size: 24px; font-weight: 500; color: #939393;   line-height: 60px; background-color: white; border: 1px solid #d8e2e7; border-radius: 10px; margin-right: 20px; margin-bottom: 20px; box-sizing: border-box;}
+     .SearchArea fieldset div > * li label{display: block; height: 100%; border-radius: 10px;}
+     .SearchArea fieldset div > * li input[type="radio"]{display: none;}
+     .SearchArea fieldset div > * li input[type="radio"]:checked + label{background-color: #006aed; color: white; box-shadow: 0px 4px 20px -5px #006aed;}
+     .SearchArea fieldset div ul li label{padding: 0 35px;}
+     .SearchArea fieldset div ol li{width: calc((100% - 60px)/4); text-align: center;}
+     .SearchArea fieldset div ol li:nth-of-type(4n){margin-right: 0;}
+     .SearchArea .addBtn{margin: 0;}
      /*채용공고검색 - 검색 결과 */
-     .JS_resultArea{padding: 60px 0; background-color: #efefef;}
+     .JS_resultArea{padding: 60px 0 40px; background-color: #efefef;}
      .JS_resultArea ul::after{content: ''; display: block; visibility: hidden; clear: both;} 
      .JS_resultArea ul li{float: left; width: calc((100% - 20px)/2); height: 180px; padding: 20px 30px; background-color: white;  box-sizing: border-box; border-radius: 25px; margin-right: 20px; margin-bottom: 20px;}
      .JS_resultArea ul li:nth-of-type(2n){margin-right: 0;}
@@ -315,6 +329,21 @@
      .JS_resultArea ul li a figure dl{line-height: 1.5;}
      .JS_resultArea ul li a figure dl dt{font-size: 18px; font-weight: 300;}
      .JS_resultArea ul li a figure dl dd{font-size: 14px; font-weight: 300; color: rgba(0, 0, 0, 0.6);}
+     /* 맞춤인재검색 - 검색 결과 */
+    .TS_resultArea{padding: 60px 0 40px; background-color: #efefef;}
+    .TS_resultArea ul::after{content: ''; display: block; visibility: hidden; clear: both;} 
+    .TS_resultArea ul li{float: left; width:calc((100% - 20px)/2);  background-color: white;  box-sizing: border-box; border-radius: 25px; margin-right: 20px; margin-bottom: 20px; overflow: hidden;}
+    .TS_resultArea ul li:nth-of-type(2n){margin-right: 0;}
+    .TS_resultArea ul li a figure{height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;}
+    .TS_resultArea ul li a figure img{width: 100%;}
+    .TS_resultArea ul li a figure figcaption{ padding: 30px 20px; box-sizing: border-box;}
+    .TS_resultArea ul li a figure figcaption dl::after{content: ''; display: block; clear: both;}
+    .TS_resultArea ul li a figure figcaption dl dt{font-size: 24px; font-weight: 300; margin-bottom: 15px;}
+    .TS_resultArea ul li a figure figcaption dl dd{float: left; font-size: 20px; font-weight: 300; margin-bottom: 15px;}
+    .TS_resultArea ul li a figure figcaption dl dd:not(:first-of-type){margin-left: 10px; padding-left: 10px; position: relative;}
+    .TS_resultArea ul li a figure figcaption dl dd:not(:first-of-type)::before{content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background-color: rgba(0, 0, 0, 0.2);}
+    .TS_resultArea ul li a figure figcaption p{font-size: 20px; font-weight: 300; line-height: 26px; color: rgba(0, 0, 0, 0.6);}
+
 
      /* 기업회원 - 메인 */
     .enterpriseArea{background-color: #efefef;}
@@ -377,7 +406,7 @@
     /* 이력서 등록 */
     .subTitle{font-size: 6.25vw; font-weight: 400;}
     .resumeTitle{padding: 15.625vw 0 7.8125vw;}
-    .jobSearchArea legend{padding: 15.625vw 0 7.8125vw;}
+    .SearchArea legend{padding: 15.625vw 0 7.8125vw;}
     .resumeTitle span{color: #006aed;}
     /* .subResumeTitle{padding: 15.625vw 0 7.8125vw; font-size: 6.25vw; font-weight: 400;} */
     /* .subResumeTitle span{color: #006aed;} */
@@ -485,22 +514,22 @@
 
     
      /* 채용공고검색 */
-     .jobSearchArea{margin-bottom: 17.1875vw;}
-     .jobSearchArea fieldset{margin-bottom: 4.6875vw;}
-     .jobSearchArea fieldset div{background-color: #f2faff; }
-     .jobSearchArea fieldset div > *{padding: 4.6875vw 4.6875vw 1.5625vw;}
-     .jobSearchArea fieldset div > *:not(:last-child){border-bottom: 1px solid #d9e6ee;}
-     .jobSearchArea fieldset div > *::after{content: ''; display: block; clear: both;}
-     .jobSearchArea fieldset div > * li{float: left; font-size: 3.75vw; font-weight: 500; color: #939393;   line-height: 9.375vw; background-color: white; border: 1px solid #d8e2e7; border-radius: 1.5625vw; margin-right: 3.125vw; margin-bottom: 3.125vw; box-sizing: border-box;}
-     .jobSearchArea fieldset div > * li label{display: block; height: 100%; border-radius: 1.5625vw;}
-     .jobSearchArea fieldset div > * li input[type="radio"]{display: none;}
-     .jobSearchArea fieldset div > * li input[type="radio"]:checked + label{background-color: #006aed; color: white; box-shadow: 0px 0.625vw 3.125vw -0.78125vw #006aed;}
-     .jobSearchArea fieldset div ul li label{padding: 0 5.46875vw;}
-     .jobSearchArea fieldset div ol li{width: calc((100% - 9.375vw)/4); text-align: center;}
-     .jobSearchArea fieldset div ol li:nth-of-type(4n){margin-right: 0;}
-     .jobSearchArea .addBtn{margin: 0;}
+     .SearchArea{margin-bottom: 17.1875vw;}
+     .SearchArea fieldset{margin-bottom: 4.6875vw;}
+     .SearchArea fieldset div{background-color: #f2faff; }
+     .SearchArea fieldset div > *{padding: 4.6875vw 4.6875vw 1.5625vw;}
+     .SearchArea fieldset div > *:not(:last-child){border-bottom: 1px solid #d9e6ee;}
+     .SearchArea fieldset div > *::after{content: ''; display: block; clear: both;}
+     .SearchArea fieldset div > * li{float: left; font-size: 3.75vw; font-weight: 500; color: #939393;   line-height: 9.375vw; background-color: white; border: 1px solid #d8e2e7; border-radius: 1.5625vw; margin-right: 3.125vw; margin-bottom: 3.125vw; box-sizing: border-box;}
+     .SearchArea fieldset div > * li label{display: block; height: 100%; border-radius: 1.5625vw;}
+     .SearchArea fieldset div > * li input[type="radio"]{display: none;}
+     .SearchArea fieldset div > * li input[type="radio"]:checked + label{background-color: #006aed; color: white; box-shadow: 0px 0.625vw 3.125vw -0.78125vw #006aed;}
+     .SearchArea fieldset div ul li label{padding: 0 5.46875vw;}
+     .SearchArea fieldset div ol li{width: calc((100% - 9.375vw)/4); text-align: center;}
+     .SearchArea fieldset div ol li:nth-of-type(4n){margin-right: 0;}
+     .SearchArea .addBtn{margin: 0;}
      /*채용공고검색 - 검색 결과 */
-     .JS_resultArea{padding: 9.375vw 0; background-color: #efefef;}
+     .JS_resultArea{padding: 9.375vw 0 6.25vw; background-color: #efefef;}
      .JS_resultArea ul::after{content: ''; display: block; visibility: hidden; clear: both;} 
      .JS_resultArea ul li{float: left; width: calc((100% - 3.125vw)/2); height: 28.125vw; padding: 3.125vw 4.6875vw; background-color: white;  box-sizing: border-box; border-radius: 3.90625vw; margin-right: 3.125vw; margin-bottom: 3.125vw;}
      .JS_resultArea ul li:nth-of-type(2n){margin-right: 0;}
@@ -508,6 +537,21 @@
      .JS_resultArea ul li a figure dl{line-height: 1.5;}
      .JS_resultArea ul li a figure dl dt{font-size: 2.8125vw; font-weight: 300;}
      .JS_resultArea ul li a figure dl dd{font-size: 2.1875vw; font-weight: 300; color: rgba(0, 0, 0, 0.6);}
+     /* 맞춤인재검색 - 검색 결과 */
+    .TS_resultArea{padding: 9.375vw 0 6.25vw; background-color: #efefef;}
+    .TS_resultArea ul::after{content: ''; display: block; visibility: hidden; clear: both;} 
+    .TS_resultArea ul li{float: left; width:calc((100% - 3.125vw)/2);  background-color: white;  box-sizing: border-box; border-radius: 3.90625vw; margin-right: 3.125vw; margin-bottom: 3.125vw; overflow: hidden;}
+    .TS_resultArea ul li:nth-of-type(2n){margin-right: 0;}
+    .TS_resultArea ul li a figure{height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;}
+    .TS_resultArea ul li a figure img{width: 100%;}
+    .TS_resultArea ul li a figure figcaption{ padding: 4.6875vw 3.125vw; box-sizing: border-box;}
+    .TS_resultArea ul li a figure figcaption dl::after{content: ''; display: block; clear: both;}
+    .TS_resultArea ul li a figure figcaption dl dt{font-size: 3.75vw; font-weight: 300; margin-bottom: 2.34375vw;}
+    .TS_resultArea ul li a figure figcaption dl dd{float: left; font-size: 3.125vw; font-weight: 300; margin-bottom: 2.34375vw;}
+    .TS_resultArea ul li a figure figcaption dl dd:not(:first-of-type){margin-left: 1.5625vw; padding-left: 1.5625vw; position: relative;}
+    .TS_resultArea ul li a figure figcaption dl dd:not(:first-of-type)::before{content: ''; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background-color: rgba(0, 0, 0, 0.2);}
+    .TS_resultArea ul li a figure figcaption p{font-size: 3.125vw; font-weight: 300; line-height: 4.0625vw; color: rgba(0, 0, 0, 0.6);}
+
 
      
          /* 기업회원 - 메인 */

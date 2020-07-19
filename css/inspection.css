@@ -1,9 +1,16 @@
+/* INSA 검사 */
 .inspectionTitle{padding: 100px 0 75px;}
-
+/* INSA 검사 - 진행*/
 .inspectionProgress{display: flex; margin-bottom: 40px;}
 .inspectionProgress li{flex: 1; border-bottom: 2px solid rgba(0,0,0,0.1);}
 .inspectionProgress li > *{color: #939393;}
 .inspectionProgress li small{display: block; font-size: 14px; font-weight: 900; margin-bottom: 12px}
-.inspectionProgress li p{font-size: 28px; font-weight: 300; margin-bottom: 14px;}
+.inspectionProgress li h3{font-size: 28px; font-weight: 300; margin-bottom: 14px;}
 .inspectionProgress li.active{border-color: #006aed;}
 .inspectionProgress li.active > *{color: #006aed;}
+
+
+.inspectionArea{width: 100%; overflow: hidden;}
+.inspectionArea > ol{width: 300%; display: flex;}
+.inspectionArea > ol::after{content: ''; display: block; visibility: hidden; clear: both;}
+.inspectionArea > ol > li{float: left; width: 100%;}
