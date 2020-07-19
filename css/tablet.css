@@ -1,3 +1,43 @@
 @media screen and (max-width: 1290px) and (min-width: 641px) {
+/* 지원현황 */
+.supportStatusArea{padding: 60px 0 100px; background-color: #f2faff;}
+.supportStatusArea > div section h2{font-size: 30px; font-weight: 500; margin-bottom: 20px;}
 
+.SS_dateArea{margin-bottom: 60px;}
+.SS_dateArea input[type="date"]{width: 325px; height: 70px; font-size: 24px; font-weight: 300; padding: 0 20px; color: #006aed; box-sizing: border-box;}
+
+.SS_tabMenuArea ul::after{content: ''; display: block; clear: both;}
+.SS_tabMenuArea ul{margin-bottom: 80px;}
+.SS_tabMenuArea ul li{float: left; width: 33.33%; font-size: 26px; font-weight: 500; color: #5a6e88; height: 120px; padding:0 30px 0 40px; box-sizing: border-box;  border-bottom: 1px solid #d9e6ee; border-radius: 10px; cursor: pointer; 
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.SS_tabMenuArea ul li::before{content: ''; width: 36px; height: 34px; background-repeat: no-repeat; background-position: center; background-size: contain; margin-bottom: 15px;}
+.SS_tabMenuArea ul li:nth-child(1)::before{background-image: url(../image/supportStatus/supportingCompanyIcon.png);}
+.SS_tabMenuArea ul li:nth-child(2)::before{background-image: url(../image/supportStatus/recommendationIcon.png);}
+.SS_tabMenuArea ul li:nth-child(3)::before{background-image: url(../image/supportStatus/myListIcon.png);}
+.SS_tabMenuArea ul li.active{background-color: #006aed; color: white; box-shadow: 0px 3px 15px #006aed; border-bottom: 0;}
+.SS_contentsArea > ul > li{display: none;}
+.SS_contentsArea > ul > li.active{display: block;}
+/* 지원기업 컨텐츠 */
+.SSC_supportingCompanyArea h3{font-size: 24px; font-weight: 500; margin-bottom: 20px; text-indent: -9999px; display: none;}
+.SSC_supportingCompanyArea > div::after{content: ''; display: block; clear: both;}
+.SSC_supportingCompanyArea > div{margin-bottom: 60px;}
+.SSC_supportingCompanyArea > div ul{float: left; width: 100%; margin-bottom: 20px;}
+.SSC_supportingCompanyArea > div ul::after{content: ''; display: block; clear: both;}
+.SSC_supportingCompanyArea > div ul li{float: left; width: 50%;}
+.SSC_supportingCompanyArea > div ul li select{width: 100%; height: 70px; border-radius: 0; font-size: 24px; font-weight: 300; color: #5f5f5f; padding: 0 25px;}
+.SSC_supportingCompanyArea > div button{float: right; width: 210px; height: 70px; background-color: #343434; padding: 0 25px; display: flex; justify-content: space-between; align-items: center; font-size: 24px; color: white; border: none; border-radius: 0;}
+.SSC_supportingCompanyArea > div button::before{content: ''; width: 19px; height: 17px; background: url(../image/supportStatus/filterIcon.png) no-repeat center center; background-size: contain;}
+.SSC_supportingCompanyArea > ul::after{content: ''; display: block; clear: both;}
+.SSC_supportingCompanyArea > ul li{float: left; width: 100%; margin-bottom: 20px}
+.SSC_supportingCompanyArea > ul li:nth-child(2n){margin-right: 0;}
+.SSC_supportingCompanyArea > ul li figure{padding: 25px 30px; background-color: white; border-radius: 25px;}
+.SSC_supportingCompanyArea > ul li figure div{position: relative; margin-bottom: 20px;}
+.SSC_supportingCompanyArea > ul li figure div mark{position: absolute; right: 0; top: 0; font-size: 22px; font-weight: 500; color: #006aed; background-color: transparent; padding-bottom: 4px;}
+.SSC_supportingCompanyArea > ul li figure div mark::after{content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #006aed;}
+.SSC_supportingCompanyArea > ul li figure figcaption{}
+.SSC_supportingCompanyArea > ul li figure figcaption dl{margin-bottom: 10px;}
+.SSC_supportingCompanyArea > ul li figure figcaption dl dt{font-size: 24px; font-weight: 300; margin-bottom: 15px;}
+.SSC_supportingCompanyArea > ul li figure figcaption dl dd{font-size: 20px; font-weight: 300;}
+.SSC_supportingCompanyArea > ul li figure figcaption small{font-size: 20px; font-weight: 300; color: rgba(0, 0, 0, 0.6);}
 }

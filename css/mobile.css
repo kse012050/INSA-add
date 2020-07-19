@@ -1,5 +1,45 @@
 @media screen and (max-width: 640px){
+    /* 지원현황 */
+    .supportStatusArea{padding: 9.375vw 0 15.625vw; background-color: #f2faff;}
+    .supportStatusArea > div section h2{font-size: 4.6875vw; font-weight: 500; margin-bottom: 3.125vw;}
 
+    .SS_dateArea{margin-bottom: 9.375vw;}
+    .SS_dateArea input[type="date"]{width: 50.78125vw; height: 10.9375vw; font-size: 3.75vw; font-weight: 300; padding: 0 3.125vw; color: #006aed; box-sizing: border-box;}
+
+    .SS_tabMenuArea ul::after{content: ''; display: block; clear: both;}
+    .SS_tabMenuArea ul{margin-bottom: 12.5vw;}
+    .SS_tabMenuArea ul li{float: left; width: 33.33%; font-size: 4.0625vw; font-weight: 500; color: #5a6e88; height: 18.75vw; padding:0 4.6875vw 0 6.25vw; box-sizing: border-box;  border-bottom: 1px solid #d9e6ee; border-radius: 1.5625vw; cursor: pointer; 
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+    .SS_tabMenuArea ul li::before{content: ''; width: 5.625vw; height: 5.3125vw; background-repeat: no-repeat; background-position: center; background-size: contain; margin-bottom: 2.34375vw;}
+    .SS_tabMenuArea ul li:nth-child(1)::before{background-image: url(../image/supportStatus/supportingCompanyIcon.png);}
+    .SS_tabMenuArea ul li:nth-child(2)::before{background-image: url(../image/supportStatus/recommendationIcon.png);}
+    .SS_tabMenuArea ul li:nth-child(3)::before{background-image: url(../image/supportStatus/myListIcon.png);}
+    .SS_tabMenuArea ul li.active{background-color: #006aed; color: white; box-shadow: 0px 0.46875vw 2.34375vw #006aed; border-bottom: 0;}
+    .SS_contentsArea > ul > li{display: none;}
+    .SS_contentsArea > ul > li.active{display: block;}
+    /* 지원기업 컨텐츠 */
+    .SSC_supportingCompanyArea h3{font-size: 3.75vw; font-weight: 500; margin-bottom: 3.125vw; text-indent: -9999px; display: none;}
+    .SSC_supportingCompanyArea > div::after{content: ''; display: block; clear: both;}
+    .SSC_supportingCompanyArea > div{margin-bottom: 9.375vw;}
+    .SSC_supportingCompanyArea > div ul{float: left; width: 100%; margin-bottom: 3.125vw;}
+    .SSC_supportingCompanyArea > div ul::after{content: ''; display: block; clear: both;}
+    .SSC_supportingCompanyArea > div ul li{float: left; width: 50%;}
+    .SSC_supportingCompanyArea > div ul li select{width: 100%; height: 10.9375vw; border-radius: 0; font-size: 3.75vw; font-weight: 300; color: #5f5f5f; padding: 0 3.90625vw;}
+    .SSC_supportingCompanyArea > div button{float: right; width: 32.8125vw; height: 10.9375vw; background-color: #343434; padding: 0 3.90625vw; display: flex; justify-content: space-between; align-items: center; font-size: 3.75vw; color: white; border: none; border-radius: 0;}
+    .SSC_supportingCompanyArea > div button::before{content: ''; width: 2.96875vw; height: 2.65625vw; background: url(../image/supportStatus/filterIcon.png) no-repeat center center; background-size: contain;}
+    .SSC_supportingCompanyArea > ul::after{content: ''; display: block; clear: both;}
+    .SSC_supportingCompanyArea > ul li{float: left; width: 100%; margin-bottom: 3.125vw}
+    .SSC_supportingCompanyArea > ul li:nth-child(2n){margin-right: 0;}
+    .SSC_supportingCompanyArea > ul li figure{padding: 3.90625vw 4.6875vw; background-color: white; border-radius: 3.90625vw;}
+    .SSC_supportingCompanyArea > ul li figure div{position: relative; margin-bottom: 3.125vw;}
+    .SSC_supportingCompanyArea > ul li figure div mark{position: absolute; right: 0; top: 0; font-size: 3.4375vw; font-weight: 500; color: #006aed; background-color: transparent; padding-bottom: 0.625vw;}
+    .SSC_supportingCompanyArea > ul li figure div mark::after{content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #006aed;}
+    .SSC_supportingCompanyArea > ul li figure figcaption{}
+    .SSC_supportingCompanyArea > ul li figure figcaption dl{margin-bottom: 1.5625vw;}
+    .SSC_supportingCompanyArea > ul li figure figcaption dl dt{font-size: 3.75vw; font-weight: 300; margin-bottom: 2.34375vw;}
+    .SSC_supportingCompanyArea > ul li figure figcaption dl dd{font-size: 3.125vw; font-weight: 300;}
+    .SSC_supportingCompanyArea > ul li figure figcaption small{font-size: 3.125vw; font-weight: 300; color: rgba(0, 0, 0, 0.6);}
 
 }
 
