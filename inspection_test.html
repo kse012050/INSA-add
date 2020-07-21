@@ -12,7 +12,7 @@
 
     <script>
        $(document).ready(function(){
-        $('.I_topArea > div *:not([class]) li').each(function(){
+        $('.I_topArea > div ul:not([class]) li').each(function(){
             $(this).css('background-image','url(' + $(this).attr('data-img')+")");
         })
         $('.step01Area > div ul:not([class]) li').click(function(){
@@ -20,28 +20,21 @@
             $(this).addClass('active');
         })
 
-        
-
+        console.log($('.inspectionArea > ol .active').prev());
         $('.rightBtn').click(function(){
-            $('.inspectionProgress li.active').next().addClass('active');
-        })
-
+            console.log($('.inspectionArea > ol').css('left'));
+            $('.inspectionArea > ol').animate({'left':parseInt($('.inspectionArea > ol').css('left')) - parseInt($('.inspectionArea').css('width'))});
+        });
         $('.leftBtn').click(function(){
-            $('.inspectionProgress li').each(function(){
-                if(!$(this).next().hasClass('active')){
-                    $(this).removeClass('active');
-                }
-            })
-        })
-    
-        
+            console.log($('.inspectionArea > ol').css('left'));
+            $('.inspectionArea > ol').animate({'left':parseInt($('.inspectionArea > ol').css('left')) + parseInt($('.inspectionArea').css('width'))});
+        });
        });
     </script>
 
     <link rel="stylesheet" href="css/import.css">
     <link rel="stylesheet" href="css/page.css">
-    <!-- <link rel="stylesheet" href="css/inspection.css"> -->
-    <link rel="stylesheet" href="css/inspection_t.css">
+    <link rel="stylesheet" href="css/inspection_test.css">
 </head>
 <body>
     <header class="subHeader">
@@ -108,9 +101,8 @@
                 <button class="rightBtn">right</button>
             </div>                
         </div>
-        <div class="swiper-container sliderArea">
-        <ol class="swiper-wrapper">
-            <li class="swiper-slide active">
+        <ol>
+            <li class="active">
                 <!-- step01 -->
                 <div class="I_topArea step01Area">
                     <div class="subContentsWidth">
@@ -135,68 +127,43 @@
                 </div>
                 <div class="subContentsWidth I_bottomArea ">
                     <div>
-                        <h4><span>검증툴 1</span>외국어 테스트</h4>
-                        <img src="image/inspection/step01_img.png" alt="">
+                        <img src="image/inspection/step01_img03.png" alt="">
                     </div>
                     <small>이 검사는 외국어 테스트 입니다.</small>
                 </div>
             </li>
-            <li class="swiper-slide">
+            <li>
                 <!-- step02 -->
-                <div class="I_topArea step02Area">
-                    <div class="subContentsWidth">
+                <div class="I_topArea">
+                    <div>
                         <h4>
                             다음 4개를 비교하고 본인의 성향에 따라 더 가까운 타임을 순서대로 선택해 주세요
                         </h4>
                         <ol>
-                            <li data-img="image/inspection/step02_img01.png"></li>
-                            <li data-img="image/inspection/step02_img02.png"></li>
-                            <li data-img="image/inspection/step02_img03.png"></li>
-                            <li data-img="image/inspection/step02_img04.png"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ol>
                         <small>
                             이검사는 검사자의 흥미도 기반으로  체크하는 검사로
                         </small>
                     </div>
                 </div>
-                <div class="subContentsWidth I_bottomArea">
-                    <div>
-                        <h4><span>검증툴 2</span>OS TEST</h4>
-                        <img src="image/inspection/step02_img.png" alt="">
-                    </div>
-                    <small>이 검사는 외국어 테스트 입니다.</small>
+                <div class="I_bottomArea">
+
                 </div>
             </li>
-            <li class="swiper-slide">
+            <li>
                 <!-- step03 -->
-                <div class="I_topArea step03Area">
-                    <div class="subContentsWidth">
-                        <div>
-                            <h4>오지로 여행간다면 사막 vs 북극</h4>
-                            <ul class="step03ProblemArea">
-                                <li>
-                                    <img src="image/inspection/step03_img01.jpg" alt="">
-                                </li>
-                                <li>
-                                    <img src="image/inspection/step03_img02.jpg" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                        <small>
-                            이검사는 검사자의 흥미도 기반으로  체크하는 검사로
-                        </small>
-                    </div>
+                <div class="I_topArea">
+
                 </div>
-                <div class="subContentsWidth I_bottomArea">
-                    <div>
-                        <h4><span>검증툴 2</span>OS TEST</h4>
-                        <img src="image/inspection/step02_img.png" alt="">
-                    </div>
-                    <small>이 검사는 외국어 테스트 입니다.</small>
+                <div class="I_bottomArea">
+
                 </div>
             </li>
         </ol>
-        </div>
     </div>
 
     <footer>
@@ -289,14 +256,5 @@
             </ul>
         </div>
     </div>
-
-    <script>
-        var swiper = new Swiper('.inspectionArea > .sliderArea', {
-          navigation: {
-            nextEl: '.rightBtn',
-            prevEl: '.leftBtn',
-          },
-        });
-      </script>
 </body>
 </html>

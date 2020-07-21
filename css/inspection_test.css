@@ -1,4 +1,3 @@
-@media screen and (min-width:1291px){
 /* INSA 검사 */
 .inspectionTitle{padding: 100px 0 75px;}
 /* INSA 검사 - 진행*/
@@ -27,36 +26,19 @@
 /* INSA 검사 - step 윗부분 */
 .I_topArea{background-color: #f2faff;}
 .I_topArea > div{padding: 55px 0 40px; text-align: center;}
-.I_topArea > div h4{font-size: 24px; font-weight: 700; }
-.I_topArea > div p{font-size: 18px; font-weight: 300; }
-.I_topArea > div ul, .I_topArea > div ol{display: flex; justify-content: center; margin-bottom: 80px;}
-.I_topArea > div ul:not([class]) li,.I_topArea > div ol:not([class]) li{width: 23.125%; height: 420px; text-indent: -9999px; box-sizing: border-box; cursor: pointer;
+.I_topArea > div h4{font-size: 24px; font-weight: 700; margin-bottom: 20px;}
+.I_topArea > div p{font-size: 18px; font-weight: 300; margin-bottom: 60px;}
+.I_topArea > div ul{display: flex; justify-content: center; margin-bottom: 80px;}
+.I_topArea > div ul:not([class]) li{width: 23.125%; height: 420px; text-indent: -9999px; box-sizing: border-box; cursor: pointer;
     background-repeat: no-repeat; background-position: center; background-size: cover; border-radius: 20px;
 }
-.I_topArea > div ul:not([class]) li:not(:last-child),.I_topArea > div ol:not([class]) li:not(:last-child){margin-right: 2.5%;}
+.I_topArea > div ul li:not(:last-child){margin-right: 2.5%;}
 /* .I_topArea > div ul:not([class]) li img{width: 100%;} */
 /* INSA 검사 - step1*/
-.I_topArea.step01Area > div h4{ margin-bottom: 20px;}
-.I_topArea.step01Area > div p{margin-bottom: 60px;}
 .step01Area > div ul:not([class]) li.active{border: 1px solid #006aed; position: relative;}
 .step01Area > div ul:not([class]) li.active::before{content: ''; position: absolute; left: 20px; top: -15px; width: 30px; height: 30px; background: url(../image/inspection/activeIcon.png) no-repeat center; z-index: 1;}
-.I_topArea > div small{ display: flex; justify-content: center; align-items: center;}
+.I_topArea > div small{font-size: 16px; font-weight: 300; color: rgba(0,0,0,0.45); display: flex; justify-content: center; align-items: center;}
 .I_topArea > div small::before{content: ''; display: inline-block; width: 5px; height: 5px; background: url(../image/inspection/bullet.png) no-repeat center center; background-size: contain; margin-right: 20px;}
-/* INSA 검사 - step2*/
-.I_topArea.step02Area > div h4{ margin-bottom: 60px;}
 /* INSA 검사 - step 아래부분 */
 .I_bottomArea{padding: 155px 0 140px;}
 .I_bottomArea > div{margin-bottom: 20px;}
-.I_bottomArea small{display: flex; justify-content: flex-start; align-items: center;}
-.I_bottomArea > div{position: relative;}
-.I_bottomArea > div h4{position: absolute; left: 0; top: -75px; font-size: 16px; font-weight: 700; line-height: 45px; color: #939393; padding: 0 30px; border: 2px solid #006aed; border-radius: 50px;}
-.I_bottomArea > div h4 span{font-size: 20px; font-weight: 700; color: #006aed; margin-right: 20px;}
-.I_bottomArea > div h4::before{content: ''; position: absolute; bottom: -20px; left: 40px; border-width: 19px 15px 0; border-style: solid; border-color: #006aed transparent; display: block; width: 0;}
-.I_bottomArea > div h4::after{content: ''; position: absolute; bottom: -15px; left: 41px; border-width: 15px 14px 0; border-style: solid; border-color: white transparent; display: block; width: 0;}
-/* INSA 검사 - step3*/
-.I_topArea.step03Area > div > div h4{line-height: 105px; font-size: 70px; font-weight: 700; color: white; background-color: black; text-align: center;}
-.I_topArea.step03Area > div > div ul.step03ProblemArea::after{content: ''; display: block; visibility: hidden; clear: both;}
-.I_topArea.step03Area > div > div ul.step03ProblemArea li{width: 50%; display: flex; justify-content: center; align-items: center; padding:150px 0 110px;}
-.I_topArea.step03Area > div > div ul.step03ProblemArea li:nth-child(1){background-color: #5fce7c;}
-.I_topArea.step03Area > div > div ul.step03ProblemArea li:nth-child(2){background-color: #f6c843;}
-}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 진행 공고2</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script>
+        $(document).ready(function(){
+            // 현재 진행 공고2
+            // 능력 게이지
+            var abilityGauge = $('.abilityGaugeArea div span');
+            abilityGauge.each(function(){
+                $(this).css('width',$(this).attr('data-percent') + '%');
+            })
+        });
+    </script>
+</head>
+<body>
+    <header class="subHeader">
+        <div class="SH_topArea">
+            <div class="subWidth">
+                <h1>
+                    <a href="#">
+                        <img src="image/sub/sub_logo.png" alt="logo">
+                    </a>
+                    <span>
+                        글자 뒤에 가려진 사람을 보다 INSA
+                    </span>
+                </h1>
+                <div class="headerSearch">
+                    <input type="search">
+                    <input type="button" value="search">
+                </div>
+                <div class="mobileMenu">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="subWidth SH_bottomArea">
+            <button>채용공고 검색</button>
+            <nav>
+                <ul>
+                    <li><a href="#">INSA 소개</a></li>
+                    <li><a href="#">이력서</a></li>
+                    <li><a href="#">INSA 검사</a></li>
+                    <li><a href="#">검증 툴</a></li>
+                    <li><a href="#">기업 추천</a></li>
+                </ul>
+                <div>
+                    <a href="#">마이페이지</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+   <section class="progressAnnouncementArea">
+       <div class="subContentsWidth">
+           <div class="PA_titleArea">
+                <div>
+                    <mark>진행중</mark>
+                    <h2 class="subTitle">해외영업 영업부 팀원 채용공고</h2>
+                    <p>2020.02.01~2020.03.30</p>
+                </div>
+                <div class="PAT_btnArea">
+                    <button class="listBtn">지원자 목록</button>
+                    <button class="suggestionBtn">채용 제안</button>
+                </div>
+            </div>
+
+            <div class="PA_contentsArea">
+                <div>
+                    <figure>
+                        <img src="image/progressAnnouncement/detail_personImg.png" alt="">
+                        <figcaption>
+                            <dl>
+                                <dt>
+                                    김인사
+                                </dt>
+                                <dd>Insa Kim</dd>
+                                <dd>여</dd>
+                                <dd class="age">38</dd>
+                            </dl>
+                            <p class="phonNum">010-0000-0000</p>
+                            <p class="email">Insakim@sample.com</p>
+                        </figcaption>
+                    </figure>
+                    <div class="abilityGaugeArea">
+                        <h4>회사 적합도</h4>
+                        <mark class="percent">48</mark>
+                        <div>
+                            <span data-percent="48"></span>
+                        </div>
+                    </div>
+                    <div class="abilityGaugeArea">
+                        <h4>추천등급</h4>
+                        <mark>C+</mark>
+                        <div>
+                            <span data-percent="20"></span>
+                        </div>
+                    </div>
+
+                    <div class="videoBtnArea">
+                        <button>자기소개동영상</button>
+                        <button>JCG 지원 동기 동영상</button>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <h4>직무관련 자격증</h4>
+                        <div>
+                            <h5>어학자격증</h5>
+                            <ul>
+                                <li>
+                                    <p>토익<span>875점</span></p>
+                                    <button>영어 말하기 동영상</button>
+                                </li>
+                                <li>
+                                    <p>HSK<span>5급</span></p>
+                                    <button>중국어 말하기 동영상</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>학력 정보</h4>
+                        <div>
+                            <dl>
+                                <dt>
+                                    학사
+                                </dt>
+                                <dd>
+                                    OO대학교 경영학과 
+                                </dd>
+                                <dd class="term">
+                                    07.03~13.02
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    석사
+                                </dt>
+                                <dd>
+                                    OO대학교 대학원
+                                </dd>
+                                <dd>
+                                    산업심리학과
+                                </dd>
+                                <dd class="term">
+                                    13.03~15.08
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    박사
+                                </dt>
+                                <dd>
+                                    OO대학교 대학원 
+                                </dd>
+                                <dd>
+                                    경영학과
+                                </dd>
+                                <dd class="term">
+                                    15.09~
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>JCG 인재상</h4>
+                        <div>
+                            <div class="graphArea">
+                                <img src="image/progressAnnouncement/graphImg01.png" alt="">
+                            </div>
+                            <div class="radioArea">
+                                <input type="radio" name="radio1" checked>
+                                <label for="">지원자</label>
+                                <input type="radio" name="radio1">
+                                <label for="">지원자평균</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>직무 적합도_HW</h4>
+                        <small>프로파일 적합도(일치도)<mark>-68.54%</mark></small>
+                        <div>
+                            <div class="graphArea">
+                                <img src="image/progressAnnouncement/graphImg02.png" alt="">
+                            </div>
+                            <div class="radioArea">
+                                <input type="radio" name="radio2" checked>
+                                <label for="">지원자</label>
+                                <input type="radio" name="radio2">
+                                <label for="">지원자평균</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>조직 적합성</h4>
+                        <small>프로파일 적합도(일치도)<mark>-72.18%</mark></small>
+                        <div>
+                            <div class="graphArea">
+                                <img src="image/progressAnnouncement/graphImg03.png" alt="">
+                            </div>
+                            <div class="radioArea">
+                                <input type="radio" name="radio3" checked>
+                                <label for="">지원자</label>
+                                <input type="radio" name="radio3">
+                                <label for="">지원자평균</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>업무 Skill 역량</h4>
+                        <div>
+                            <div class="graphArea">
+                                <img src="image/progressAnnouncement/graphImg04.png" alt="">
+                            </div>
+                            <div class="radioArea">
+                                <input type="radio" name="radio4" checked>
+                                <label for="">지원자</label>
+                                <input type="radio" name="radio4">
+                                <label for="">지원자평균</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+       </div>
+   </section>
+   
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">보도기사</a>
+                </li>
+                <li>
+                    <a href="#">찾아오시는길</a>
+                </li>
+                <li>
+                    <a href="#">회원약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">이메일무단수집거부</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="subAddressArea">
+            <h1><img src="image/main/f_LOGO.png" alt="LOGO"></h1>
+            <div>
+                <h2>
+                    (주)INSA
+                </h2>
+                <address>
+                    <p>서울특별시 용산구 한강대로 69, 102동 2025호<span>(한강로2가,용산푸르지오써밋)</span></p>
+                    <dl>
+                        <dt>대표</dt>
+                        <dd>정영주, 정진우</dd>
+                        <dt>사업자등록</dt>
+                        <dd>000-00-0000</dd>
+                    </dl>
+                    <dl>
+                        <dt>직업정보제공사업</dt>
+                        <dd>서울 용산 제 2020-0호</dd>
+                        <dt>통신판매업</dt>
+                        <dd>제 0000호</dd>
+                    </dl>
+                </address>
+            </div>
+            <div>
+                <h2>INSA 고객센터</h2>
+                <address>
+                    <p>080-0000-0000 <span>(평일 09:00~19:00, 주말·공휴일 휴무)</span></p>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>help@insahr.co.kr</dd>
+                    </dl>
+                    <dl>
+                        <dt>Fax</dt>
+                        <dd>02-6954-0000(대표)</dd>
+                    </dl>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <div class="subCopyrightArea">
+        <div>
+            <p>Copyright (c) INSA. All rights reserved.</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bold"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

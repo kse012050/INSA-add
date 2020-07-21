@@ -138,6 +138,8 @@ footer .subAddressArea div address dl dt:not(:first-of-type){margin-left: 2.214e
 }
 
 @media screen and (max-width:639px){
+    .subContentsWidth{width: calc(100% - 6.25vw);}
+
     .SH_topArea div h1{width: 10.9375vw; margin-right: 0}
     .SH_topArea div h1 p{display: none;}
     .SH_topArea div{padding: 2.8125vw 0;}

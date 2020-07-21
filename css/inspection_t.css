@@ -1,12 +1,12 @@
-@media screen and (min-width:1291px){
+@media screen and (min-width: 641px){
 /* INSA 검사 */
-.inspectionTitle{padding: 100px 0 75px;}
+.inspectionTitle{padding: 100px 0 60px;}
 /* INSA 검사 - 진행*/
 .inspectionProgress{display: flex; margin-bottom: 40px;}
 .inspectionProgress li{flex: 1; border-bottom: 2px solid rgba(0,0,0,0.1);}
 .inspectionProgress li > *{color: #939393;}
-.inspectionProgress li small{display: block; font-size: 14px; font-weight: 900; margin-bottom: 12px}
-.inspectionProgress li h3{font-size: 28px; font-weight: 300; margin-bottom: 14px;}
+.inspectionProgress li small{display: block; font-size: 20px; line-height: 1; font-weight: 900; margin-bottom: 15px}
+.inspectionProgress li h3{font-size: 32px; font-weight: 700; line-height: 40px; margin-bottom: 30px;}
 .inspectionProgress li.active{border-color: #006aed;}
 .inspectionProgress li.active > *{color: #006aed;}
 
@@ -16,7 +16,7 @@
 .inspectionArea > ol{width: 300%; display: flex; position: relative; left: 0;}
 .inspectionArea > ol::after{content: ''; display: block; visibility: hidden; clear: both;}
 .inspectionArea > ol > li{float: left; width: 100%;}
-.inspectionArea small{font-size: 16px; font-weight: 300; color: rgba(0,0,0,0.45); }
+.inspectionArea small{font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.45); }
 .inspectionArea small::before{content: ''; display: inline-block; width: 5px; height: 5px; background: url(../image/inspection/bullet.png) no-repeat center center; background-size: contain; margin-right: 20px;}
 .I_buttonArea{position: absolute; width: 100%; top: 325px; left: 0;}
 .I_buttonArea > div{width: 100%; max-width: 1600px; margin: 0 auto; position: relative;}
@@ -26,14 +26,14 @@
 .I_buttonArea > div button.rightBtn{right: 0; background: url(../image/inspection/rightBtn.png) no-repeat center center;}
 /* INSA 검사 - step 윗부분 */
 .I_topArea{background-color: #f2faff;}
-.I_topArea > div{padding: 55px 0 40px; text-align: center;}
-.I_topArea > div h4{font-size: 24px; font-weight: 700; }
-.I_topArea > div p{font-size: 18px; font-weight: 300; }
-.I_topArea > div ul, .I_topArea > div ol{display: flex; justify-content: center; margin-bottom: 80px;}
-.I_topArea > div ul:not([class]) li,.I_topArea > div ol:not([class]) li{width: 23.125%; height: 420px; text-indent: -9999px; box-sizing: border-box; cursor: pointer;
-    background-repeat: no-repeat; background-position: center; background-size: cover; border-radius: 20px;
+.I_topArea > div{padding: 60px 0 40px; text-align: center;}
+.I_topArea > div h4{font-size: 28px; font-weight: 700; }
+.I_topArea > div p{font-size: 24px; font-weight: 300; line-height: 34px; }
+.I_topArea > div ul:not([class]), .I_topArea > div ol:not([class]){display: flex; justify-content: center; flex-wrap: wrap; width: 600px; margin: 0 auto; margin-bottom: 30px; }
+.I_topArea > div ul:not([class]) li,.I_topArea > div ol:not([class]) li{width: calc(50% - 15px); max-width: 285px; height: 420px; text-indent: -9999px; box-sizing: border-box; cursor: pointer;
+    background-repeat: no-repeat; background-position: center; background-size: contain; border-radius: 20px; margin-bottom: 30px;
 }
-.I_topArea > div ul:not([class]) li:not(:last-child),.I_topArea > div ol:not([class]) li:not(:last-child){margin-right: 2.5%;}
+.I_topArea > div ul:not([class]) li:not(:nth-child(2n)),.I_topArea > div ol:not([class]) li:not(:nth-child(2n)){margin-right: 30px;}
 /* .I_topArea > div ul:not([class]) li img{width: 100%;} */
 /* INSA 검사 - step1*/
 .I_topArea.step01Area > div h4{ margin-bottom: 20px;}
@@ -45,18 +45,21 @@
 /* INSA 검사 - step2*/
 .I_topArea.step02Area > div h4{ margin-bottom: 60px;}
 /* INSA 검사 - step 아래부분 */
-.I_bottomArea{padding: 155px 0 140px;}
+.I_bottomArea{padding: 180px 0 140px;}
 .I_bottomArea > div{margin-bottom: 20px;}
+.I_bottomArea > div img{width: 100%;}
 .I_bottomArea small{display: flex; justify-content: flex-start; align-items: center;}
 .I_bottomArea > div{position: relative;}
-.I_bottomArea > div h4{position: absolute; left: 0; top: -75px; font-size: 16px; font-weight: 700; line-height: 45px; color: #939393; padding: 0 30px; border: 2px solid #006aed; border-radius: 50px;}
-.I_bottomArea > div h4 span{font-size: 20px; font-weight: 700; color: #006aed; margin-right: 20px;}
+.I_bottomArea > div h4{position: absolute; left: 0; top: -100px; font-size: 24px; font-weight: 700; line-height: 65px; color: #939393; padding: 0 30px 0 40px; border: 2px solid #006aed; border-radius: 50px;}
+.I_bottomArea > div h4 span{font-size: 28px; font-weight: 700; color: #006aed; margin-right: 20px;}
 .I_bottomArea > div h4::before{content: ''; position: absolute; bottom: -20px; left: 40px; border-width: 19px 15px 0; border-style: solid; border-color: #006aed transparent; display: block; width: 0;}
 .I_bottomArea > div h4::after{content: ''; position: absolute; bottom: -15px; left: 41px; border-width: 15px 14px 0; border-style: solid; border-color: white transparent; display: block; width: 0;}
 /* INSA 검사 - step3*/
-.I_topArea.step03Area > div > div h4{line-height: 105px; font-size: 70px; font-weight: 700; color: white; background-color: black; text-align: center;}
+.I_topArea.step03Area > div > div h4{line-height: 50px; font-size: 30px; font-weight: 700; color: white; background-color: black; text-align: center;}
 .I_topArea.step03Area > div > div ul.step03ProblemArea::after{content: ''; display: block; visibility: hidden; clear: both;}
-.I_topArea.step03Area > div > div ul.step03ProblemArea li{width: 50%; display: flex; justify-content: center; align-items: center; padding:150px 0 110px;}
+.I_topArea.step03Area > div > div ul.step03ProblemArea{margin-bottom: 60px;}
+.I_topArea.step03Area > div > div ul.step03ProblemArea li{float: left; width: 50%; display: flex; justify-content: center; align-items: center; padding:65px 40px; box-sizing: border-box;}
+.I_topArea.step03Area > div > div ul.step03ProblemArea li img{width: 100%;}
 .I_topArea.step03Area > div > div ul.step03ProblemArea li:nth-child(1){background-color: #5fce7c;}
 .I_topArea.step03Area > div > div ul.step03ProblemArea li:nth-child(2){background-color: #f6c843;}
 }
