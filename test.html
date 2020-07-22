@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            touchEnabled : (navigator.maxTouchPoints > 0)
+        });
+
+        $('a').click(function(){
+            alert();
+        })
+    });
+    </script>
     <style>
     </style>
 </head>
 <body>
-    <figure>
-        <div>
-            <img src="" alt="">
-            <button>크게</button>
-            <button>작게</button>
-        </div>
-        <figcaption>
-            <ul>
-                <li>
-                    <h3>test<button>test</button></h3>
-                </li>
-            </ul>
-        </figcaption>
-    </figure>
+    <div class="slider">
+        <div><a href="enterprise_main.html">I am a slide.</a></div>
+        <div>I am another slide.</div>
+      </div>
 </body>
 </html>
