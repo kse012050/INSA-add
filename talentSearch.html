@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/import.css">
     <link rel="stylesheet" href="css/page.css">
+    <script>
+        $(document).ready(function(){
+            $('.dutyClick li').click(function(){
+                $('.SearchArea .detailsPopup').css({'top':$(this).position().top + $(this).height() + 10, 'display' : 'block'});
+                $('.SearchArea .detailsPopup > span').css({'left':$(this).position().left + ($(this).width() / 2 ) - 7});
+            });
+        });
+    </script>
 </head>
 <body>
     <header class="subHeader">
@@ -113,7 +121,7 @@
                         <label for="">직군 8</label>
                     </li>
                 </ol>
-                <ol>
+                <ol class="dutyClick">
                     <li>
                         <input type="radio" name="radio3">
                         <label for="">직무 1</label>
@@ -203,6 +211,43 @@
                         <label for="">직무 22</label>
                     </li>
                 </ol>
+            </div>
+            <div class="detailsPopup">
+                <span></span>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        <label for="">세부직무 1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="">세부직무 2</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="">세부직무 3</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="">세부직무 4</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="">세부직무 5</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="">세부직무 6</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="">세부직무 7</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label for="">세부직무 8</label>
+                    </li>
+                </ul>
             </div>
         </fieldset>
         <div class="addBtn">
