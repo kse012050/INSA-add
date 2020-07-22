@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서 basic- INSA</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/page.css">
+    <!-- <link rel="stylesheet" href="css/pc.css"> -->
+    <!-- <link rel="stylesheet" href="css/tablet.css"> -->
+    <!-- <link rel="stylesheet" href="css/mobile.css"> -->
+</head>
+<body>
+    <header class="subHeader">
+        <div class="SH_topArea">
+            <div class="subWidth">
+                <h1>
+                    <a href="#">
+                        <img src="image/sub/sub_logo.png" alt="logo">
+                    </a>
+                    <span>
+                        글자 뒤에 가려진 사람을 보다 INSA
+                    </span>
+                </h1>
+                <div class="headerSearch">
+                    <input type="search">
+                    <input type="button" value="search">
+                </div>
+                <div class="mobileMenu">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="subWidth SH_bottomArea">
+            <button>채용공고 검색</button>
+            <nav>
+                <ul>
+                    <li><a href="#">INSA 소개</a></li>
+                    <li><a href="#">이력서</a></li>
+                    <li><a href="#">INSA 검사</a></li>
+                    <li><a href="#">검증 툴</a></li>
+                    <li><a href="#">기업 추천</a></li>
+                </ul>
+                <div>
+                    <a href="#">마이페이지</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="subContentsWidth myResumeTitleArea">
+        <small>김인사</small>
+        <h2 class="subTitle" >Thank you for your <span>being.</span></h2>
+    </div>
+    <div class="subMenu">
+        <nav>
+            <ul class="subContentsWidth">
+                <li><a href="#">지원현황</a></li>
+                <li><a href="#" class="active">나의 이력서</a></li>
+                <li><a href="#">자기소개 동영상</a></li>
+                <li><a href="#">INSA 검사</a></li>
+                <li><a href="#">외국어/OS 검증</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="myResumeArea">
+        <div class="subContentsWidth">
+            <div class="MR_btnArea">
+                <button class="rearrangement">재배열</button>
+                <select name="" id="">
+                    <option value="">전체 항목별 컬러 변경</option>
+                </select>
+            </div>
+            <figure>
+                <div>
+                    <img src="image/myResume/personImg.png" alt="">
+                    <button class="big">크게</button>
+                    <button class="small">작게</button>
+                </div>
+                <figcaption>
+                    <ul>
+                        <li class="MR_basicArea">
+                            <h4>기본정보<button>수정</button></h4>
+                            <ul>
+                                <li class="age" data-age="29"><button class="move">이동</button><div>1990.00.00</div></li>
+                                <li class="phoneNumber"><button class="move">이동</button><div>010-0000-0000</div></li>
+                                <li class="address"><button class="move">이동</button><div>서울시 강남구</div></li>
+                                <li class="Email"><button class="move">이동</button><div>kiminsa@sample.co.kr</div></li>
+                                <li class="sns">
+                                    <button class="move">
+                                        이동
+                                    </button>
+                                    <div>
+                                        <a href="#" class="instagram">인스타</a>
+                                        <a href="#" class="twitter">트위터</a>
+                                        <a href="#" class="facebook">페이스북</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="MR_abilityArea">
+                            <h4>대표역량<button class="search">검색</button></h4>
+                            <ul class="MRA_graphArea">
+                                <li>
+                                    <div>
+                                        <img src="image/myResume/graphImg.png" alt="">
+                                    </div>
+                                    <p>역량1</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="image/myResume/graphImg.png" alt="">
+                                    </div>
+                                    <p>역량1</p>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="image/myResume/graphImg.png" alt="">
+                                    </div>
+                                    <p>역량1</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="MR_certificateArea">
+                            <h4>자격증<button>수정</button></h4>
+                            <ul>
+                                <li>
+                                    <p data-level="2">컴퓨터활용능력</p>
+                                    <button>삭제</button>
+                                </li>
+                                <li>
+                                    <p>컴퓨터활용능력 2급</p>
+                                    <button>삭제</button>
+                                </li>
+                                <li>
+                                    <p>00 기능사</p>
+                                    <button>삭제</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="MR_OSArea">
+                            <h4>OS<button>수정</button></h4>
+                            <ul>
+                                <li class="word">
+                                    <p>00</p>
+                                    <button class="search">검색</button>
+                                </li>
+                                <li class="excel">
+                                    <p>00</p>
+                                    <button class="search">검색</button>
+                                </li>
+                                <li class="ppt">
+                                    <p>00</p>
+                                    <button class="search">검색</button>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="image/myResume/wordIcon.png" alt="">
+                                        <p>종합점수 00점</p>
+                                    </div>
+                                    <button class="search">검색</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="MR_languageArea">
+                            <h4>외국어<button>수정</button></h4>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>경력<button>수정</button></h4>
+                            <ul class="careerArea">
+                                <li>
+                                    <div class="termArea">
+                                        <div class="black">
+                                            <p>2017.04</p>
+                                            <p>현재</p>
+                                            <p class="totalArea">
+                                                <span class="yearData">0</span>
+                                                <span class="monthData">0</span>
+                                            </p>
+                                        </div>
+                                        <dl>
+                                            <dt>연봉</dt>
+                                            <dd data-unit="만원">4000</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="detailArea">
+                                        <div>
+                                            <div>
+                                                <h5 class="black">해외영업 영업부</h5>
+                                                <p data-detail="팀장">대리</p>
+                                                <p data-detail="서울 00구">회사명</p>
+                                            </div>
+                                            <ul>
+                                                <li>직무 서술 1</li>
+                                                <li>직무 서술 2</li>
+                                                <li>직무 서술 3</li>
+                                            </ul>
+                                            <dl>
+                                                <dt>퇴사 사유</dt>
+                                                <dd>퇴사사유 입력 내용입니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div>
+                                            <mark>진취적 리더</mark>
+                                            <button>삭제</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="termArea">
+                                        <div class="black">
+                                            <p>2015.02</p>
+                                            <p>2017.01</p>
+                                            <p class="totalArea">0년 0개월</p>
+                                        </div>
+                                        <dl>
+                                            <dt>연봉</dt>
+                                            <dd>4000만원</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="detailArea">
+                                        <div>
+                                            <div>
+                                                <h5 class="black">해외영업 영업부</h5>
+                                                <p>대리(팀장)</p>
+                                                <p>회사명(서울 00구)</p>
+                                            </div>
+                                            </dl>
+                                            <ul>
+                                                <li>직무 서술 1</li>
+                                                <li>직무 서술 2</li>
+                                                <li>직무 서술 3</li>
+                                            </ul>
+                                            <dl>
+                                                <dt>퇴사 사유</dt>
+                                                <dd>퇴사사유 입력 내용입니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div>
+                                            <mark>진취적 리더</mark>
+                                            <button>삭제</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button>경력 추가</button>
+                        </li>
+                        <li>
+                            <h4>학력<button>수정</button></h4>
+                            <ul class="careerArea">
+                                <li>
+                                    <div class="termArea">
+                                        <div class="black">
+                                            <p>0000</p>
+                                            <p>0000</p>
+                                        </div>
+                                    </div>
+                                    <div class="detailArea">
+                                        <div>
+                                            <div>
+                                                <h5 class="black">전공명</h5>
+                                                <p data-detail2="졸업">00대학원</p>
+                                                <p data-detail2="4.5">수료학점</p>
+                                                <p>4.5</p>
+                                            </div>
+                                            <ul>
+                                                <li>전공 설명 서술</li>
+                                                <li>전공 관련 활동 서슬</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <mark>진취적 리더</mark>
+                                            <button>삭제</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="termArea">
+                                        <div class="black">
+                                            <p>0000</p>
+                                            <p>0000</p>
+                                        </div>
+                                    </div>
+                                    <div class="detailArea">
+                                        <div>
+                                            <div>
+                                                <h5 class="black">전공명</h5>
+                                                <p>00대학원</p>
+                                                <p>수료학점</p>
+                                                <p>4.5</p>
+                                            </div>
+                                            <ul>
+                                                <li>전공 설명 서술</li>
+                                                <li>전공 관련 활동 서슬</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <mark>진취적 리더</mark>
+                                            <button>삭제</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button>학력 추가</button>
+                        </li>
+                        <li>
+                            <h4>대외활동<button>수정</button></h4>
+                            <ul class="careerArea">
+                                <li>
+                                    <div class="termArea">
+                                        <div class="black">
+                                            <p>0000</p>
+                                            <p>0000</p>
+                                        </div>
+                                    </div>
+                                    <div class="detailArea">
+                                        <div>
+                                            <div>
+                                                <h5 class="black">000경진대회 대상 </h5>
+                                                <p>팀명</p>
+                                                <p>팀원</p>
+                                            </div>
+                                            <ul>
+                                                <li>전공 설명 서술</li>
+                                                <li>전공 관련 활동 서슬</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <mark>진취적 리더</mark>
+                                            <button>삭제</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button>대외활동 추가</button>
+                        </li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">보도기사</a>
+                </li>
+                <li>
+                    <a href="#">찾아오시는길</a>
+                </li>
+                <li>
+                    <a href="#">회원약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">이메일무단수집거부</a>
+                </li>
+                <li>
+                    <a href="#">제휴문의</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="subAddressArea">
+            <h1><img src="image/main/f_LOGO.png" alt="LOGO"></h1>
+            <div>
+                <h2>
+                    (주)INSA
+                </h2>
+                <address>
+                    <p>서울특별시 용산구 한강대로 69, 102동 2025호<span>(한강로2가,용산푸르지오써밋)</span></p>
+                    <dl>
+                        <dt>대표</dt>
+                        <dd>정영주, 정진우</dd>
+                        <dt>사업자등록</dt>
+                        <dd>000-00-0000</dd>
+                    </dl>
+                    <dl>
+                        <dt>직업정보제공사업</dt>
+                        <dd>서울 용산 제 2020-0호</dd>
+                        <dt>통신판매업</dt>
+                        <dd>제 0000호</dd>
+                    </dl>
+                </address>
+            </div>
+            <div>
+                <h2>INSA 고객센터</h2>
+                <address>
+                    <p>080-0000-0000 <span>(평일 09:00~19:00, 주말·공휴일 휴무)</span></p>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>help@insahr.co.kr</dd>
+                    </dl>
+                    <dl>
+                        <dt>Fax</dt>
+                        <dd>02-6954-0000(대표)</dd>
+                    </dl>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <div class="subCopyrightArea">
+        <div>
+            <p>Copyright (c) INSA. All rights reserved.</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bold"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

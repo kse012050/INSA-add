@@ -1,103 +1,106 @@
 @media screen and (max-width: 640px){
-    .subMenu2 nav{border-width: 1px 0 0px 0; position: relative;}  
-    .subMenu2 nav::after{content: ''; display: block; width: 100%; height: 1px; background-color: #d9e6ee; position: absolute; bottom: 0; left: 0; z-index: 0;}
-    .subMenu2 nav ul{display: flex; width: 100%;}
-    .subMenu2 nav ul li{flex: 1; text-align: center;}
-    .subMenu2 nav ul li a{font-size: 3.125vw; font-weight: 300; color: #939393; display: block; padding: 3.59375vw 0;}
-    .subMenu2 nav ul li a.active {font-weight: 700; color: #006aed; background-color: #f2faff; border-width: 0 1px 0 1px; border-style: solid; border-color: #d9e6ee; position: relative; z-index: 1;}
-    
-    /* 지원자 리포트 타이틀 */
-    .applicantReportTitle{padding-top: 15.625vw; margin-bottom: 4.6875vw;}
-    /* 지원자 리포트 서브 타이틀 */
-    .AR_titleArea{position: relative; margin-bottom: 7.8125vw;}
-    .AR_titleArea dl{display: flex;  font-size: 3.4375vw; font-weight: 400; letter-spacing: -1px;}
-    .AR_titleArea dl::before{content: ''; width: 0.9375vw;  margin-right: 3.125vw; background: url(../image/progressAnnouncement/bullet.png) no-repeat center center/ contain;}
-    .AR_titleArea dl dd:last-of-type::before{content: '~';}
-    .AR_titleArea select{ width: 41.40625vw; height: 10.9375vw; border: 1px solid #dfdfdf; font-size: 3.75vw; font-weight: 300; color: #5f5f5f; padding: 0 3.90625vw; position: absolute; right: 0; bottom: 0;}
+/* 나의 이력서 */
+/* 나의 이력서 - 타이틀 */
+.myResumeTitleArea{padding: 7.8125vw 0;}
+.myResumeTitleArea small{display: inline-block; font-size: 3.75vw; font-weight: 300; padding-bottom: 0.9375vw; margin-bottom: 3.125vw; position: relative;}
+.myResumeTitleArea small::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
+/* 나의 이력서 - 컨텐츠*/
+.myResumeArea{background-color: #f2faff; padding: 9.375vw 0 15.625vw;}
+/* 나의 이력서 - 컨텐츠박스 - 상단 버튼*/
+.MR_btnArea{display: flex; justify-content: center; margin-bottom: 9.375vw;}
+.MR_btnArea button{width: 32.8125vw; height: 10.9375vw; font-size:3.75vw; font-weight: 300; color: white; background-color: #343434; border: none; padding:0 3.90625vw 0;   display: flex; justify-content: space-between; align-items: center; }
+.MR_btnArea button.rearrangement::before{content: ''; width: 3.125vw; height: 3.125vw; background: url(../image/myResume/rearrangementIcon.png) no-repeat center center/contain;}
+.MR_btnArea select{width: 47.65625vw; height: 10.9375vw; font-size: 3.75vw; font-weight: 300; color: #5f5f5f; padding: 0 3.90625vw; border-color: #dfdfdf;}
+.MR_btnArea *:not(:last-child){margin-right: 3.125vw;}
+/* 나의 이력서 - 컨텐츠 박스 */
+.myResumeArea figure{}
+/* 나의 이력서 - 컨텐츠 박스 - 왼쪽 이미지*/
+.myResumeArea figure > div{max-width: 31.25vw; width: 100%; margin: 0 auto; margin-bottom: 9.375vw;}
+.myResumeArea figure > div img{width: 100%; margin-bottom: 4.6875vw; }
+.myResumeArea figure > div button{width: 7.8125vw; height: 7.8125vw; text-indent: -9999px; background-color: transparent; background-repeat: no-repeat; background-position: center; background-size: contain; border: none;}
+.myResumeArea figure > div button.big{background-image: url(../image/myResume/smallIcon.png);}
+.myResumeArea figure > div button.small{background-image: url(../image/myResume/smallIcon.png);}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 */
+.myResumeArea figure figcaption{}
+.myResumeArea figure figcaption > ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.myResumeArea figure figcaption > ul > li{width: 100%; font-size: 3.4375vw; font-weight: 300; color: #5f5f5f; }
+.myResumeArea figure figcaption > ul > li:not(:last-child){margin-bottom: 9.375vw;}
+.myResumeArea figure figcaption > ul > li h4{width: 100%; height: 12.5vw; font-size: 4.375vw; font-weight: 500; padding: 0 4.6875vw; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; background-color: #dfedf6; border: 1px solid #b5d6fa; margin-bottom: 1.5625vw;}
+.myResumeArea figure figcaption > ul > li h4 button{width: 5.46875vw; height: 5.46875vw; background-repeat: no-repeat; background-position: center center; background-size: 100%; background-color: transparent; border: none;  text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li h4 button:not([class]){background-image: url(../image/myResume/addIcon.png);}
+.myResumeArea figure figcaption > ul > li h4 button.search{background-image: url(../image/myResume/searchIcon.png);}
+.myResumeArea figure figcaption > ul > li .black{color: black; font-weight: 500;}
+.myResumeArea figure figcaption > ul > li > ul > li button{width: 5.46875vw; height: 5.46875vw; background-color: transparent; border: none; background-repeat: no-repeat; background-position: center; background-size: 100%; text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li > ul > li button:not([class]){background-image: url(../image/myResume/delete.png);}
+.myResumeArea figure figcaption > ul > li > ul > li button.search{background-image: url(../image/myResume/g_searchIcon.png);}
+.myResumeArea figure figcaption > ul > li > ul:not([class]) > li{width: 100%; height: 12.5vw;  border: 1px solid #b5d6fa; background-color: white; display: flex; justify-content: space-between; align-items: center; padding: 0 3.90625vw 0 4.6875vw; box-sizing: border-box; }
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 기본정보*/
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li{justify-content: flex-start;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li button.move{background-image: url(../image/myResume/moveIcon.png); margin-right: 4.6875vw;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li[class] div{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li[class] div::before{content: ''; display: inline-block; width: 5.46875vw; height: 5.46875vw; background-repeat: no-repeat; background-position: center; background-size: 100%; margin-right: 7.03125vw;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.age div::before{background-image: url(../image/myResume/ageIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.phoneNumber div::before{background-image: url(../image/myResume/phoneNumberIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.address div::before{background-image: url(../image/myResume/addressIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.Email div::before{background-image: url(../image/myResume/EmailIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns div::before{background-image: url(../image/myResume/snsIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns{justify-content: flex-start;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a{display: inline-block; width: 5.46875vw; height: 5.46875vw; background-repeat: no-repeat; background-position: center; background-size: 100%; text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a:not(:last-child){margin-right: 3.90625vw;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.instagram{background-image: url(../image/myResume/instagramIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.twitter{background-image: url(../image/myResume/twitterIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.facebook{background-image: url(../image/myResume/facebookIcon.png); width: 2.1875vw;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 대표역량 */
+.myResumeArea figure figcaption > ul > li.MR_abilityArea{display: flex; flex-direction: column; }
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea{flex: 1; display: flex; justify-content: space-around; align-items: center; background-color: white; border: 1px solid #b5d6fa; padding: 6.25vw 0 7.8125vw;}
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea li > div{margin-bottom: 1.5625vw;}
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea li > p{text-align: center; font-size: 3.4375vw; font-weight: 300; color: #5f5f5f;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 자격증 */
+.myResumeArea figure figcaption > ul > li.MR_certificateArea ul li p[data-level]::after{content:' ' attr(data-level) '급';}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - OS */
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p::before{content: '종합점수'; display: inline-block; width: 21.875vw; height: 4.0625vw; background-repeat: no-repeat; background-position: center left; background-size: contain; display: flex; align-items: center; justify-content: flex-end; margin-right: 0.46875vw;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.word p::before{background-image:url(../image/myResume/wordIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.excel p::before{background-image:url(../image/myResume/excelIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.ppt p::before{background-image:url(../image/myResume/PPTIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p::after{content: '점';}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li div{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li div img{margin-right: 4.6875vw;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 외국어 */
 
-    /* 지원자 리포트 컨텐츠 */
-    .applicantReportArea{background-color: #f2faff;}
-    .applicantReportArea > div{padding: 11.71875vw 0 0;}
-    /* 지원자 리포트 컨텐츠 - 인물 메뉴*/
-    .AR_tabMenuArea{}
-    .AR_tabMenuArea select{width: 32%; height: 10.9375vw; font-size: 3.75vw; font-weight: 300; color: #5f5f5f; border-color:#dfdfdf;  padding: 0 3.90625vw; margin-bottom: 6.4vw;}
-    .AR_tabMenuArea ul{margin-bottom: 7.03125vw; display: flex; overflow: hidden;}
-    .AR_tabMenuArea ul li{min-width: 33.33%; padding: 4.6875vw 0 6.25vw; border-right: 1px solid #d9e6ee;}
-    .AR_tabMenuArea ul li.active{background-color: #006aed; border-radius: 10px; box-shadow: 0 3px 10px #006aed; border-bottom: none;}
-    .AR_tabMenuArea ul li figure{text-align: center;}
-    .AR_tabMenuArea ul li figure div{display: inline-block; position: relative; margin-bottom: 7.8125vw;}
-    .AR_tabMenuArea ul li.check figure div::after{content: ''; display: inline-block; width: 5.9375vw; height: 5.9375vw; background:url(../image/applicantReport/check.png) no-repeat center center / contain; position: absolute; right: -2.8125vw; top: 0}
-    .AR_tabMenuArea ul li figure div img{width: 17.1875vw; height: 17.1875vw; border-radius: 50%;}
-    .AR_tabMenuArea ul li figcaption{}
-    .AR_tabMenuArea ul li figcaption dl{color: #5a6e88; font-weight: 500; display: flex; flex-wrap: wrap; justify-content: center;}
-    .AR_tabMenuArea ul li figcaption dl dt{font-size: 3.75vw; width: 100%; text-align: center; margin-bottom: 2.34375vw;}
-    .AR_tabMenuArea ul li figcaption dl dd{font-size: 3.125vw;}
-    .AR_tabMenuArea ul li figcaption dl dd:not(:first-of-type)::before{content: '/';}
-    .AR_tabMenuArea ul li figcaption dl dd.age::after{content: '세';}
-    .AR_tabMenuArea ul li.active figcaption dl{color: white;}
-    .AR_tabMenuArea ol{display: flex; justify-content: space-between; align-items: center; width: 40%; min-width: 39.0625vw;  margin: 0 auto; margin-bottom: 14.84375vw;}
-    .AR_tabMenuArea ol li{font-size: 4.0625vw; font-weight: 500; flex: 1;}
-    .AR_tabMenuArea ol li a{display: block; text-align: center; color: #b1c0c9;}
-    .AR_tabMenuArea ol li:first-child,.AR_tabMenuArea ol li:last-child{font-size: 5.46875vw;}
-    .AR_tabMenuArea ol li:hover a{color: #006aed;}
-    .AR_tabMenuArea ol li a.active{color: #006aed;}
-    /* 지원자 리포트 컨텐츠 - 종합결과 , 스펙 분석 공통 */
-    .applicantReportArea section h4{font-size: 5.625vw; font-weight: 500; margin-bottom: 4.6875vw;}
-    .applicantReportArea mark{background-color: transparent; color: #006aed;}
-    .applicantReportArea h5{font-size: 4.0625vw; font-weight: 400;}
-    .AR_resultArea > ul,.AR_specArea > div{background-color: #ffffff;}
-    /* 지원자 리포트 컨텐츠 - 종합결과 */
-    .AR_resultArea{position: relative; margin-bottom: 15.625vw;}
-    .AR_resultArea > dl{position: absolute; right: 0; top: 0; display: flex; align-items: center;}
-    .AR_resultArea > dl > *{display: flex; align-items: center;}
-    .AR_resultArea > dl dt{font-size: 3.4375vw; font-weight: 700;}
-    .AR_resultArea > dl dt::before{content: ''; display: inline-block; width: 4.84375vw; height: 4.84375vw; background: url(../image/applicantReport/characterIcon.png) no-repeat center center / contain; margin-right: 2.34375vw;}
-    .AR_resultArea > dl dd{font-size: 3.4375vw; font-weight: 300; padding-left: 3.90625vw; margin-left: 3.90625vw; border-left: 1px solid #a9afb2;}
-    .AR_resultArea > ul{padding: 7.8125vw 4.6875vw 9.375vw; display: flex; flex-wrap: wrap;}
-    .AR_resultArea > ul li{display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
-    .AR_resultArea > ul li:first-child{border-bottom: 1px solid rgba(0,0,0,0.1);}
-    .AR_resultArea > ul li:last-child{border-top: 1px solid rgba(0,0,0,0.1);}
-    .AR_resultArea > ul li h5{margin-bottom: 5.46875vw;}
-    /* 지원자 리포트 컨텐츠 - 종합결과 - 적극 추천*/
-    .AR_resultArea > ul li.ARR_recommendationArea{width: 100%; margin-bottom: 8.59375vw;}
-    .AR_resultArea > ul li.ARR_recommendationArea span{font-size: 28.125vw; font-weight: 900; color: #006aed; padding-bottom: 9.375vw;}
-    .AR_resultArea > ul li.ARR_recommendationArea strong{font-size: 3.75vw; font-weight: 700; color: #006aed; padding: 2.03125vw 3.28125vw 3.4375vw; background: url(../image/applicantReport/speechBubbleImg.png) no-repeat center center /contain; position: relative; top: -5px;}
-    /* 지원자 리포트 컨텐츠 - 종합결과 - AI분석 점수 */
-    .AR_resultArea > ul li.ARR_scoreArea{width: 50%;}
-    /* 지원자 리포트 컨텐츠 - 종합결과 - 적극 추천 */
-    .AR_resultArea > ul li.ARR_rankingArea{width: 50%;}
-    .AR_resultArea > ul li.ARR_rankingArea div{margin-bottom: 1.5625vw;}
-    .AR_resultArea > ul li.ARR_rankingArea small{font-size: 3.125vw; font-weight: 400; color: rgba(0,0,0,0.6);}
-    .AR_resultArea > ul li.ARR_rankingArea small::before{content: '(';}
-    .AR_resultArea > ul li.ARR_rankingArea small::after{content: ')';}
-    /* 지원자 리포트 컨텐츠 - 종합결과 - 적극 추천 */
-    .AR_resultArea > ul li.ARR_summaryArea{width: 100%; margin-top: 8.59375vw; padding-top: 8.59375vw;}
-    .AR_resultArea > ul li.ARR_summaryArea h5{align-self: flex-start;}
-    .AR_resultArea > ul li.ARR_summaryArea dl{ display: flex; justify-content: space-between; width: 100%; font-size: 3.4375vw; font-weight: 400;}
-    .AR_resultArea > ul li.ARR_summaryArea dl:not(:first-child){margin-bottom: 3.90625vw;}
-    .AR_resultArea > ul li.ARR_summaryArea dl dd::after{color: #006aed;}
-    .AR_resultArea > ul li.ARR_summaryArea dl dd[data-score]::after{content:'(' attr(data-score) '점)'; }
-    .AR_resultArea > ul li.ARR_summaryArea dl dd[data-percent]::after{content:'(' attr(data-percent) '%)';}
-    .AR_resultArea > ul li.ARR_summaryArea dl dd:not([data-score]):not([data-percent]){color: #006aed;}
-    /* 지원자 리포트 컨텐츠 - 스펙 분석*/
-    .AR_specArea{padding-bottom: 15.625vw;}
-    .AR_specArea > div{position: relative; padding: 15.625vw 4.6875vw 9.375vw;}
-    /* 지원자 리포트 컨텐츠 - 스펙 분석 - 그래프 */
-    .ARS_graphArea{}
-    .ARS_graphArea .radioArea{position: absolute; left: 6.25vw; top: 5.46875vw;}
-    .ARS_graphArea .radioArea{text-align: center;}
-    .ARS_graphArea .radioArea input[type="radio"]{display: none;}
-    .ARS_graphArea .radioArea label{font-size: 3.75vw; font-weight: 400; color: #8c8c8c; padding-left: 6.4vw; }
-    .ARS_graphArea .radioArea label:not(:last-child){margin-right: 2.34375vw;}
-    .ARS_graphArea .radioArea input[type="radio"] + label{background-image: url(../image/progressAnnouncement/radioBullet.png); background-repeat: no-repeat; background-position: center left;}
-    .ARS_graphArea .radioArea input[type="radio"]:checked + label{background-image: url(../image/progressAnnouncement/radioBulletCK.png); color: #006aed;}
-    .ARS_graphArea div{text-align: center; margin-bottom: 9.375vw;}
-    .ARS_graphArea div img{width: 100%;}
-    /* 지원자 리포트 컨텐츠 - 스펙 분석 - 상세스펙*/
-    .ARS_detailArea{display: flex; flex-direction: column; padding: 8.59375vw 0 0 0; box-sizing: border-box; border-top: 1px solid rgba(0,0,0,0.1);}
-    .ARS_detailArea h5{margin-bottom: 5.46875vw;}
-    .ARS_detailArea dl{display: flex; justify-content: space-between; font-size: 3.4375vw;}
-    .ARS_detailArea dl:not(:last-child){margin-bottom: 3.90625vw;}
+
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 경력, 학력, 대외활동 기간*/
+.careerArea > li{padding: 12.5vw 4.6875vw 4.6875vw 4.6875vw; background-color: white; display: flex;border: 1px solid #b5d6fa;  position: relative;}
+.careerArea > li .termArea{width: 24.21875vw;}
+.careerArea > li .termArea > div{display: flex; flex-wrap: wrap;}
+.careerArea > li .termArea > div p{line-height: 3.75vw;}
+.careerArea > li .termArea > div p:nth-of-type(1)::after{content: '~';}
+.careerArea > li .termArea > div p.totalArea{width: 100%;}
+.careerArea > li .termArea > div p.totalArea::before{content: '(';}
+.careerArea > li .termArea > div p.totalArea::after{content: ')';}
+.careerArea > li .termArea > div p.totalArea span.yearData::after{content: '년';}
+.careerArea > li .termArea > div p.totalArea span.monthData::after{content: '개월';}
+.careerArea > li .termArea > dl{display: flex; margin-top: 2.34375vw;}
+.careerArea > li .termArea > dl dt::after{content: ':';}
+.careerArea > li .termArea > dl dd[data-unit]::after{content: attr(data-unit);}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 경력, 학력, 대외활동 세부내용 */
+.careerArea > li .detailArea{flex: 1; display: flex; justify-content: space-between; border-left: 1px solid rgba(0, 0, 0, 0.1);}
+.careerArea > li .detailArea > div:first-of-type{padding-left: 4.6875vw;}
+.careerArea > li .detailArea > div:first-of-type div{display: flex; align-items: center; flex-wrap: wrap; margin-bottom: 5.46875vw;}
+.careerArea > li .detailArea > div:first-of-type div h5{width: 100%; margin-bottom: 1.5625vw; }
+.careerArea > li .detailArea > div:first-of-type div p[data-detail]::after{content:'(' attr(data-detail) ')';}
+.careerArea > li .detailArea > div:first-of-type div p[data-detail]::after{content:attr(data-detail);}
+.careerArea > li .detailArea > div:first-of-type div p:not(:first-of-type)::before{content: '/';}
+.careerArea > li .detailArea > div:first-of-type ul li:not(:last-child){margin-bottom: 1.25vw;}
+.careerArea > li .detailArea > div:first-of-type ul li::before{content: '-';}
+.careerArea > li .detailArea > div:first-of-type dl{display: flex; flex-wrap: wrap; margin-top: 6.25vw;}
+.careerArea > li .detailArea > div:first-of-type dl dt{width: 100%; margin-bottom: 1.5625vw;}
+.careerArea > li .detailArea > div:first-of-type dl dt::after{content: ':';}
+.careerArea > li .detailArea > div:last-of-type{display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; position: absolute; top: 4.6875vw; right: 3.90625vw;}
+.careerArea > li .detailArea > div:last-of-type mark{font-size: 4.375vw; font-weight: 700; color: #006aed; background-color: transparent; margin-bottom: 3.90625vw;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 -  추가 버튼*/
+.myResumeArea figure figcaption > ul > li > button{width: 100%; height: 12.5vw; font-size: 3.75vw; font-weight: 300; color: black; background-color: white; border: 1px solid #b5d6fa;}
+.myResumeArea figure figcaption > ul > li > button::after{content: ''; display: inline-block; width: 2.8125vw; height: 2.8125vw; background: url(../image/myResume/plusIcon.png) no-repeat center center/100%; margin-left: 2.34375vw;}
 }
 
 

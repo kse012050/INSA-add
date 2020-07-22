@@ -54,12 +54,118 @@
 .SSC_supportingCompanyArea > ul li figure figcaption dl dd{font-size: 14px; font-weight: 300;}
 .SSC_supportingCompanyArea > ul li figure figcaption small{font-size: 14px; font-weight: 300; color: rgba(0, 0, 0, 0.6);}
 
+/* 나의 이력서 */
+/* 나의 이력서 - 타이틀 */
+.myResumeTitleArea{padding: 60px 0;}
+.myResumeTitleArea small{display: inline-block; font-size: 22px; font-weight: 300; padding-bottom: 7px; margin-bottom: 15px; position: relative;}
+.myResumeTitleArea small::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
+/* 나의 이력서 - 컨텐츠*/
+.myResumeArea{background-color: #f2faff; padding: 30px 0 100px;}
+/* 나의 이력서 - 컨텐츠박스 - 상단 버튼*/
+.MR_btnArea{display: flex; justify-content: flex-end; margin-bottom: 45px;}
+.MR_btnArea button{width: 150px; height: 50px; font-size:16px; font-weight: 300; color: white; background-color: #343434; border: none; padding:0 25px 0 20px;   display: flex; justify-content: space-between; align-items: center; }
+.MR_btnArea button.rearrangement::before{content: ''; width: 20px; height: 20px; background: url(../image/myResume/rearrangementIcon.png) no-repeat center center/contain;}
+.MR_btnArea select{width: 220px; height: 50px; font-size: 16px; font-weight: 300; color: #5f5f5f; padding: 0 20px; border-color: #dfdfdf;}
+.MR_btnArea *:not(:last-child){margin-right: 10px;}
+/* 나의 이력서 - 컨텐츠 박스 */
+.myResumeArea figure{display: flex; justify-content: space-between;}
+/* 나의 이력서 - 컨텐츠 박스 - 왼쪽 이미지*/
+.myResumeArea figure > div{width: 170px;}
+.myResumeArea figure > div img{margin-bottom: 10px;}
+.myResumeArea figure > div button{width: 25px; height: 25px; text-indent: -9999px; background-color: transparent; background-repeat: no-repeat; background-position: center; border: none;}
+.myResumeArea figure > div button.big{background-image: url(../image/myResume/smallIcon.png);}
+.myResumeArea figure > div button.small{background-image: url(../image/myResume/smallIcon.png);}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 */
+.myResumeArea figure figcaption{width: 990px;}
+.myResumeArea figure figcaption > ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.myResumeArea figure figcaption > ul > li{font-size: 16px; font-weight: 300; color: #5f5f5f; }
+.myResumeArea figure figcaption > ul > li:nth-child(-n + 4){width: 475px;}
+.myResumeArea figure figcaption > ul > li:nth-child(n + 5){width: 100%;}
+.myResumeArea figure figcaption > ul > li:not(:last-child){margin-bottom: 40px;}
+.myResumeArea figure figcaption > ul > li h4{width: 100%; height: 50px; font-size: 18px; font-weight: 500; padding: 0 20px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; background-color: #dfedf6; border: 1px solid #b5d6fa; margin-bottom: 10px;}
+.myResumeArea figure figcaption > ul > li h4 button{width: 24px; height: 21px; background-repeat: no-repeat; background-position: center center; background-color: transparent; border: none;  text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li h4 button:not([class]){background-image: url(../image/myResume/addIcon.png);}
+.myResumeArea figure figcaption > ul > li h4 button.search{background-image: url(../image/myResume/searchIcon.png);}
+.myResumeArea figure figcaption > ul > li .black{color: black; font-weight: 500;}
+.myResumeArea figure figcaption > ul > li > ul > li button{width: 24px; height: 21px; background-color: transparent; border: none; background-repeat: no-repeat; background-position: center; background-size: contain; text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li > ul > li button:not([class]){background-image: url(../image/myResume/delete.png);}
+.myResumeArea figure figcaption > ul > li > ul > li button.search{background-image: url(../image/myResume/g_searchIcon.png);}
+.myResumeArea figure figcaption > ul > li > ul:not([class]) > li{width: 100%; height: 50px;  border: 1px solid #b5d6fa; background-color: white; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; box-sizing: border-box; }
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 기본정보*/
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li{justify-content: flex-start;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li button.move{background-image: url(../image/myResume/moveIcon.png); margin-right: 20px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li[class] div{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li[class] div::before{content: ''; display: inline-block; width: 23px; height: 22px; background-repeat: no-repeat; background-position: center; background-size: contain; margin-right: 40px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.age div::before{background-image: url(../image/myResume/ageIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.phoneNumber div::before{background-image: url(../image/myResume/phoneNumberIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.address div::before{background-image: url(../image/myResume/addressIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.Email div::before{background-image: url(../image/myResume/EmailIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns div::before{background-image: url(../image/myResume/snsIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns{justify-content: flex-start;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a{display: inline-block; width: 21px; height: 20px; background-repeat: no-repeat; background-position: center; background-size: contain; text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a:not(:last-child){margin-right: 20px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.instagram{background-image: url(../image/myResume/instagramIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.twitter{background-image: url(../image/myResume/twitterIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.facebook{background-image: url(../image/myResume/facebookIcon.png); width: 9px;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 대표역량 */
+.myResumeArea figure figcaption > ul > li.MR_abilityArea{display: flex; flex-direction: column; }
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea{flex: 1; display: flex; justify-content: space-around; align-items: center; background-color: white; border: 1px solid #b5d6fa;}
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea li > div{margin-bottom: 10px;}
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea li > p{text-align: center; font-size: 16px; font-weight: 300; color: #5f5f5f;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 자격증 */
+.myResumeArea figure figcaption > ul > li.MR_certificateArea ul li p[data-level]::after{content:' ' attr(data-level) '급';}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - OS */
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p::before{content: '종합점수'; display: inline-block; width: 115px; height: 26px; background-repeat: no-repeat; background-position: center left; background-size: contain; display: flex; align-items: center; justify-content: flex-end; margin-right: 3px;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.word p::before{background-image:url(../image/myResume/wordIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.excel p::before{background-image:url(../image/myResume/excelIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.ppt p::before{background-image:url(../image/myResume/PPTIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p::after{content: '점';}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li div{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li div img{margin-right: 30px;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 외국어 */
+
+
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 경력, 학력, 대외활동 기간*/
+.careerArea > li{padding: 20px; background-color: white; display: flex;border: 1px solid #b5d6fa;}
+.careerArea > li .termArea{width: 115px;}
+.careerArea > li .termArea > div{display: flex; flex-wrap: wrap;}
+.careerArea > li .termArea > div p{line-height: 24px;}
+.careerArea > li .termArea > div p:nth-of-type(1)::after{content: '~';}
+.careerArea > li .termArea > div p.totalArea{width: 100%;}
+.careerArea > li .termArea > div p.totalArea::before{content: '(';}
+.careerArea > li .termArea > div p.totalArea::after{content: ')';}
+.careerArea > li .termArea > div p.totalArea span.yearData::after{content: '년';}
+.careerArea > li .termArea > div p.totalArea span.monthData::after{content: '개월';}
+.careerArea > li .termArea > dl{display: flex; margin-top: 15px;}
+.careerArea > li .termArea > dl dt::after{content: ':';}
+.careerArea > li .termArea > dl dd[data-unit]::after{content: attr(data-unit);}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 경력, 학력, 대외활동 세부내용 */
+.careerArea > li .detailArea{flex: 1; display: flex; justify-content: space-between; border-left: 1px solid rgba(0, 0, 0, 0.1);}
+.careerArea > li .detailArea > div:first-of-type{padding-left: 30px;}
+.careerArea > li .detailArea > div:first-of-type div{display: flex; align-items: center; margin-bottom: 8px;}
+.careerArea > li .detailArea > div:first-of-type div h5{margin-right: 15px;}
+.careerArea > li .detailArea > div:first-of-type div p[data-detail]::after{content:'(' attr(data-detail) ')';}
+.careerArea > li .detailArea > div:first-of-type div p[data-detail]::after{content:attr(data-detail);}
+.careerArea > li .detailArea > div:first-of-type div p:not(:first-of-type)::before{content: '/';}
+.careerArea > li .detailArea > div:first-of-type ul li:not(:last-child){margin-bottom: 8px;}
+.careerArea > li .detailArea > div:first-of-type ul li::before{content: '-';}
+.careerArea > li .detailArea > div:first-of-type dl{display: flex; margin-top: 30px;}
+.careerArea > li .detailArea > div:first-of-type dl dt::after{content: ':';}
+.careerArea > li .detailArea > div:last-of-type{display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;}
+.careerArea > li .detailArea > div:last-of-type mark{font-size: 24px; font-weight: 700; color: #006aed; background-color: transparent;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 -  추가 버튼*/
+.myResumeArea figure figcaption > ul > li > button{width: 100%; height: 50px; font-size: 18px; font-weight: 300; color: black; background-color: white; border: 1px solid #b5d6fa;}
+.myResumeArea figure figcaption > ul > li > button::after{content: ''; display: inline-block; width: 14px; height: 14px; background: url(../image/myResume/plusIcon.png) no-repeat center center; margin-left: 20px;}
+
+
 
 /* 이력서 등록 */
 .subTitle{ font-size: 40px; font-weight: 400;}
 .resumeTitle{padding: 100px 0 50px;}
 .SearchArea legend{padding: 100px 0 50px;}
 .resumeTitle span{color: #006aed;}
+.subTitle span{color: #006aed;}
 /* 서브 메뉴 */
 .subMenu nav{border-width: 1px 0 0px 0; border-style: solid; border-color: #d9e6ee; position: relative;}  
 .subMenu nav::after{content: ''; display: block; width: 100%; height: 1px; background-color: #d9e6ee; position: absolute; bottom: 0; left: 0; z-index: 0;}
@@ -509,12 +615,117 @@
 .SSC_supportingCompanyArea > ul li figure figcaption dl dd{font-size: 20px; font-weight: 300;}
 .SSC_supportingCompanyArea > ul li figure figcaption small{font-size: 20px; font-weight: 300; color: rgba(0, 0, 0, 0.6);}
 
+/* 나의 이력서 */
+/* 나의 이력서 - 타이틀 */
+.myResumeTitleArea{padding: 50px 0;}
+.myResumeTitleArea small{display: inline-block; font-size: 24px; font-weight: 300; padding-bottom: 6px; margin-bottom: 20px; position: relative;}
+.myResumeTitleArea small::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
+/* 나의 이력서 - 컨텐츠*/
+.myResumeArea{background-color: #f2faff; padding: 60px 0 100px;}
+/* 나의 이력서 - 컨텐츠박스 - 상단 버튼*/
+.MR_btnArea{display: flex; justify-content: center; margin-bottom: 60px;}
+.MR_btnArea button{width: 210px; height: 70px; font-size:24px; font-weight: 300; color: white; background-color: #343434; border: none; padding:0 25px 0;   display: flex; justify-content: space-between; align-items: center; }
+.MR_btnArea button.rearrangement::before{content: ''; width: 20px; height: 20px; background: url(../image/myResume/rearrangementIcon.png) no-repeat center center/contain;}
+.MR_btnArea select{width: 305px; height: 70px; font-size: 24px; font-weight: 300; color: #5f5f5f; padding: 0 25px; border-color: #dfdfdf;}
+.MR_btnArea *:not(:last-child){margin-right: 20px;}
+/* 나의 이력서 - 컨텐츠 박스 */
+.myResumeArea figure{}
+/* 나의 이력서 - 컨텐츠 박스 - 왼쪽 이미지*/
+.myResumeArea figure > div{max-width: 200px; width: 100%; margin: 0 auto; margin-bottom: 60px;}
+.myResumeArea figure > div img{width: 100%; margin-bottom: 30px; }
+.myResumeArea figure > div button{width: 50px; height: 50px; text-indent: -9999px; background-color: transparent; background-repeat: no-repeat; background-position: center; background-size: contain; border: none;}
+.myResumeArea figure > div button.big{background-image: url(../image/myResume/smallIcon.png);}
+.myResumeArea figure > div button.small{background-image: url(../image/myResume/smallIcon.png);}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 */
+.myResumeArea figure figcaption{}
+.myResumeArea figure figcaption > ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.myResumeArea figure figcaption > ul > li{width: 100%; font-size: 22px; font-weight: 300; color: #5f5f5f; }
+.myResumeArea figure figcaption > ul > li:not(:last-child){margin-bottom: 60px;}
+.myResumeArea figure figcaption > ul > li h4{width: 100%; height: 80px; font-size: 28px; font-weight: 500; padding: 0 30px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; background-color: #dfedf6; border: 1px solid #b5d6fa; margin-bottom: 10px;}
+.myResumeArea figure figcaption > ul > li h4 button{width: 35px; height: 35px; background-repeat: no-repeat; background-position: center center; background-size: 100%; background-color: transparent; border: none;  text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li h4 button:not([class]){background-image: url(../image/myResume/addIcon.png);}
+.myResumeArea figure figcaption > ul > li h4 button.search{background-image: url(../image/myResume/searchIcon.png);}
+.myResumeArea figure figcaption > ul > li .black{color: black; font-weight: 500;}
+.myResumeArea figure figcaption > ul > li > ul > li button{width: 35px; height: 35px; background-color: transparent; border: none; background-repeat: no-repeat; background-position: center; background-size: 100%; text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li > ul > li button:not([class]){background-image: url(../image/myResume/delete.png);}
+.myResumeArea figure figcaption > ul > li > ul > li button.search{background-image: url(../image/myResume/g_searchIcon.png);}
+.myResumeArea figure figcaption > ul > li > ul:not([class]) > li{width: 100%; height: 80px;  border: 1px solid #b5d6fa; background-color: white; display: flex; justify-content: space-between; align-items: center; padding: 0 25px 0 30px; box-sizing: border-box; }
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 기본정보*/
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li{justify-content: flex-start;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li button.move{background-image: url(../image/myResume/moveIcon.png); margin-right: 30px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li[class] div{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li[class] div::before{content: ''; display: inline-block; width: 35px; height: 35px; background-repeat: no-repeat; background-position: center; background-size: 100%; margin-right: 45px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.age div::before{background-image: url(../image/myResume/ageIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.phoneNumber div::before{background-image: url(../image/myResume/phoneNumberIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.address div::before{background-image: url(../image/myResume/addressIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.Email div::before{background-image: url(../image/myResume/EmailIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns div::before{background-image: url(../image/myResume/snsIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns{justify-content: flex-start;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a{display: inline-block; width: 35px; height: 35px; background-repeat: no-repeat; background-position: center; background-size: 100%; text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a:not(:last-child){margin-right: 25px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.instagram{background-image: url(../image/myResume/instagramIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.twitter{background-image: url(../image/myResume/twitterIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.facebook{background-image: url(../image/myResume/facebookIcon.png); width: 14px;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 대표역량 */
+.myResumeArea figure figcaption > ul > li.MR_abilityArea{display: flex; flex-direction: column; }
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea{flex: 1; display: flex; justify-content: space-around; align-items: center; background-color: white; border: 1px solid #b5d6fa; padding: 40px 0 50px;}
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea li > div{margin-bottom: 10px;}
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea li > p{text-align: center; font-size: 22px; font-weight: 300; color: #5f5f5f;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 자격증 */
+.myResumeArea figure figcaption > ul > li.MR_certificateArea ul li p[data-level]::after{content:' ' attr(data-level) '급';}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - OS */
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p::before{content: '종합점수'; display: inline-block; width: 140px; height: 26px; background-repeat: no-repeat; background-position: center left; background-size: contain; display: flex; align-items: center; justify-content: flex-end; margin-right: 3px;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.word p::before{background-image:url(../image/myResume/wordIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.excel p::before{background-image:url(../image/myResume/excelIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.ppt p::before{background-image:url(../image/myResume/PPTIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p::after{content: '점';}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li div{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li div img{margin-right: 30px;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 외국어 */
+
+
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 경력, 학력, 대외활동 기간*/
+.careerArea > li{padding: 80px 30px 30px 30px; background-color: white; display: flex;border: 1px solid #b5d6fa;  position: relative;}
+.careerArea > li .termArea{width: 155px;}
+.careerArea > li .termArea > div{display: flex; flex-wrap: wrap;}
+.careerArea > li .termArea > div p{line-height: 24px;}
+.careerArea > li .termArea > div p:nth-of-type(1)::after{content: '~';}
+.careerArea > li .termArea > div p.totalArea{width: 100%;}
+.careerArea > li .termArea > div p.totalArea::before{content: '(';}
+.careerArea > li .termArea > div p.totalArea::after{content: ')';}
+.careerArea > li .termArea > div p.totalArea span.yearData::after{content: '년';}
+.careerArea > li .termArea > div p.totalArea span.monthData::after{content: '개월';}
+.careerArea > li .termArea > dl{display: flex; margin-top: 15px;}
+.careerArea > li .termArea > dl dt::after{content: ':';}
+.careerArea > li .termArea > dl dd[data-unit]::after{content: attr(data-unit);}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 경력, 학력, 대외활동 세부내용 */
+.careerArea > li .detailArea{flex: 1; display: flex; justify-content: space-between; border-left: 1px solid rgba(0, 0, 0, 0.1);}
+.careerArea > li .detailArea > div:first-of-type{padding-left: 30px;}
+.careerArea > li .detailArea > div:first-of-type div{display: flex; align-items: center; flex-wrap: wrap; margin-bottom: 35px;}
+.careerArea > li .detailArea > div:first-of-type div h5{width: 100%; margin-bottom: 10px; }
+.careerArea > li .detailArea > div:first-of-type div p[data-detail]::after{content:'(' attr(data-detail) ')';}
+.careerArea > li .detailArea > div:first-of-type div p[data-detail]::after{content:attr(data-detail);}
+.careerArea > li .detailArea > div:first-of-type div p:not(:first-of-type)::before{content: '/';}
+.careerArea > li .detailArea > div:first-of-type ul li:not(:last-child){margin-bottom: 8px;}
+.careerArea > li .detailArea > div:first-of-type ul li::before{content: '-';}
+.careerArea > li .detailArea > div:first-of-type dl{display: flex; flex-wrap: wrap; margin-top: 40px;}
+.careerArea > li .detailArea > div:first-of-type dl dt{width: 100%; margin-bottom: 10px;}
+.careerArea > li .detailArea > div:first-of-type dl dt::after{content: ':';}
+.careerArea > li .detailArea > div:last-of-type{display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; position: absolute; top: 30px; right: 25px;}
+.careerArea > li .detailArea > div:last-of-type mark{font-size: 28px; font-weight: 700; color: #006aed; background-color: transparent; margin-bottom: 25px;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 -  추가 버튼*/
+.myResumeArea figure figcaption > ul > li > button{width: 100%; height: 80px; font-size: 24px; font-weight: 300; color: black; background-color: white; border: 1px solid #b5d6fa;}
+.myResumeArea figure figcaption > ul > li > button::after{content: ''; display: inline-block; width: 18px; height: 18px; background: url(../image/myResume/plusIcon.png) no-repeat center center/100%; margin-left: 15px;}
+
+
 
 /* 이력서 등록 */
 .subTitle{font-size: 40px; font-weight: 400;}
 .resumeTitle{padding: 100px 0 50px; }
 .SearchArea legend{padding: 100px 0 50px; }
 .resumeTitle span{color: #006aed;}
+.subTitle span{color: #006aed;}
 /* .subResumeTitle{padding: 100px 0 50px; } */
 /* .subResumeTitle span{color: #006aed;} */
 /* 서브 메뉴 */
@@ -978,12 +1189,116 @@
 .SSC_supportingCompanyArea > ul li figure figcaption small{font-size: 3.125vw; font-weight: 300; color: rgba(0, 0, 0, 0.6);}
 
 
+/* 나의 이력서 */
+/* 나의 이력서 - 타이틀 */
+.myResumeTitleArea{padding: 7.8125vw 0;}
+.myResumeTitleArea small{display: inline-block; font-size: 3.75vw; font-weight: 300; padding-bottom: 0.9375vw; margin-bottom: 3.125vw; position: relative;}
+.myResumeTitleArea small::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
+/* 나의 이력서 - 컨텐츠*/
+.myResumeArea{background-color: #f2faff; padding: 9.375vw 0 15.625vw;}
+/* 나의 이력서 - 컨텐츠박스 - 상단 버튼*/
+.MR_btnArea{display: flex; justify-content: center; margin-bottom: 9.375vw;}
+.MR_btnArea button{width: 32.8125vw; height: 10.9375vw; font-size:3.75vw; font-weight: 300; color: white; background-color: #343434; border: none; padding:0 3.90625vw 0;   display: flex; justify-content: space-between; align-items: center; }
+.MR_btnArea button.rearrangement::before{content: ''; width: 3.125vw; height: 3.125vw; background: url(../image/myResume/rearrangementIcon.png) no-repeat center center/contain;}
+.MR_btnArea select{width: 47.65625vw; height: 10.9375vw; font-size: 3.75vw; font-weight: 300; color: #5f5f5f; padding: 0 3.90625vw; border-color: #dfdfdf;}
+.MR_btnArea *:not(:last-child){margin-right: 3.125vw;}
+/* 나의 이력서 - 컨텐츠 박스 */
+.myResumeArea figure{}
+/* 나의 이력서 - 컨텐츠 박스 - 왼쪽 이미지*/
+.myResumeArea figure > div{max-width: 31.25vw; width: 100%; margin: 0 auto; margin-bottom: 9.375vw;}
+.myResumeArea figure > div img{width: 100%; margin-bottom: 4.6875vw; }
+.myResumeArea figure > div button{width: 7.8125vw; height: 7.8125vw; text-indent: -9999px; background-color: transparent; background-repeat: no-repeat; background-position: center; background-size: contain; border: none;}
+.myResumeArea figure > div button.big{background-image: url(../image/myResume/smallIcon.png);}
+.myResumeArea figure > div button.small{background-image: url(../image/myResume/smallIcon.png);}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 */
+.myResumeArea figure figcaption{}
+.myResumeArea figure figcaption > ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.myResumeArea figure figcaption > ul > li{width: 100%; font-size: 3.4375vw; font-weight: 300; color: #5f5f5f; }
+.myResumeArea figure figcaption > ul > li:not(:last-child){margin-bottom: 9.375vw;}
+.myResumeArea figure figcaption > ul > li h4{width: 100%; height: 12.5vw; font-size: 4.375vw; font-weight: 500; padding: 0 4.6875vw; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; background-color: #dfedf6; border: 1px solid #b5d6fa; margin-bottom: 1.5625vw;}
+.myResumeArea figure figcaption > ul > li h4 button{width: 5.46875vw; height: 5.46875vw; background-repeat: no-repeat; background-position: center center; background-size: 100%; background-color: transparent; border: none;  text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li h4 button:not([class]){background-image: url(../image/myResume/addIcon.png);}
+.myResumeArea figure figcaption > ul > li h4 button.search{background-image: url(../image/myResume/searchIcon.png);}
+.myResumeArea figure figcaption > ul > li .black{color: black; font-weight: 500;}
+.myResumeArea figure figcaption > ul > li > ul > li button{width: 5.46875vw; height: 5.46875vw; background-color: transparent; border: none; background-repeat: no-repeat; background-position: center; background-size: 100%; text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li > ul > li button:not([class]){background-image: url(../image/myResume/delete.png);}
+.myResumeArea figure figcaption > ul > li > ul > li button.search{background-image: url(../image/myResume/g_searchIcon.png);}
+.myResumeArea figure figcaption > ul > li > ul:not([class]) > li{width: 100%; height: 12.5vw;  border: 1px solid #b5d6fa; background-color: white; display: flex; justify-content: space-between; align-items: center; padding: 0 3.90625vw 0 4.6875vw; box-sizing: border-box; }
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 기본정보*/
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li{justify-content: flex-start;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li button.move{background-image: url(../image/myResume/moveIcon.png); margin-right: 4.6875vw;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li[class] div{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li[class] div::before{content: ''; display: inline-block; width: 5.46875vw; height: 5.46875vw; background-repeat: no-repeat; background-position: center; background-size: 100%; margin-right: 7.03125vw;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.age div::before{background-image: url(../image/myResume/ageIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.phoneNumber div::before{background-image: url(../image/myResume/phoneNumberIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.address div::before{background-image: url(../image/myResume/addressIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.Email div::before{background-image: url(../image/myResume/EmailIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns div::before{background-image: url(../image/myResume/snsIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns{justify-content: flex-start;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a{display: inline-block; width: 5.46875vw; height: 5.46875vw; background-repeat: no-repeat; background-position: center; background-size: 100%; text-indent: -9999px;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a:not(:last-child){margin-right: 3.90625vw;}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.instagram{background-image: url(../image/myResume/instagramIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.twitter{background-image: url(../image/myResume/twitterIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_basicArea ul li.sns a.facebook{background-image: url(../image/myResume/facebookIcon.png); width: 2.1875vw;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 대표역량 */
+.myResumeArea figure figcaption > ul > li.MR_abilityArea{display: flex; flex-direction: column; }
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea{flex: 1; display: flex; justify-content: space-around; align-items: center; background-color: white; border: 1px solid #b5d6fa; padding: 6.25vw 0 7.8125vw;}
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea li > div{margin-bottom: 1.5625vw;}
+.myResumeArea figure figcaption > ul > li.MR_abilityArea ul.MRA_graphArea li > p{text-align: center; font-size: 3.4375vw; font-weight: 300; color: #5f5f5f;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 자격증 */
+.myResumeArea figure figcaption > ul > li.MR_certificateArea ul li p[data-level]::after{content:' ' attr(data-level) '급';}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - OS */
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p::before{content: '종합점수'; display: inline-block; width: 21.875vw; height: 4.0625vw; background-repeat: no-repeat; background-position: center left; background-size: contain; display: flex; align-items: center; justify-content: flex-end; margin-right: 0.46875vw;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.word p::before{background-image:url(../image/myResume/wordIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.excel p::before{background-image:url(../image/myResume/excelIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li.ppt p::before{background-image:url(../image/myResume/PPTIcon.png);}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li[class] p::after{content: '점';}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li div{display: flex; align-items: center;}
+.myResumeArea figure figcaption > ul > li.MR_OSArea ul li div img{margin-right: 4.6875vw;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 외국어 */
+
+
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 경력, 학력, 대외활동 기간*/
+.careerArea > li{padding: 12.5vw 4.6875vw 4.6875vw 4.6875vw; background-color: white; display: flex;border: 1px solid #b5d6fa;  position: relative;}
+.careerArea > li .termArea{width: 24.21875vw;}
+.careerArea > li .termArea > div{display: flex; flex-wrap: wrap;}
+.careerArea > li .termArea > div p{line-height: 3.75vw;}
+.careerArea > li .termArea > div p:nth-of-type(1)::after{content: '~';}
+.careerArea > li .termArea > div p.totalArea{width: 100%;}
+.careerArea > li .termArea > div p.totalArea::before{content: '(';}
+.careerArea > li .termArea > div p.totalArea::after{content: ')';}
+.careerArea > li .termArea > div p.totalArea span.yearData::after{content: '년';}
+.careerArea > li .termArea > div p.totalArea span.monthData::after{content: '개월';}
+.careerArea > li .termArea > dl{display: flex; margin-top: 2.34375vw;}
+.careerArea > li .termArea > dl dt::after{content: ':';}
+.careerArea > li .termArea > dl dd[data-unit]::after{content: attr(data-unit);}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 - 경력, 학력, 대외활동 세부내용 */
+.careerArea > li .detailArea{flex: 1; display: flex; justify-content: space-between; border-left: 1px solid rgba(0, 0, 0, 0.1);}
+.careerArea > li .detailArea > div:first-of-type{padding-left: 4.6875vw;}
+.careerArea > li .detailArea > div:first-of-type div{display: flex; align-items: center; flex-wrap: wrap; margin-bottom: 5.46875vw;}
+.careerArea > li .detailArea > div:first-of-type div h5{width: 100%; margin-bottom: 1.5625vw; }
+.careerArea > li .detailArea > div:first-of-type div p[data-detail]::after{content:'(' attr(data-detail) ')';}
+.careerArea > li .detailArea > div:first-of-type div p[data-detail]::after{content:attr(data-detail);}
+.careerArea > li .detailArea > div:first-of-type div p:not(:first-of-type)::before{content: '/';}
+.careerArea > li .detailArea > div:first-of-type ul li:not(:last-child){margin-bottom: 1.25vw;}
+.careerArea > li .detailArea > div:first-of-type ul li::before{content: '-';}
+.careerArea > li .detailArea > div:first-of-type dl{display: flex; flex-wrap: wrap; margin-top: 6.25vw;}
+.careerArea > li .detailArea > div:first-of-type dl dt{width: 100%; margin-bottom: 1.5625vw;}
+.careerArea > li .detailArea > div:first-of-type dl dt::after{content: ':';}
+.careerArea > li .detailArea > div:last-of-type{display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; position: absolute; top: 4.6875vw; right: 3.90625vw;}
+.careerArea > li .detailArea > div:last-of-type mark{font-size: 4.375vw; font-weight: 700; color: #006aed; background-color: transparent; margin-bottom: 3.90625vw;}
+/* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 -  추가 버튼*/
+.myResumeArea figure figcaption > ul > li > button{width: 100%; height: 12.5vw; font-size: 3.75vw; font-weight: 300; color: black; background-color: white; border: 1px solid #b5d6fa;}
+.myResumeArea figure figcaption > ul > li > button::after{content: ''; display: inline-block; width: 2.8125vw; height: 2.8125vw; background: url(../image/myResume/plusIcon.png) no-repeat center center/100%; margin-left: 2.34375vw;}
+
 
 /* 이력서 등록 */
 .subTitle{font-size: 6.25vw; font-weight: 400;}
 .resumeTitle{padding: 15.625vw 0 7.8125vw;}
 .SearchArea legend{padding: 15.625vw 0 7.8125vw;}
 .resumeTitle span{color: #006aed;}
+.subTitle span{color: #006aed;}
 /* .subResumeTitle{padding: 15.625vw 0 7.8125vw; font-size: 6.25vw; font-weight: 400;} */
 /* .subResumeTitle span{color: #006aed;} */
 /* 서브 메뉴 */
