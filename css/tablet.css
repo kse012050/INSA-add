@@ -1,3 +1,13 @@
 @media screen and (max-width: 1290px) and (min-width: 641px) {
+    .popupArea01{position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10;}
+    .popupArea01 > div{width: 600px; height: 535px; background-color: white; position: relative; display: flex; justify-content: center; align-items: center;}
+    .popupArea01 > div .closeBtn{position: absolute; right: 0; top: -50px;  font-size: 14px; font-weight: 400; color: white; display: flex; align-items: center; cursor: pointer;}
+    .popupArea01 > div .closeBtn::after{content: ''; display: inline-block; width: 30px; height: 30px; background: url(../image/myResume/closeIcon.png) no-repeat center center/ 100%; margin-left: 25px;}
+    .popupArea01 > div .closeBtn span{display: none;}
+    .popupArea01 > div ul{width: 560px;}
+    .popupArea01 > div ul li{display: flex; justify-content: space-between; align-items: center; height: 70px; font-size: 24px; font-weight: 300; padding-left: 30px; border-bottom: 1px solid rgba(0,0,0,0.1);}
+    .popupArea01 > div ul li button:first-of-type{width: 30px; height: 30px; background: transparent url(../image/myResume/exportIcon.png) no-repeat center center / 100%;  border: none;}
+    .popupArea01 > div ul li button:last-of-type{width: 27px; height: 27px; background: transparent url(../image/myResume/xIcon.png) no-repeat center center / 100%; border: none;}
+    .popupArea01 > div ul li button:not(:last-of-type){margin-right: 50px;}
     
 }

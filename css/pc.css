@@ -1,10 +1,14 @@
 @media screen and (min-width:1291px){
-    .SearchArea fieldset{position: relative;}
-    .SearchArea .detailsPopup{width: 100%; border: 1px solid #b5d6fa; padding: 0; position: absolute; left: 0; top: 0;}
-    .SearchArea .detailsPopup > span{display: inline-block; width: 14px; height: 8px; background: url(../image/jobSearch/speechBubble.png) no-repeat center center / 100%; position: absolute; left: 0; top: -8px; padding: 0;}
-    .SearchArea .detailsPopup ul{background-color: white; padding: 10px 20px 10px; position: relative;}
-    .SearchArea .detailsPopup ul li{margin: 0; border: none; padding: 10px 15px; line-height: 1;}
-    .SearchArea .detailsPopup ul li input[type="checkbox"]{display: none;}
-    .SearchArea .detailsPopup ul li label{padding: 0; display: flex; align-items: center;}
-    .SearchArea .detailsPopup ul li label::before{content: ''; display: inline-block; width: 21px; height: 21px; background: url(../image/jobSearch/CKbox.png) no-repeat center center / 100%; margin-right: 10px;}
+    .popupArea01{position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10;}
+    .popupArea01 > div{width: 740px; height: 445px; background-color: white; position: relative; display: flex; justify-content: center; align-items: center;}
+    .popupArea01 > div .closeBtn{position: absolute; right: 0; top: -50px;  font-size: 14px; font-weight: 400; color: white; display: flex; align-items: center; cursor: pointer;}
+    .popupArea01 > div .closeBtn::after{content: ''; display: inline-block; width: 20px; height: 20px; background: url(../image/myResume/closeIcon.png) no-repeat center center/ 100%; margin-left: 25px;}
+    .popupArea01 > div ul{width: 355px;}
+    .popupArea01 > div ul li{display: flex; justify-content: space-between; align-items: center; height: 60px; font-size: 18px; font-weight: 300; padding-left: 20px; border-bottom: 1px solid rgba(0,0,0,0.1);}
+    .popupArea01 > div ul li button:first-of-type{width: 17px; height: 17px; background: transparent url(../image/myResume/exportIcon.png) no-repeat center center / 100%;  border: none;}
+    .popupArea01 > div ul li button:last-of-type{width: 16px; height: 16px; background: transparent url(../image/myResume/xIcon.png) no-repeat center center / 100%; border: none;}
+    .popupArea01 > div ul li button:not(:last-of-type){margin-right: 30px;}
+    
+    
 } 
+

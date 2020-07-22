@@ -1,7 +1,12 @@
 $(document).ready(function(){
-    // 이력서 등록 메뉴
-    subMenu();
+    // 서브페이지 메뉴 클릭 이벤트
+    subPageMenu();
 
+    // 나의 이력서 팝업
+    myResumePopup();
+
+    // 이력서 등록 메뉴 - 터치 메뉴
+    subMenu();
     // 기업회원 메인 js
     enterpriseMain();
     // INSA검사
@@ -11,6 +16,19 @@ $(document).ready(function(){
     // 현재 진행 공고2
     progressAnnouncementDetail();
 });
+
+function subPageMenu(){
+    $('.mobileMenu').click(function(){
+        $(this).toggleClass('active');
+        $('.SH_bottomArea').toggleClass('active');
+    });
+}
+
+function myResumePopup(){
+    $('.closeBtn').click(function(){
+        $('.popupArea01').fadeOut();
+    });
+}
 
 function subMenu(){
     var browserW;

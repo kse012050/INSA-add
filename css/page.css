@@ -157,7 +157,41 @@
 /* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 -  추가 버튼*/
 .myResumeArea figure figcaption > ul > li > button{width: 100%; height: 50px; font-size: 18px; font-weight: 300; color: black; background-color: white; border: 1px solid #b5d6fa;}
 .myResumeArea figure figcaption > ul > li > button::after{content: ''; display: inline-block; width: 14px; height: 14px; background: url(../image/myResume/plusIcon.png) no-repeat center center; margin-left: 20px;}
-
+/* 나의 이력서 - 팝업1 */
+.popupArea01{position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10;}
+.popupArea01 > div{width: 740px; height: 445px; background-color: white; position: relative; display: flex; justify-content: center; align-items: center;}
+.popupArea01 > div .closeBtn{position: absolute; right: 0; top: -50px;  font-size: 14px; font-weight: 400; color: white; display: flex; align-items: center; cursor: pointer;}
+.popupArea01 > div .closeBtn::after{content: ''; display: inline-block; width: 20px; height: 20px; background: url(../image/myResume/closeIcon.png) no-repeat center center/ 100%; margin-left: 25px;}
+.popupArea01 > div ul{width: 355px;}
+.popupArea01 > div ul li{display: flex; justify-content: space-between; align-items: center; height: 60px; font-size: 18px; font-weight: 300; padding-left: 20px; border-bottom: 1px solid rgba(0,0,0,0.1);}
+.popupArea01 > div ul li button:first-of-type{width: 17px; height: 17px; background: transparent url(../image/myResume/exportIcon.png) no-repeat center center / 100%;  border: none;}
+.popupArea01 > div ul li button:last-of-type{width: 16px; height: 16px; background: transparent url(../image/myResume/xIcon.png) no-repeat center center / 100%; border: none;}
+.popupArea01 > div ul li button:not(:last-of-type){margin-right: 30px;}
+/* 나의 이력서 - 팝업2 */
+.popupArea02{position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10;}
+.popupArea02 > div{width: 740px; background-color: white; padding-top: 20px; text-align: center;}
+.popupArea02 > div .popupBtnArea{width: calc(100% - 40px); margin: 0 auto; display: flex; justify-content: flex-end; margin-bottom: 55px;}
+.popupArea02 > div .popupBtnArea button{height: 40px; font-size: 14px; display: flex; justify-content: center; align-items: center;  border: none;}
+.popupArea02 > div .popupBtnArea button:first-child{width: 125px; color: white; background-color: #006aed;}
+.popupArea02 > div .popupBtnArea button:last-child{width: 165px; color: #006aed; border: 1px solid #006aed; background-color: transparent;}
+.popupArea02 > div .popupBtnArea button::before{content: '';display: inline-block; background-repeat: no-repeat; background-position: center; background-size: 100%; margin-right: 20px;}
+.popupArea02 > div .popupBtnArea button:first-child::before{width: 16px; height: 16px; background-image: url(../image/myResume/saveIcon.png);}
+.popupArea02 > div .popupBtnArea button:last-child::before{width: 12px; height: 15px; background-image: url(../image/myResume/sendIcon.png); }
+.popupArea02 > div .popupBtnArea button:not(:last-child){margin-right: 10px;}
+.popupArea02 > div ul{display: flex; flex-wrap: wrap; width: 475px; margin: 0 auto; margin-bottom: 35px;}
+.popupArea02 > div ul li{height: 90px; font-size: 16px; font-weight: 300; background-color: #dfedf6; border: 1px solid #b5d6fa; box-sizing: border-box; display: flex; justify-content: center; align-items: center;}
+.popupArea02 > div ul li:not(:last-child){margin-bottom: 10px;}
+.popupArea02 > div ul li:first-child{width: 85px; background: url(../image/myResume/img.png) no-repeat center center / 100%; border: none;}
+.popupArea02 > div ul li:first-child img{width: 100%;}
+.popupArea02 > div ul li:nth-child(2),.popupArea02 > div ul li:nth-child(3)
+{width: 185px; margin-left: 10px;}
+.popupArea02 > div ul li:nth-child(4),.popupArea02 > div ul li:nth-child(5)
+{width: 232.5px;}
+.popupArea02 > div ul li:nth-child(5){margin-left: 10px;}
+.popupArea02 > div ul li:nth-child(n + 6){width: 100%; height: 50px;}
+.popupArea02 > div input[type="reset"]{width: 285px; height: 60px; font-size: 22px; font-weight: 500; color: white;  background:black url(../image/myResume/resetIcon.png) no-repeat left 30px center; border: none; border-radius: 50px; margin-bottom: 60px;}
+.popupArea02 > div > button{width: 100%; height: 70px; font-size: 18px; font-weight: 400; background-color: #e8e8e8; border: none; display: flex; justify-content: center; align-items: center }
+.popupArea02 > div > button::after{content: ''; width: 21px; height: 21px; background: url(../image/myResume/searchIcon.png) no-repeat center/ 100%; margin-left: 20px;}
 
 
 /* 이력서 등록 */
@@ -787,7 +821,42 @@
 /* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 -  추가 버튼*/
 .myResumeArea figure figcaption > ul > li > button{width: 100%; height: 80px; font-size: 24px; font-weight: 300; color: black; background-color: white; border: 1px solid #b5d6fa;}
 .myResumeArea figure figcaption > ul > li > button::after{content: ''; display: inline-block; width: 18px; height: 18px; background: url(../image/myResume/plusIcon.png) no-repeat center center/100%; margin-left: 15px;}
-
+/* 나의 이력서 - 팝업1 */
+.popupArea01{position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10;}
+.popupArea01 > div{width: 600px; height: 535px; background-color: white; position: relative; display: flex; justify-content: center; align-items: center;}
+.popupArea01 > div .closeBtn{position: absolute; right: 0; top: -50px;  font-size: 14px; font-weight: 400; color: white; display: flex; align-items: center; cursor: pointer;}
+.popupArea01 > div .closeBtn::after{content: ''; display: inline-block; width: 30px; height: 30px; background: url(../image/myResume/closeIcon.png) no-repeat center center/ 100%; margin-left: 25px;}
+.popupArea01 > div .closeBtn span{display: none;}
+.popupArea01 > div ul{width: 560px;}
+.popupArea01 > div ul li{display: flex; justify-content: space-between; align-items: center; height: 70px; font-size: 24px; font-weight: 300; padding-left: 30px; border-bottom: 1px solid rgba(0,0,0,0.1);}
+.popupArea01 > div ul li button:first-of-type{width: 30px; height: 30px; background: transparent url(../image/myResume/exportIcon.png) no-repeat center center / 100%;  border: none;}
+.popupArea01 > div ul li button:last-of-type{width: 27px; height: 27px; background: transparent url(../image/myResume/xIcon.png) no-repeat center center / 100%; border: none;}
+.popupArea01 > div ul li button:not(:last-of-type){margin-right: 50px;}
+/* 나의 이력서 - 팝업2 */
+.popupArea02{position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10;}
+.popupArea02 > div{width: 740px; background-color: white; padding-top: 40px; text-align: center;}
+.popupArea02 > div .popupBtnArea{width: calc(100% - 40px); margin: 0 auto; display: flex; justify-content: center; margin-bottom: 55px;}
+.popupArea02 > div .popupBtnArea button{height: 60px; font-size: 22px; display: flex; justify-content: center; align-items: center;  border: none;}
+.popupArea02 > div .popupBtnArea button:first-child{width: 190px; color: white; background-color: #006aed;}
+.popupArea02 > div .popupBtnArea button:last-child{width: 245px; color: #006aed; border: 1px solid #006aed; background-color: transparent;}
+.popupArea02 > div .popupBtnArea button::before{content: '';display: inline-block; background-repeat: no-repeat; background-position: center; background-size: 100%; margin-right: 30px;}
+.popupArea02 > div .popupBtnArea button:first-child::before{width: 24px; height: 24px; background-image: url(../image/myResume/saveIcon.png);}
+.popupArea02 > div .popupBtnArea button:last-child::before{width: 18px; height: 23px; background-image: url(../image/myResume/sendIcon.png);}
+.popupArea02 > div .popupBtnArea button:not(:last-child){margin-right: 15px;}
+.popupArea02 > div ul{display: flex; flex-wrap: wrap; width: 560px; margin: 0 auto; margin-bottom: 60px;}
+.popupArea02 > div ul li{height: 105px; font-size: 24px; font-weight: 300; background-color: #dfedf6; border: 1px solid #b5d6fa; box-sizing: border-box; display: flex; justify-content: center; align-items: center;}
+.popupArea02 > div ul li:not(:last-child){margin-bottom: 10px;}
+.popupArea02 > div ul li:first-child{width: 100px; background: url(../image/myResume/img.png) no-repeat center center / 100%; border: none;}
+.popupArea02 > div ul li:first-child img{width: 100%;}
+.popupArea02 > div ul li:nth-child(2),.popupArea02 > div ul li:nth-child(3)
+{width: 220px; margin-left: 10px;}
+.popupArea02 > div ul li:nth-child(4),.popupArea02 > div ul li:nth-child(5)
+{width: 275px;}
+.popupArea02 > div ul li:nth-child(5){margin-left: 10px;}
+.popupArea02 > div ul li:nth-child(n + 6){width: 100%; height: 60px;}
+.popupArea02 > div input[type="reset"]{width: 330px; height: 80px; font-size: 28px; font-weight: 500; color: white;  background:black url(../image/myResume/resetIcon.png) no-repeat left 30px center; background-size: 30px; border: none; border-radius: 50px; margin-bottom: 80px;}
+.popupArea02 > div > button{width: 100%; height: 80px; font-size: 24px; font-weight: 400; background-color: #e8e8e8; border: none; display: flex; justify-content: center; align-items: center }
+.popupArea02 > div > button::after{content: ''; width: 35px; height: 35px; background: url(../image/myResume/searchIcon.png) no-repeat center/ 100%; margin-left: 30px;}
 
 
 /* 이력서 등록 */
@@ -1436,7 +1505,42 @@
 /* 나의 이력서 - 컨텐츠 박스 - 컨텐츠 -  추가 버튼*/
 .myResumeArea figure figcaption > ul > li > button{width: 100%; height: 12.5vw; font-size: 3.75vw; font-weight: 300; color: black; background-color: white; border: 1px solid #b5d6fa;}
 .myResumeArea figure figcaption > ul > li > button::after{content: ''; display: inline-block; width: 2.8125vw; height: 2.8125vw; background: url(../image/myResume/plusIcon.png) no-repeat center center/100%; margin-left: 2.34375vw;}
-
+/* 나의 이력서 - 팝업1 */
+.popupArea01{position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10;}
+.popupArea01 > div{width: 93.75vw; height: 83.59375vw; background-color: white; position: relative; display: flex; justify-content: center; align-items: center;}
+.popupArea01 > div .closeBtn{position: absolute; right: 0; top: -7.8125vw;  font-size: 2.1875vw; font-weight: 400; color: white; display: flex; align-items: center; cursor: pointer;}
+.popupArea01 > div .closeBtn::after{content: ''; display: inline-block; width: 4.6875vw; height: 4.6875vw; background: url(../image/myResume/closeIcon.png) no-repeat center center/ 100%; margin-left: 3.90625vw;}
+.popupArea01 > div .closeBtn span{display: none;}
+.popupArea01 > div ul{width: 87.5vw;}
+.popupArea01 > div ul li{display: flex; justify-content: space-between; align-items: center; height: 10.9375vw; font-size: 3.75vw; font-weight: 300; padding-left: 4.6875vw; border-bottom: 1px solid rgba(0,0,0,0.1);}
+.popupArea01 > div ul li button:first-of-type{width: 4.6875vw; height: 4.6875vw; background: transparent url(../image/myResume/exportIcon.png) no-repeat center center / 100%;  border: none;}
+.popupArea01 > div ul li button:last-of-type{width: 4.21875vw; height: 4.21875vw; background: transparent url(../image/myResume/xIcon.png) no-repeat center center / 100%; border: none;}
+.popupArea01 > div ul li button:not(:last-of-type){margin-right: 7.8125vw;}
+/* 나의 이력서 - 팝업2 */
+.popupArea02{position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10;}
+.popupArea02 > div{width: 93.75vw; background-color: white; padding-top: 6.25vw; text-align: center;}
+.popupArea02 > div .popupBtnArea{width: calc(100% - 6.25vw); margin: 0 auto; display: flex; justify-content: center; margin-bottom: 8.59375vw;}
+.popupArea02 > div .popupBtnArea button{height: 9.375vw; font-size: 3.4375vw; display: flex; justify-content: center; align-items: center;  border: none;}
+.popupArea02 > div .popupBtnArea button:first-child{width: 29.6875vw; color: white; background-color: #006aed;}
+.popupArea02 > div .popupBtnArea button:last-child{width: 38.28125vw; color: #006aed; border: 1px solid #006aed; background-color: transparent;}
+.popupArea02 > div .popupBtnArea button::before{content: '';display: inline-block; background-repeat: no-repeat; background-position: center; background-size: 100%; margin-right: 4.6875vw;}
+.popupArea02 > div .popupBtnArea button:first-child::before{width: 3.75vw; height: 3.75vw; background-image: url(../image/myResume/saveIcon.png);}
+.popupArea02 > div .popupBtnArea button:last-child::before{width: 2.8125vw; height: 3.59375vw; background-image: url(../image/myResume/sendIcon.png);}
+.popupArea02 > div .popupBtnArea button:not(:last-child){margin-right: 2.34375vw;}
+.popupArea02 > div ul{display: flex; flex-wrap: wrap; width: 87.5vw; margin: 0 auto; margin-bottom: 9.375vw;}
+.popupArea02 > div ul li{height: 16.40625vw; font-size: 3.75vw; font-weight: 300; background-color: #dfedf6; border: 1px solid #b5d6fa; box-sizing: border-box; display: flex; justify-content: center; align-items: center;}
+.popupArea02 > div ul li:not(:last-child){margin-bottom: 1.5625vw;}
+.popupArea02 > div ul li:first-child{width: 15.625vw; background: url(../image/myResume/img.png) no-repeat center center / 100%; border: none;}
+.popupArea02 > div ul li:first-child img{width: 100%;}
+.popupArea02 > div ul li:nth-child(2),.popupArea02 > div ul li:nth-child(3)
+{width: 34.375vw; margin-left: 1.5625vw;}
+.popupArea02 > div ul li:nth-child(4),.popupArea02 > div ul li:nth-child(5)
+{width: 42.96875vw;}
+.popupArea02 > div ul li:nth-child(5){margin-left: 1.5625vw;}
+.popupArea02 > div ul li:nth-child(n + 6){width: 100%; height: 9.375vw;}
+.popupArea02 > div input[type="reset"]{width: 51.5625vw; height: 12.5vw; font-size: 4.375vw; font-weight: 500; color: white;  background:black url(../image/myResume/resetIcon.png) no-repeat left 4.6875vw center; background-size: 4.6875vw; border: none; border-radius: 7.8125vw; margin-bottom: 12.5vw;}
+.popupArea02 > div > button{width: 100%; height: 12.5vw; font-size: 3.75vw; font-weight: 400; background-color: #e8e8e8; border: none; display: flex; justify-content: center; align-items: center }
+.popupArea02 > div > button::after{content: ''; width: 5.46875vw; height: 5.46875vw; background: url(../image/myResume/searchIcon.png) no-repeat center/ 100%; margin-left: 4.6875vw;}
 
 /* 이력서 등록 */
 .subTitle{font-size: 6.25vw; font-weight: 400;}

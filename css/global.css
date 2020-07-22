@@ -108,8 +108,29 @@ footer .subAddressArea div address dl dt:not(:first-of-type){margin-left: 2.214e
     .SH_topArea div h1 span{display: none;}
     .SH_topArea div{padding: 18px 0;}
     .SH_topArea div .mobileMenu{display: block; width: 40px; display: flex; flex-direction: column; justify-content: center;}
-    .SH_topArea div .mobileMenu span{display: block; width: 100%; height: 3px; background-color: white;}
+    .SH_topArea div .mobileMenu span{display: block; width: 100%; height: 3px; background-color: white; transition: 0.5s;}
     .SH_topArea div .mobileMenu span:not(:last-of-type){margin-bottom: 10px;}
+    .SH_topArea div .mobileMenu.active span:first-child{transform: translateY(6px) rotate(-225deg);}
+    .SH_topArea div .mobileMenu.active span:last-child{transform: translateY(-7px) rotate(225deg);}
+    .SH_bottomArea{display: none; padding: 40px 0;}
+    .SH_bottomArea button{font-size: 26px; font-weight: 700; width: 230px; height: 70px; margin-bottom: 50px;}
+    .SH_bottomArea button::after{width: 12px; height: 21px; background-repeat: no-repeat; background-size: 100%;}
+    .SH_bottomArea.active{display: block;}
+    .SH_bottomArea nav{flex-direction: column; align-items: flex-start;}
+    .SH_bottomArea nav ul{width: 100%; margin-right: 0; margin-bottom: 45px;}
+    .SH_bottomArea nav ul li:nth-child(1){width: 140px;}
+    .SH_bottomArea nav ul li:nth-child(2){width: 105px;}
+    .SH_bottomArea nav ul li:nth-child(3){width: 135px;}
+    .SH_bottomArea nav ul li:nth-child(4){width: 110px;}
+    .SH_bottomArea nav ul li:nth-child(5){width: 110px;}
+    .SH_bottomArea nav ul li a{font-size: 26px; padding: 0; display: block;}
+    .SH_bottomArea nav div a{height: 60px; font-size: 22px;}
+    .SH_bottomArea nav div a::before{background-size: 100%; margin-right: 20px;}
+    .SH_bottomArea nav div a:nth-of-type(1){width: 200px;}
+    .SH_bottomArea nav div a:nth-of-type(2){width: 195px}
+    .SH_bottomArea nav div a:nth-of-type(1)::before{width: 24px; height: 29px; }
+    .SH_bottomArea nav div a:nth-of-type(2)::before{width: 27px; height: 24px; }
+    
 
     footer nav ul{flex-wrap: wrap; padding: 10px 0;}
     footer nav ul li{max-width: calc(33% - 20px); width: calc(33% - 20px); min-width: 185px; margin: 10px;  flex: none;}
@@ -129,12 +150,33 @@ footer .subAddressArea div address dl dt:not(:first-of-type){margin-left: 2.214e
     .copyrightArea{display: none;}
 
 
-    .SH_bottomArea{display: none}
     .subContentsWidth{width: calc(100% - 40px);}
 }
 
-@media screen and (max-width:767px){
-
+@media screen and (max-width:640px){
+    .SH_topArea div .mobileMenu{display: block; width: 6.25vw; display: flex; flex-direction: column; justify-content: center;}
+    .SH_topArea div .mobileMenu span{display: block; width: 100%; height: 0.46875vw; background-color: white; transition: 0.5s;}
+    .SH_topArea div .mobileMenu span:not(:last-of-type){margin-bottom: 1.5625vw;}
+    .SH_topArea div .mobileMenu.active span:first-child{transform: translateY(0.9375vw) rotate(-225deg);}
+    .SH_topArea div .mobileMenu.active span:last-child{transform: translateY(-1.09375vw) rotate(225deg);}
+    .SH_bottomArea{display: none; padding: 6.25vw 0;}
+    .SH_bottomArea button{font-size: 4.0625vw; font-weight: 700; width: 35.9375vw; height: 10.9375vw; margin-bottom: 7.8125vw;}
+    .SH_bottomArea button::after{width: 1.875vw; height: 3.28125vw; background-repeat: no-repeat; background-size: 100%;}
+    .SH_bottomArea.active{display: block;}
+    .SH_bottomArea nav{flex-direction: column; align-items: flex-start;}
+    .SH_bottomArea nav ul{width: 100%; margin-right: 0; margin-bottom: 7.03125vw;}
+    .SH_bottomArea nav ul li:nth-child(1){width: 21.875vw;}
+    .SH_bottomArea nav ul li:nth-child(2){width: 16.40625vw;}
+    .SH_bottomArea nav ul li:nth-child(3){width: 21.09375vw;}
+    .SH_bottomArea nav ul li:nth-child(4){width: 17.1875vw;}
+    .SH_bottomArea nav ul li:nth-child(5){width: 17.1875vw;}
+    .SH_bottomArea nav ul li a{font-size: 4.0625vw; padding: 0; display: block;}
+    .SH_bottomArea nav div a{height: 9.375vw; font-size: 3.4375vw;}
+    .SH_bottomArea nav div a::before{background-size: 100%; margin-right: 3.125vw;}
+    .SH_bottomArea nav div a:nth-of-type(1){width: 31.25vw;}
+    .SH_bottomArea nav div a:nth-of-type(2){width: 30.46875vw}
+    .SH_bottomArea nav div a:nth-of-type(1)::before{width: 3.75vw; height: 4.53125vw; }
+    .SH_bottomArea nav div a:nth-of-type(2)::before{width: 4.21875vw; height: 3.75vw; }
 }
 
 @media screen and (max-width:639px){
