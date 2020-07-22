@@ -9,35 +9,7 @@
     <!-- swiper CDN -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <script>
-       $(document).ready(function(){
-        $('.I_topArea > div *:not([class]) li').each(function(){
-            $(this).css('background-image','url(' + $(this).attr('data-img')+")");
-        })
-        $('.step01Area > div ul:not([class]) li').click(function(){
-            $('.step01Area > div ul:not([class]) li').removeClass('active');
-            $(this).addClass('active');
-        })
-
-        
-
-        $('.rightBtn').click(function(){
-            $('.inspectionProgress li.active').next().addClass('active');
-        })
-
-        $('.leftBtn').click(function(){
-            $('.inspectionProgress li').each(function(){
-                if(!$(this).next().hasClass('active')){
-                    $(this).removeClass('active');
-                }
-            })
-        })
-    
-        
-       });
-    </script>
-
+    <script src="js/common.js"></script>
     <link rel="stylesheet" href="css/import.css">
     <link rel="stylesheet" href="css/page.css">
 </head>
@@ -290,6 +262,7 @@
 
     <script>
         var swiper = new Swiper('.inspectionArea > .sliderArea', {
+            simulateTouch:false,
           navigation: {
             nextEl: '.rightBtn',
             prevEl: '.leftBtn',
